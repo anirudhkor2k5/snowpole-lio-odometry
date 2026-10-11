@@ -1,0 +1,22 @@
+{
+  "source": "kiss_fusion",
+  "tag": "rt_fusion_v20",
+  "pipeline": "run",
+  "rows": 5422,
+  "rows_held_at_ends": 10,
+  "clock_offset_s": 0.06223430145443494,
+  "alignment": {
+    "mode": "se2_head",
+    "n_fit": 536,
+    "head_m": 200.0,
+    "yaw_deg": 4.718807233050381,
+    "scale": 1.0
+  },
+  "template": "incremental_navigation_results.csv",
+  "row_error_vs_gt_m": {
+    "median": 227.63025773538433,
+    "p95": 716.553776642148,
+    "max": 777.3173083949561,
+    "final": 777.1276603118214
+  }
+}

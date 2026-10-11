@@ -1,0 +1,12 @@
+# kiss_fusion_node.py parameters (REPORT_v3). Values chosen on the training/validation blocks or a priori.
+gravity_tau_s: 5.0            # complementary-filter time constant (val-selected; flat 0.5-10 s)
+gravity_window_s: 1.0         # accelerometer averaging window
+body_up: [-0.004319, 0.029441, 0.999557]   # vehicle 'up' in the IMU frame (training-block mean specific force)
+lidar_in_imu_t: [-0.006253, 0.011775, -0.007645]
+guard_rate_rad_s: 0.2         # fall back to the LIO's heading change if KISS-ICP's yaw rate differs by more
+match_tol_s: 0.02             # LIO pose <-> KISS-ICP scan stamp matching tolerance
+kiss_voxel: 2.0              # chosen on the validation block from {1.0, 1.5, 2.0} (REPORT_v3 §11); -61 % cost
+kiss_max_range: 100.0
+kiss_min_range: 2.0
+kiss_max_points_per_voxel: 20
+kiss_threads: 2

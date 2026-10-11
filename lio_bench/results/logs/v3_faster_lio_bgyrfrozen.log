@@ -1,0 +1,4 @@
+[run_ros 09:48:24] tag=full_bgyrfrozen algos=['faster_lio'] port=41957 bag=2024-02-28-12-59-51.bag start=0.0 dur=None rate=1.0
+[run_ros 09:57:31] playback finished in 543 s; draining
+[run_ros 09:57:37] odometry poses recorded: {'faster_lio': 5414}
+[run_ros 09:57:40] faster_lio: 5414 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/faster_lio/full_bgyrfrozen

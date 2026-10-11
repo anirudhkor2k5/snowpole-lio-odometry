@@ -1,0 +1,5 @@
+[run_ros 11:51:52] tag=rt_fusion_v20 algos=['faster_lio', 'kiss_fusion'] port=33369 bag=2024-02-28-12-59-51.bag start=0.0 dur=None rate=1.0
+[run_ros 12:01:02] playback finished in 546 s; draining
+[run_ros 12:01:08] odometry poses recorded: {'faster_lio': 5412, 'kiss_fusion': 5412}
+[run_ros 12:01:11] faster_lio: 5412 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/faster_lio/rt_fusion_v20
+[run_ros 12:01:11] kiss_fusion: 5412 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/kiss_fusion/rt_fusion_v20

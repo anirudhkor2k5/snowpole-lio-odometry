@@ -1,0 +1,17 @@
+<launch>
+  <!-- Faster-LIO, headless and namespaced (see fast_lio.launch). -->
+  <arg name="ns" default="faster_lio"/>
+  <arg name="config"/>
+  <group ns="$(arg ns)">
+    <rosparam command="load" file="$(arg config)"/>
+    <param name="map_file_path" value=""/>
+    <node pkg="faster_lio" type="run_mapping_online" name="mapping" output="screen" required="true">
+      <remap from="/Odometry" to="/$(arg ns)/Odometry"/>
+      <remap from="/path" to="/$(arg ns)/path"/>
+      <remap from="/cloud_registered" to="/$(arg ns)/cloud_registered"/>
+      <remap from="/cloud_registered_body" to="/$(arg ns)/cloud_registered_body"/>
+      <remap from="/cloud_effected" to="/$(arg ns)/cloud_effected"/>
+      <remap from="/Laser_map" to="/$(arg ns)/Laser_map"/>
+    </node>
+  </group>
+</launch>

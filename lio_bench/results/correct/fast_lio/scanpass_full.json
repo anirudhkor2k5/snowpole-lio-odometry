@@ -1,0 +1,15 @@
+{
+  "baseline": "fast_lio",
+  "scans": 5412,
+  "wall_s": 263.6602688330022,
+  "variants": {
+    "vgicp_grav": {
+      "ms_per_scan": 15.016220154500404,
+      "fallback_rate": 0.017923133776792312
+    },
+    "grav_only": {
+      "ms_per_scan": 0.08235411417049064,
+      "fallback_rate": 0.0
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "algo": "genz_lio",
+  "tag": "win_fast_lio_genz_lio_adaptive_warm_wu5_q0.75_000",
+  "runner": "python",
+  "world_frame": "gravity",
+  "role": "support",
+  "start_offset_s": 465.99583172798157,
+  "duration_s": 10.095763683319092,
+  "warm_start_from": "fast_lio",
+  "seed_velocity_body": [
+    20.864615769972605,
+    0.33002507118232555,
+    0.3047241002227003
+  ],
+  "scans": 102,
+  "valid": 98,
+  "wall_s": 11.093178751994856,
+  "real_time_factor": 0.9194839665020058,
+  "config": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/configs/algorithms/genz_lio.yaml"
+}

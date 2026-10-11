@@ -1,0 +1,46 @@
+# Correction strategies on top of faster_lio
+
+Per block: anchored on the block's own first 200 m, then pure prediction. Drift % = KITTI-style mean over 100-800 m segments (frame-free). Fitted quantities use the training block only; the strategy is selected on validation.
+
+| method | ms/scan | train drift % | val drift % | test drift % | test RPE 1 s m | test length ratio | whole-drive ATE m (se2_head) |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| faster_lio | — | 2.67 | 4.37 | 13.41 | 3.801 | 0.871 | 1245.5 |
+| faster_lio+gicp | 36 | 3.56 | 8.73 | 26.31 | 6.627 | 0.747 | 1095.5 |
+| faster_lio+gicp+planar | — | 1.15 | 1.07 | 0.65 | 0.296 | 1.001 | 472.0 |
+| faster_lio+gicp_da | 34 | 3.57 | 8.70 | 26.12 | 6.588 | 0.749 | 1093.4 |
+| faster_lio+gicp_da+planar | — | 1.12 | 1.08 | 0.68 | 0.333 | 1.001 | 469.6 |
+| faster_lio+gicp_da+planar+poles | — | 1.16 | 1.08 | 0.68 | 0.333 | 1.001 | 474.3 |
+| faster_lio+gicp_da_wheel | 34 | 3.51 | 8.50 | 25.73 | 6.524 | 0.752 | 1121.4 |
+| faster_lio+gicp_da_wheel+planar | — | 1.13 | 1.09 | 0.72 | 0.317 | 1.002 | 508.8 |
+| faster_lio+gicp_da_wheel+planar+poles | — | 1.20 | 1.09 | 0.72 | 0.317 | 1.002 | 495.8 |
+| faster_lio+icp | 50 | 3.78 | 7.04 | 20.58 | 5.694 | 0.797 | 949.5 |
+| faster_lio+icp+planar | — | 1.48 | 1.07 | 2.38 | 2.127 | 0.991 | 426.3 |
+| faster_lio+planar | — | 1.44 | 1.34 | 1.20 | 0.507 | 0.994 | 948.3 |
+| faster_lio+planar+poles | — | 1.50 | 1.34 | 1.20 | 0.507 | 0.994 | 951.1 |
+| faster_lio+plane_icp | 43 | 3.81 | 7.31 | 21.29 | 5.410 | 0.790 | 1222.5 |
+| faster_lio+plane_icp+planar | — | 1.35 | 1.08 | 2.07 | 1.683 | 0.992 | 648.8 |
+| faster_lio+plane_icp_da | 36 | 3.72 | 7.00 | 20.32 | 5.184 | 0.800 | 1231.1 |
+| faster_lio+plane_icp_da+planar | — | 1.34 | 0.83 | 1.94 | 1.628 | 0.993 | 678.6 |
+| faster_lio+vgicp | 8 | 3.58 | 8.01 | 23.98 | 6.081 | 0.769 | 1242.3 |
+| faster_lio+vgicp+planar | — | 1.22 | 1.07 | 0.65 | 0.299 | 1.001 | 655.4 |
+| faster_lio+vgicp+planar+poles | — | 1.26 | 1.07 | 0.65 | 0.299 | 1.001 | 647.9 |
+| faster_lio+wheel | — | 3.69 | 4.61 | 12.89 | 3.614 | 0.876 | 1301.2 |
+| faster_lio+wheel+planar | — | 2.74 | 1.61 | 1.06 | 1.167 | 0.999 | 1009.8 |
+| dlio | — | 3.24 | 7.15 | 22.42 | 5.616 | 0.786 | 1102.7 |
+| genz_lio | — | 3.74 | 8.69 | 25.22 | 6.296 | 0.756 | 1413.7 |
+| kiss_icp | 34 | 2.30 | 3.13 | 10.61 | 2.657 | 0.899 | 563.0 |
+| dlio+planar | — | 1.45 | 1.62 | 0.91 | 0.644 | 1.001 | 571.7 |
+| genz_lio+planar | — | 1.38 | 1.02 | 0.88 | 0.307 | 0.998 | 806.4 |
+| kiss_icp+planar | — | 1.45 | 0.58 | 1.65 | 1.033 | 0.995 | 372.1 |
+
+## Absolute (UTM, no re-alignment) for pole-corrected runs
+
+| method | whole drive ATE m | train ATE m | val ATE m | test ATE m |
+|---|---:|---:|---:|---:|
+| faster_lio+gicp_da+planar+poles | 474.3 | 122.4 | 451.9 | 964.5 |
+| faster_lio+gicp_da_wheel+planar+poles | 495.8 | 127.0 | 476.1 | 1006.3 |
+| faster_lio+planar+poles | 951.2 | 246.8 | 988.4 | 1884.8 |
+| faster_lio+vgicp+planar+poles | 647.9 | 188.2 | 675.2 | 1277.2 |
+
+**Selected on validation:** `faster_lio+plane_icp_da+planar`. Test drift: 1.94 % vs baseline 13.41 %. (Best on test, for reference only, not a selection: `faster_lio+vgicp+planar`.)
+

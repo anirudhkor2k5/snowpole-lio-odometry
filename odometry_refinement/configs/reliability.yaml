@@ -1,0 +1,23 @@
+# Primary label declared before test scoring.
+# The holdout for the LIO exports is single-class at this label; see docs/05_reliability_experiment.md.
+horizon_s: 1.0
+threshold_m: 2.0
+min_reference_quality: 0.5
+train_fraction: 0.5
+validation_fraction: 0.2
+gap_s: 20
+seed: 0
+logistic_l2: 1.0
+xgboost:
+  n_estimators: 80
+  max_depth: 2
+  learning_rate: 0.08
+  early_stopping_rounds: 10
+mlp:
+  hidden: 16
+  l2: 0.01
+analytical:
+  robust_z_flag: 3.0
+  exported_vertical_rate_m_s: 5.0
+lags: [1, 2, 5, 10]
+adopt_neural_model: false

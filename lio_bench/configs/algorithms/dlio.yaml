@@ -1,0 +1,88 @@
+# DLIO (vectr-ucla/direct_lidar_inertial_odometry @ fc8d183), OS2-128 + internal IMU.
+# Upstream cfg/dlio.yaml and cfg/params.yaml merged; loaded into the node's private
+# namespace by ros/launch/dlio.launch. base_link = os_sensor (where the points are),
+# so the IMU offset is Trip068.json's imu_to_sensor translation and the LiDAR is identity.
+dlio:
+  version: 1.1.1
+  verbose: false                 # upstream redraws a terminal dashboard every frame
+  adaptive: true                 # adaptive keyframing / registration params by spaciousness
+
+  frames:
+    odom: odom
+    baselink: base_link
+    lidar: lidar
+    imu: imu
+
+  extrinsics:
+    baselink2imu:
+      t: [0.006253, -0.011775, 0.007645]
+      R: [1., 0., 0.,
+          0., 1., 0.,
+          0., 0., 1.]
+    baselink2lidar:
+      t: [0., 0., 0.]
+      R: [1., 0., 0.,
+          0., 1., 0.,
+          0., 0., 1.]
+
+  pointcloud:
+    deskew: true
+    voxelize: true
+
+  imu:
+    calibration: true            # needs the vehicle still for `odom/imu/calibration/time` s (true at drive start)
+    intrinsics:
+      accel:
+        bias: [0.0, 0.0, 0.0]
+        sm: [1., 0., 0.,
+             0., 1., 0.,
+             0., 0., 1.]
+      gyro:
+        bias: [0.0, 0.0, 0.0]
+
+  map:
+    waitUntilMove: true
+    dense:
+      filtered: false
+    sparse:
+      leafSize: 0.5
+
+  odom:
+    gravity: 9.80665
+    computeTimeOffset: false     # LiDAR and IMU share the Ouster clock
+    imu:
+      approximateGravity: true
+      calibration:
+        gyro: true
+        accel: true
+        time: 3
+      bufferSize: 5000
+    preprocessing:
+      cropBoxFilter:
+        size: 2.0                # m; vehicle / roof returns
+      voxelFilter:
+        res: 0.5                 # 128 beams at highway speed; 0.25 is upstream's indoor default
+    keyframe:
+      threshD: 5.0               # m; upstream 1.0 is tuned for small spaces (adaptive scales it)
+      threshR: 45.0
+    submap:
+      keyframe:
+        knn: 10
+        kcv: 10
+        kcc: 10
+    gicp:
+      minNumPoints: 64
+      kCorrespondences: 16
+      maxCorrespondenceDistance: 0.5
+      maxIterations: 32
+      transformationEpsilon: 0.01
+      rotationEpsilon: 0.01
+      initLambdaFactor: 1e-9
+    geo:
+      Kp: 4.5
+      Kv: 11.25
+      Kq: 4.0
+      Kab: 2.25
+      Kgb: 1.0
+      abias_max: 5.0
+      gbias_max: 0.5

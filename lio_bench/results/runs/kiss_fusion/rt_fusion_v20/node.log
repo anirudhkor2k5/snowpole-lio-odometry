@@ -1,0 +1,1 @@
+KISS_FUSION_STATS {"scans": 5419, "fused": 5411, "kiss_ms_median": 37.652814004104584, "kiss_ms_p95": 54.34757959010311, "fuse_us_median": 447.2510045161471, "fallback_missing": 45, "fallback_guard": 0}

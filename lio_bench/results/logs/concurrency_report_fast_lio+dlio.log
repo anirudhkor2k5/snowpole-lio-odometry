@@ -1,0 +1,57 @@
+{
+  "baseline": "fast_lio",
+  "support": "dlio",
+  "machine": {
+    "cpus": 10,
+    "arch": "aarch64",
+    "mem_gb": 15.2
+  },
+  "per_algo": {
+    "fast_lio": {
+      "solo": {
+        "ate_rmse_m": 500.44991699249306,
+        "drift_pct": 9.382748502077547,
+        "latency_ms_median": 48.66790771484375,
+        "latency_ms_p95": 67.03090667724608,
+        "latency_ms_max": 96.21214866638184,
+        "poses": 5413,
+        "clouds": 5419,
+        "scans_without_pose": 6,
+        "cpu_pct_mean": 116.9679347826087,
+        "cpu_pct_p95": 167.8,
+        "rss_mb_max": 615.3
+      },
+      "concurrent": {
+        "ate_rmse_m": 492.4532091422202,
+        "drift_pct": 9.471272601434213,
+        "latency_ms_median": 38.6960506439209,
+        "latency_ms_p95": 57.1828842163086,
+        "latency_ms_max": 958.8708877563477,
+        "poses": 5415,
+        "clouds": 5419,
+        "scans_without_pose": 4,
+        "cpu_pct_mean": 79.56669691470054,
+        "cpu_pct_p95": 113.9,
+        "rss_mb_max": 558.5
+      }
+    },
+    "dlio": {
+      "solo": {
+        "ate_rmse_m": 395.8146375372113,
+        "drift_pct": 7.767565761603266,
+        "note": "DLIO publishes IMU-rate poses; per-scan latency not defined",
+        "cpu_pct_mean": 234.11376811594207,
+        "cpu_pct_p95": 383.685,
+        "rss_mb_max": 3110.1
+      },
+      "concurrent": {
+        "ate_rmse_m": 410.7690069093431,
+        "drift_pct": 7.689194964303038,
+        "note": "DLIO publishes IMU-rate poses; per-scan latency not defined",
+        "cpu_pct_mean": 190.63112522686026,
+        "cpu_pct_p95": 323.7000000000001,
+        "rss_mb_max": 3063.9
+      }
+    }
+  }
+}

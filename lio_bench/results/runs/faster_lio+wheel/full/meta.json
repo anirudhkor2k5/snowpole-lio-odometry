@@ -1,0 +1,35 @@
+{
+  "algo": "faster_lio+wheel",
+  "tag": "full",
+  "start_offset_s": 0.0,
+  "machine": {
+    "arch": "aarch64"
+  },
+  "runner": "correct.wheel",
+  "role": "corrector",
+  "world_frame": "first_imu",
+  "baseline": "faster_lio",
+  "baseline_tag": "full",
+  "calibration": {
+    "baseline": "faster_lio",
+    "train_interval_unix": [
+      1709121591.9325616,
+      1709121916.8086388
+    ],
+    "lag_s": 0.35000000000000075,
+    "scale": 0.9282261761989331,
+    "forward_axis_body": [
+      0.9996375113473692,
+      0.020337141476654663,
+      0.017642181945462788
+    ],
+    "forward_axis_yaw_deg": 1.1654941293124736,
+    "forward_axis_pitch_deg": 1.010875010067621,
+    "train_step_err_m": {
+      "bias": 0.0003636394259299827,
+      "std": 0.07378668106068506,
+      "rel_pct": 2.983166605968294
+    },
+    "speed_mae_at_lag_mps": 1.4490428604516024
+  }
+}

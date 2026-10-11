@@ -1,0 +1,38 @@
+# ROS Noetic (RoboStack) + build toolchain for FAST-LIO, Faster-LIO and DLIO.
+# Works on linux-64 and linux-aarch64.
+#   conda env create -f lio_bench/envs/lio-ros.yml
+name: lio-ros
+channels:
+  - robostack-noetic
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=2
+  - ros-noetic-ros-base
+  - ros-noetic-rosbag
+  - ros-noetic-pcl-ros
+  - ros-noetic-pcl-conversions
+  - ros-noetic-tf
+  - ros-noetic-eigen-conversions
+  - ros-noetic-nav-msgs
+  - ros-noetic-geometry-msgs
+  - ros-noetic-sensor-msgs
+  - ros-noetic-message-generation
+  - ros-noetic-message-runtime
+  - catkin_tools
+  - empy=3.3.4        # ROS1 genmsg breaks on empy 4 (em.RAW_OPT)
+  - compilers
+  - cmake<4          # catkin's CMakeLists still declare cmake_minimum_required < 3.5
+  - pkg-config
+  - make
+  - ninja
+  - glog
+  - gflags
+  - tbb-devel        # Faster-LIO uses std::execution::par_unseq
+  - yaml-cpp
+  - eigen
+  - psutil           # resource monitor used by the runner
+  - pyyaml
+  - pip
+  - pip:
+      - kiss-icp>=1.2,<2     # LiDAR-only heading source for ros/scripts/kiss_fusion_node.py

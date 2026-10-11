@@ -1,0 +1,29 @@
+[0m[INFO] [1791648447.839626411]: GenZ-LIO listening on /ouster/points and /ouster/imu[0m
+[0m[INFO] [1791648447.839780786]:   adaptive voxelization: on, hybrid metric: on[0m
+master has started, initiating launch
+... logging to /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/_work/concurrent_faster_lio+genz_lio_1401117/ros_logs/affcc61a-c4c4-11f1-81f1-52c3e62f6738/roslaunch-fedora-1401224.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/ros/launch/genz_lio.launch
+[1mstarted roslaunch server http://127.0.0.1:44433/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /genz_lio/odometry/config_path: /home/anirudhk/Do...
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+  /genz_lio/
+    odometry (genz_lio/genz_lio_node)
+
+[1mROS_MASTER_URI=http://127.0.0.1:45047[0m
+]2;/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/ros/launch/genz_lio.launch http://127.0.0.1:45047
+[1mprocess[genz_lio/odometry-1]: started with pid [1401290][0m
+[genz_lio/odometry-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

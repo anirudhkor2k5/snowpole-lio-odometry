@@ -1,0 +1,17 @@
+<launch>
+  <!-- GenZ-LIO ROS1 node, headless and namespaced. -->
+  <arg name="ns" default="genz_lio"/>
+  <arg name="config"/>
+  <group ns="$(arg ns)">
+    <node pkg="genz_lio" type="genz_lio_node" name="odometry" output="screen" required="true">
+      <param name="config_path" value="$(arg config)"/>
+      <remap from="/Odometry" to="/$(arg ns)/Odometry"/>
+      <remap from="/path" to="/$(arg ns)/path"/>
+      <remap from="/cloud_registered" to="/$(arg ns)/cloud_registered"/>
+      <remap from="/cloud_registered_body" to="/$(arg ns)/cloud_registered_body"/>
+      <remap from="/cloud_planar" to="/$(arg ns)/cloud_planar"/>
+      <remap from="/cloud_non_planar" to="/$(arg ns)/cloud_non_planar"/>
+      <remap from="/voxel_map" to="/$(arg ns)/voxel_map"/>
+    </node>
+  </group>
+</launch>

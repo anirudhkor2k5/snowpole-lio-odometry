@@ -1,0 +1,73 @@
+diff --git a/cpp/genz_lio/core/GenZLIO.hpp b/cpp/genz_lio/core/GenZLIO.hpp
+index 96b6aa9..7800eb5 100644
+--- a/cpp/genz_lio/core/GenZLIO.hpp
++++ b/cpp/genz_lio/core/GenZLIO.hpp
+@@ -80,6 +80,12 @@ public:
+ 
+     /// Discards the map and the filter state, keeping the configuration.
+     void reset();
++    /// lio_bench: overwrite the filter velocity, given in the IMU body frame.
++    void seedVelocityBody(const Vec3 &v_body) {
++        auto x = kf_.get_x();
++        x.vel = x.rot * v_body;
++        kf_.change_x(x);
++    }
+ 
+     bool initialized() const { return imu_processor_.initialized() && map_built_; }
+     state_ikfom state() const { return kf_.get_x(); }
+diff --git a/cpp/genz_lio/core/ImuProcessor.cpp b/cpp/genz_lio/core/ImuProcessor.cpp
+index bd4fc62..68cac20 100644
+--- a/cpp/genz_lio/core/ImuProcessor.cpp
++++ b/cpp/genz_lio/core/ImuProcessor.cpp
+@@ -5,6 +5,7 @@
+ #include "SO3Math.hpp"
+ 
+ #include <algorithm>
++#include <cstdlib>  // lio_bench: GENZ_INIT_IMU_SAMPLES
+ #include <cmath>
+ #include <stdexcept>
+ 
+@@ -75,6 +76,18 @@ void ImuProcessor::setExtrinsic(const Vec3 &translation, const Mat3 &rotation) {
+     lidar_r_wrt_imu_ = rotation;
+ }
+ 
++namespace {
++// lio_bench: number of stationary IMU samples averaged for the initial gravity / gyro bias.
++// Upstream uses kInitScanCount (20 samples = 0.2 s at 100 Hz); GENZ_INIT_IMU_SAMPLES overrides it.
++int initImuSamples(int fallback) {
++    static const int n = [fallback] {
++        const char *e = std::getenv("GENZ_INIT_IMU_SAMPLES");
++        return (e && std::atoi(e) > 0) ? std::atoi(e) : fallback;
++    }();
++    return n;
++}
++}  // namespace
++
+ void ImuProcessor::initializeImu(const MeasurementBundle &bundle, EsekfState &kf) {
+     if (first_frame_) {
+         reset();
+@@ -232,7 +245,7 @@ void ImuProcessor::process(const MeasurementBundle &bundle, EsekfState &kf, Poin
+     if (imu_need_init_) {
+         initializeImu(bundle, kf);
+         last_imu_ = bundle.imu.back();
+-        if (init_iter_num_ > kInitScanCount) {
++        if (init_iter_num_ > initImuSamples(kInitScanCount)) {
+             // The initial covariance was accumulated on raw accelerometer units;
+             // rescale it before switching to the configured noise model.
+             cov_acc_ *= std::pow(kGravity / mean_acc_.norm(), 2);
+diff --git a/python/genz_lio/pybind/genz_lio_pybind.cpp b/python/genz_lio/pybind/genz_lio_pybind.cpp
+index 3647759..0917dc9 100644
+--- a/python/genz_lio/pybind/genz_lio_pybind.cpp
++++ b/python/genz_lio/pybind/genz_lio_pybind.cpp
+@@ -534,6 +534,11 @@ PYBIND11_MODULE(genz_lio_pybind, m) {
+             py::arg("timing_prepared") = false,
+             "Consume one scan with the IMU samples spanning it.")
+         .def("reset", &GenZLIO::reset)
++        .def("seed_velocity_body", &GenZLIO::seedVelocityBody, py::arg("v_body"))  // lio_bench
++        .def_property_readonly("imu_biases", [](const GenZLIO &s) {  // lio_bench
++            const auto x = s.state();
++            return std::make_pair(Vec3(x.bg), Vec3(x.ba));
++        })
+         .def_property_readonly("covariance", &GenZLIO::covariance)
+         .def_property_readonly("initialized", &GenZLIO::initialized)
+         .def_property_readonly("map_size", [](const GenZLIO &s) { return s.map().size(); })

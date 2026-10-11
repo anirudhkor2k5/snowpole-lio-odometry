@@ -1,0 +1,58 @@
+[scanpass fast_lio] 250 scans, 71 s wall, 0.35x real time, icp 54 ms, plane_icp 43 ms, gicp 30 ms, vgicp 8 ms, plane_icp_da 25 ms, gicp_da 21 ms, gicp_da_wheel 21 ms, kiss 31 ms
+[scanpass fast_lio] 500 scans, 136 s wall, 0.37x real time, icp 46 ms, plane_icp 39 ms, gicp 29 ms, vgicp 7 ms, plane_icp_da 26 ms, gicp_da 24 ms, gicp_da_wheel 24 ms, kiss 38 ms
+[scanpass fast_lio] 750 scans, 238 s wall, 0.32x real time, icp 59 ms, plane_icp 44 ms, gicp 35 ms, vgicp 8 ms, plane_icp_da 32 ms, gicp_da 30 ms, gicp_da_wheel 31 ms, kiss 38 ms
+[scanpass fast_lio] 1000 scans, 335 s wall, 0.30x real time, icp 63 ms, plane_icp 47 ms, gicp 37 ms, vgicp 9 ms, plane_icp_da 35 ms, gicp_da 33 ms, gicp_da_wheel 33 ms, kiss 37 ms
+[scanpass fast_lio] 1250 scans, 432 s wall, 0.29x real time, icp 65 ms, plane_icp 49 ms, gicp 39 ms, vgicp 9 ms, plane_icp_da 37 ms, gicp_da 35 ms, gicp_da_wheel 35 ms, kiss 36 ms
+[scanpass fast_lio] 1500 scans, 544 s wall, 0.28x real time, icp 69 ms, plane_icp 51 ms, gicp 41 ms, vgicp 9 ms, plane_icp_da 39 ms, gicp_da 38 ms, gicp_da_wheel 38 ms, kiss 37 ms
+[scanpass fast_lio] 1750 scans, 624 s wall, 0.28x real time, icp 66 ms, plane_icp 50 ms, gicp 40 ms, vgicp 9 ms, plane_icp_da 39 ms, gicp_da 38 ms, gicp_da_wheel 38 ms, kiss 36 ms
+[scanpass fast_lio] 2000 scans, 686 s wall, 0.29x real time, icp 62 ms, plane_icp 48 ms, gicp 39 ms, vgicp 9 ms, plane_icp_da 38 ms, gicp_da 37 ms, gicp_da_wheel 37 ms, kiss 35 ms
+[scanpass fast_lio] 2250 scans, 761 s wall, 0.30x real time, icp 60 ms, plane_icp 47 ms, gicp 39 ms, vgicp 9 ms, plane_icp_da 38 ms, gicp_da 37 ms, gicp_da_wheel 36 ms, kiss 35 ms
+[scanpass fast_lio] 2500 scans, 831 s wall, 0.30x real time, icp 59 ms, plane_icp 46 ms, gicp 38 ms, vgicp 9 ms, plane_icp_da 38 ms, gicp_da 36 ms, gicp_da_wheel 36 ms, kiss 35 ms
+[scanpass fast_lio] 2750 scans, 887 s wall, 0.31x real time, icp 56 ms, plane_icp 45 ms, gicp 37 ms, vgicp 8 ms, plane_icp_da 37 ms, gicp_da 35 ms, gicp_da_wheel 35 ms, kiss 34 ms
+[scanpass fast_lio] 3000 scans, 961 s wall, 0.31x real time, icp 56 ms, plane_icp 45 ms, gicp 37 ms, vgicp 8 ms, plane_icp_da 36 ms, gicp_da 34 ms, gicp_da_wheel 34 ms, kiss 34 ms
+[scanpass fast_lio] 3250 scans, 1012 s wall, 0.32x real time, icp 54 ms, plane_icp 43 ms, gicp 36 ms, vgicp 8 ms, plane_icp_da 36 ms, gicp_da 34 ms, gicp_da_wheel 33 ms, kiss 33 ms
+[scanpass fast_lio] 3500 scans, 1076 s wall, 0.33x real time, icp 54 ms, plane_icp 43 ms, gicp 35 ms, vgicp 8 ms, plane_icp_da 35 ms, gicp_da 33 ms, gicp_da_wheel 33 ms, kiss 32 ms
+[scanpass fast_lio] 3750 scans, 1153 s wall, 0.33x real time, icp 53 ms, plane_icp 43 ms, gicp 35 ms, vgicp 8 ms, plane_icp_da 35 ms, gicp_da 33 ms, gicp_da_wheel 33 ms, kiss 33 ms
+[scanpass fast_lio] 4000 scans, 1232 s wall, 0.32x real time, icp 53 ms, plane_icp 44 ms, gicp 35 ms, vgicp 8 ms, plane_icp_da 35 ms, gicp_da 33 ms, gicp_da_wheel 32 ms, kiss 33 ms
+[scanpass fast_lio] 4250 scans, 1305 s wall, 0.33x real time, icp 53 ms, plane_icp 43 ms, gicp 35 ms, vgicp 8 ms, plane_icp_da 35 ms, gicp_da 33 ms, gicp_da_wheel 32 ms, kiss 33 ms
+[scanpass fast_lio] 4500 scans, 1385 s wall, 0.32x real time, icp 53 ms, plane_icp 44 ms, gicp 35 ms, vgicp 8 ms, plane_icp_da 35 ms, gicp_da 32 ms, gicp_da_wheel 32 ms, kiss 33 ms
+[scanpass fast_lio] 4750 scans, 1496 s wall, 0.32x real time, icp 54 ms, plane_icp 44 ms, gicp 36 ms, vgicp 8 ms, plane_icp_da 36 ms, gicp_da 34 ms, gicp_da_wheel 34 ms, kiss 34 ms
+[scanpass fast_lio] 5000 scans, 1565 s wall, 0.32x real time, icp 53 ms, plane_icp 44 ms, gicp 36 ms, vgicp 8 ms, plane_icp_da 36 ms, gicp_da 34 ms, gicp_da_wheel 34 ms, kiss 34 ms
+[scanpass fast_lio] 5250 scans, 1640 s wall, 0.32x real time, icp 53 ms, plane_icp 44 ms, gicp 36 ms, vgicp 8 ms, plane_icp_da 36 ms, gicp_da 34 ms, gicp_da_wheel 34 ms, kiss 34 ms
+{
+  "baseline": "fast_lio",
+  "scans": 5412,
+  "wall_s": 1684.4392484260025,
+  "variants": {
+    "icp": {
+      "ms_per_scan": 52.30890726942597,
+      "fallback_rate": 0.10347376201034737
+    },
+    "plane_icp": {
+      "ms_per_scan": 43.99602575394616,
+      "fallback_rate": 0.05303030303030303
+    },
+    "gicp": {
+      "ms_per_scan": 36.09580572157571,
+      "fallback_rate": 0.009238728750923873
+    },
+    "vgicp": {
+      "ms_per_scan": 7.980557128857693,
+      "fallback_rate": 0.01681448632668145
+    },
+    "plane_icp_da": {
+      "ms_per_scan": 36.41307718183466,
+      "fallback_rate": 0.0524759793052476
+    },
+    "gicp_da": {
+      "ms_per_scan": 33.76543638992024,
+      "fallback_rate": 0.011456023651145602
+    },
+    "gicp_da_wheel": {
+      "ms_per_scan": 33.63256653565346,
+      "fallback_rate": 0.008314855875831485
+    }
+  },
+  "kiss_icp_ms_per_scan": 33.63837133812441,
+  "pole_candidates": 6075
+}

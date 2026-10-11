@@ -1,0 +1,36 @@
+[scanpass faster_lio] 250 scans, 17 s wall, 1.45x real time, vgicp_grav 16 ms, grav_only 0 ms
+[scanpass faster_lio] 500 scans, 26 s wall, 1.89x real time, vgicp_grav 13 ms, grav_only 0 ms
+[scanpass faster_lio] 750 scans, 45 s wall, 1.65x real time, vgicp_grav 16 ms, grav_only 0 ms
+[scanpass faster_lio] 1000 scans, 63 s wall, 1.60x real time, vgicp_grav 18 ms, grav_only 0 ms
+[scanpass faster_lio] 1250 scans, 81 s wall, 1.55x real time, vgicp_grav 19 ms, grav_only 0 ms
+[scanpass faster_lio] 1500 scans, 100 s wall, 1.50x real time, vgicp_grav 20 ms, grav_only 0 ms
+[scanpass faster_lio] 1750 scans, 111 s wall, 1.57x real time, vgicp_grav 19 ms, grav_only 0 ms
+[scanpass faster_lio] 2000 scans, 117 s wall, 1.70x real time, vgicp_grav 18 ms, grav_only 0 ms
+[scanpass faster_lio] 2250 scans, 126 s wall, 1.79x real time, vgicp_grav 17 ms, grav_only 0 ms
+[scanpass faster_lio] 2500 scans, 134 s wall, 1.87x real time, vgicp_grav 16 ms, grav_only 0 ms
+[scanpass faster_lio] 2750 scans, 140 s wall, 1.96x real time, vgicp_grav 16 ms, grav_only 0 ms
+[scanpass faster_lio] 3000 scans, 156 s wall, 1.93x real time, vgicp_grav 16 ms, grav_only 0 ms
+[scanpass faster_lio] 3250 scans, 161 s wall, 2.01x real time, vgicp_grav 15 ms, grav_only 0 ms
+[scanpass faster_lio] 3500 scans, 175 s wall, 2.00x real time, vgicp_grav 15 ms, grav_only 0 ms
+[scanpass faster_lio] 3750 scans, 183 s wall, 2.05x real time, vgicp_grav 15 ms, grav_only 0 ms
+[scanpass faster_lio] 4000 scans, 199 s wall, 2.01x real time, vgicp_grav 15 ms, grav_only 0 ms
+[scanpass faster_lio] 4250 scans, 210 s wall, 2.03x real time, vgicp_grav 15 ms, grav_only 0 ms
+[scanpass faster_lio] 4500 scans, 224 s wall, 2.01x real time, vgicp_grav 15 ms, grav_only 0 ms
+[scanpass faster_lio] 4750 scans, 233 s wall, 2.04x real time, vgicp_grav 15 ms, grav_only 0 ms
+[scanpass faster_lio] 5000 scans, 240 s wall, 2.08x real time, vgicp_grav 15 ms, grav_only 0 ms
+[scanpass faster_lio] 5250 scans, 247 s wall, 2.13x real time, vgicp_grav 15 ms, grav_only 0 ms
+{
+  "baseline": "faster_lio",
+  "scans": 5410,
+  "wall_s": 252.42830345399852,
+  "variants": {
+    "vgicp_grav": {
+      "ms_per_scan": 14.483531676036996,
+      "fallback_rate": 0.019408502772643253
+    },
+    "grav_only": {
+      "ms_per_scan": 0.08171772494048823,
+      "fallback_rate": 0.0
+    }
+  }
+}

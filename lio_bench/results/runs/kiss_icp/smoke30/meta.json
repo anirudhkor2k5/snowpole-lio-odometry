@@ -1,0 +1,13 @@
+{
+  "algo": "kiss_icp",
+  "tag": "smoke30",
+  "start_offset_s": 0.0,
+  "machine": {
+    "arch": "aarch64"
+  },
+  "runner": "correct.scanpass",
+  "role": "support",
+  "world_frame": "first_imu",
+  "ms_per_scan": 31.9656063572135,
+  "note": "KISS-ICP 1.x, LiDAR only, 1.0 m voxel"
+}

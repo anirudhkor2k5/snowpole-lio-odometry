@@ -1,0 +1,5 @@
+planar: ['faster_lio+planar', 'dlio+planar', 'genz_lio+planar', 'kiss_icp+planar', 'faster_lio+gicp+planar', 'faster_lio+gicp_da+planar', 'faster_lio+gicp_da_wheel+planar', 'faster_lio+icp+planar', 'faster_lio+plane_icp+planar', 'faster_lio+plane_icp_da+planar', 'faster_lio+vgicp+planar', 'faster_lio+wheel+planar']
+faster_lio+planar fixes 2 / 5106 | test, pole zone: {"head_aligned_only": {"n": 0}, "pole_corrected": {"n": 0}}
+faster_lio+gicp_da+planar fixes 13 / 5106 | test, pole zone: {"head_aligned_only": {"n": 0}, "pole_corrected": {"n": 0}}
+faster_lio+vgicp+planar fixes 6 / 5106 | test, pole zone: {"head_aligned_only": {"n": 0}, "pole_corrected": {"n": 0}}
+faster_lio+gicp_da_wheel+planar fixes 13 / 5106 | test, pole zone: {"head_aligned_only": {"n": 0}, "pole_corrected": {"n": 0}}

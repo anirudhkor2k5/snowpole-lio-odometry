@@ -1,0 +1,27 @@
+[genz full_bgyrfrozen] 500 scans, 33 s wall, 1.49x real time
+[genz full_bgyrfrozen] 1000 scans, 75 s wall, 1.34x real time
+[genz full_bgyrfrozen] 1500 scans, 116 s wall, 1.29x real time
+[genz full_bgyrfrozen] 2000 scans, 150 s wall, 1.33x real time
+[genz full_bgyrfrozen] 2500 scans, 183 s wall, 1.37x real time
+[genz full_bgyrfrozen] 3000 scans, 213 s wall, 1.41x real time
+[genz full_bgyrfrozen] 3500 scans, 242 s wall, 1.45x real time
+[genz full_bgyrfrozen] 4000 scans, 277 s wall, 1.44x real time
+[genz full_bgyrfrozen] 4500 scans, 313 s wall, 1.44x real time
+[genz full_bgyrfrozen] 5000 scans, 350 s wall, 1.43x real time
+{
+  "algo": "genz_lio",
+  "tag": "full_bgyrfrozen",
+  "runner": "python",
+  "world_frame": "gravity",
+  "role": "support",
+  "start_offset_s": 0.0,
+  "duration_s": null,
+  "warm_start_from": null,
+  "seed_velocity_body": null,
+  "scans": 5419,
+  "valid": 5417,
+  "wall_s": 373.72717050099163,
+  "real_time_factor": 1.449988234126965,
+  "config": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/configs/algorithms/variants/genz_lio_bgyrfrozen.yaml",
+  "time_scale": 1.0
+}

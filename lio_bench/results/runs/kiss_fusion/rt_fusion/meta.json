@@ -1,0 +1,21 @@
+{
+  "algo": "kiss_fusion",
+  "tag": "rt_fusion",
+  "runner": "ros",
+  "concurrent_with": [
+    "faster_lio"
+  ],
+  "world_frame": "gravity",
+  "role": "corrector",
+  "config": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/configs/algorithms/kiss_fusion.yaml",
+  "start_offset_s": 0.0,
+  "duration_s": null,
+  "rate": 1.0,
+  "machine": {
+    "cpus": 10,
+    "arch": "aarch64",
+    "mem_gb": 15.2
+  },
+  "estimator_commit": null,
+  "note": "outputs recovered from the work dir after a metadata KeyError (fixed)"
+}

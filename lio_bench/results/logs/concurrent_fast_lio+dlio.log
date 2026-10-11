@@ -1,0 +1,5 @@
+[run_ros 21:09:20] tag=concurrent_fast_lio+dlio algos=['fast_lio', 'dlio'] port=59123 bag=2024-02-28-12-59-51.bag start=0.0 dur=None rate=1.0
+[run_ros 21:18:30] playback finished in 546 s; draining
+[run_ros 21:18:36] odometry poses recorded: {'fast_lio': 5415, 'dlio': 41261}
+[run_ros 21:18:38] fast_lio: 5415 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/fast_lio/concurrent_fast_lio+dlio
+[run_ros 21:18:38] dlio: 41261 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/dlio/concurrent_fast_lio+dlio

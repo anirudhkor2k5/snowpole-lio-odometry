@@ -1,0 +1,51 @@
+# Dataset description for the 2024-02-28 E39 Hemnekjølen drive.
+#
+# Relative paths resolve against `data_root`, which itself resolves against the
+# repository root. On a cloud machine where the bags live elsewhere, either edit
+# data_root or export LIOBENCH_DATA_ROOT=/mnt/data/snowpole (env var wins).
+data_root: .
+
+bag: 2024-02-28-12-59-51.bag                          # full bag: the only one with /ouster/points
+reduced_bag: 2024-02-28-12-59-51_no_unwanted_topics.bag  # has /ouster/imu; faster to scan for the clock fit
+lidar_topic: /ouster/points
+imu_topic: /ouster/imu
+
+ground_truth: groundtruth_extracted.csv               # UTM 33N easting/northing, 10 Hz, no altitude
+gnss_left: gps_left_position.csv                      # altitude source for the 3D reference
+gnss_right: gps_right_position.csv
+pole_map: Groundtruth_pole_location_at_test_site_E39_Hemnekjølen.csv   # 290 surveyed poles, UTM 33N
+utm_epsg: 32633                                       # zone the repo and pole map use (site is in 32; kept for consistency)
+
+legacy_exports:                                       # the CSVs step 1 verifies
+  fastlio:   {file: fastlio.csv,   clock: relative}   # stamps start at 0
+  fasterlio: {file: fasterlio.csv, clock: unix}
+
+# Sensor: Ouster OS2-128, 1024x10, internal IMU at 100 Hz (Trip068.json).
+# Points are published in os_sensor; IMU in os_imu; no rotation between them.
+# imu_to_sensor translation = (6.253, -11.775, 7.645) mm, so the LiDAR (os_sensor)
+# origin expressed in the IMU frame is the negative of that.
+sensor:
+  model: OS-2-128
+  scan_lines: 128
+  scan_rate_hz: 10
+  lidar_in_imu_t: [-0.006253, 0.011775, -0.007645]
+  lidar_in_imu_R: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+static_start_s: 1.0          # vehicle is still for the first seconds; used for gravity levelling
+
+evaluation:
+  max_assoc_dt: 0.15         # s, never interpolate across a bigger gap
+  estimate_time_offset: true # residual clock offset from speed-profile matching
+  min_time_offset_s: 0.02
+  head_align_m: 200          # se2_head: anchor on the first 200 m only
+  protocols: [se2_head, se2_full, se3_full]
+  rpe_time_s: [1, 10]
+  drift_lengths_m: [100, 200, 400, 800]
+  segment_m: 500
+
+# Chronological split for the learned parts (fractions of drive time). Gaps keep
+# adjacent, strongly correlated frames out of neighbouring blocks.
+split:
+  train: 0.6
+  val: 0.2
+  gap_s: 10
+  folds: 5                   # blocked k-fold for the cross-validated estimate

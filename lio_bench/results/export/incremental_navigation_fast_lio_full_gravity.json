@@ -1,0 +1,22 @@
+{
+  "source": "fast_lio",
+  "tag": "full",
+  "pipeline": "gravity",
+  "rows": 5422,
+  "rows_held_at_ends": 9,
+  "clock_offset_s": 0.06579290827308541,
+  "alignment": {
+    "mode": "se2_head",
+    "n_fit": 537,
+    "head_m": 200.0,
+    "yaw_deg": 4.765308690990714,
+    "scale": 1.0
+  },
+  "template": "incremental_navigation_results.csv",
+  "row_error_vs_gt_m": {
+    "median": 372.5249181567834,
+    "p95": 1770.2062634760296,
+    "max": 1927.492938505249,
+    "final": 1927.492938505249
+  }
+}

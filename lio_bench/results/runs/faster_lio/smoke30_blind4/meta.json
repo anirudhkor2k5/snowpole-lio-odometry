@@ -1,0 +1,24 @@
+{
+  "algo": "faster_lio",
+  "tag": "smoke30_blind4",
+  "runner": "ros",
+  "concurrent_with": [],
+  "world_frame": "first_imu",
+  "role": "baseline",
+  "config": "/tmp/flio/blind4.yaml",
+  "bag": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/2024-02-28-12-59-51.bag",
+  "start_offset_s": 0.0,
+  "duration_s": 30.0,
+  "rate": 1.0,
+  "wall": {
+    "play_start": 1791628661.0118263,
+    "play_end": 1791628695.01638,
+    "drained": 1791628701.01823
+  },
+  "machine": {
+    "cpus": 10,
+    "arch": "aarch64",
+    "mem_gb": 15.2
+  },
+  "estimator_commit": "8038fbac95283708fe2aa30658b7e116a7ace6d8"
+}

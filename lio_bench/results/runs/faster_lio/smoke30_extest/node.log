@@ -1,0 +1,985 @@
+I20261010 16:05:58.770001 281471712673824 laser_mapping.cc:98] lidar_type 3
+I20261010 16:05:58.770114 281471712673824 laser_mapping.cc:107] Using OUST 64 Lidar
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+[0;33mW20261010 16:06:04.284127 281471712673824 laser_mapping.cc:294] No point, skip this scan!
+[mFailed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+[0;33mW20261010 16:06:04.305989 281471712673824 laser_mapping.cc:294] No point, skip this scan!
+[mFailed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:04.352149 281471712673824 imu_processing.hpp:310] IMU Initial Done
+[0;33mW20261010 16:06:04.352289 281471712673824 laser_mapping.cc:294] No point, skip this scan!
+[mFailed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:04.559731 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17071 downsamp 7053 Map grid num: 8252 effect num : 5973
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:04.647632 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17129 downsamp 7054 Map grid num: 8911 effect num : 6412
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:04.741138 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17105 downsamp 7035 Map grid num: 9440 effect num : 6552
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:04.839846 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17020 downsamp 7022 Map grid num: 9828 effect num : 6625
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:04.960429 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17059 downsamp 7008 Map grid num: 10171 effect num : 6654
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:05.044082 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17128 downsamp 7055 Map grid num: 10451 effect num : 6722
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:05.150248 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17078 downsamp 7036 Map grid num: 10702 effect num : 6732
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:05.263407 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17022 downsamp 6988 Map grid num: 10917 effect num : 6690
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:05.340413 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17070 downsamp 7019 Map grid num: 11122 effect num : 6739
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:05.433815 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17131 downsamp 7091 Map grid num: 11325 effect num : 6772
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:05.548854 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17054 downsamp 7052 Map grid num: 11503 effect num : 6769
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:05.643346 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17052 downsamp 7018 Map grid num: 11650 effect num : 6780
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:05.746471 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17234 downsamp 7067 Map grid num: 11809 effect num : 6815
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:05.848537 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17153 downsamp 7093 Map grid num: 11962 effect num : 6854
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:05.944522 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17162 downsamp 7117 Map grid num: 12107 effect num : 6888
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:06.037340 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17093 downsamp 7042 Map grid num: 12230 effect num : 6824
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:06.144952 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17172 downsamp 7091 Map grid num: 12360 effect num : 6876
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:06.251308 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17153 downsamp 7109 Map grid num: 12484 effect num : 6887
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:06.344046 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17184 downsamp 7095 Map grid num: 12588 effect num : 6891
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:06.448461 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17113 downsamp 7103 Map grid num: 12699 effect num : 6896
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:06.542151 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17210 downsamp 7067 Map grid num: 12786 effect num : 6873
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:06.661064 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17170 downsamp 7089 Map grid num: 12887 effect num : 6882
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:06.746255 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17044 downsamp 7037 Map grid num: 12984 effect num : 6838
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:06.845477 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17109 downsamp 7068 Map grid num: 13073 effect num : 6894
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:06.939474 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17123 downsamp 7089 Map grid num: 13170 effect num : 6906
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:07.039935 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17082 downsamp 7019 Map grid num: 13256 effect num : 6844
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:07.140208 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17116 downsamp 7086 Map grid num: 13345 effect num : 6916
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:07.254927 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17191 downsamp 7094 Map grid num: 13415 effect num : 6917
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:07.343500 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17090 downsamp 7081 Map grid num: 13488 effect num : 6924
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:07.463805 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17143 downsamp 7042 Map grid num: 13574 effect num : 6894
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:07.555461 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17078 downsamp 7085 Map grid num: 13645 effect num : 6905
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:07.639867 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17054 downsamp 7041 Map grid num: 13709 effect num : 6877
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:07.736397 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17049 downsamp 7044 Map grid num: 13783 effect num : 6885
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:07.843928 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17064 downsamp 7065 Map grid num: 13848 effect num : 6904
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:07.945678 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16959 downsamp 7021 Map grid num: 13893 effect num : 6878
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:08.042751 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16996 downsamp 7037 Map grid num: 13956 effect num : 6881
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:08.151008 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17010 downsamp 6996 Map grid num: 14012 effect num : 6832
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:08.256401 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16965 downsamp 7028 Map grid num: 14055 effect num : 6895
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:08.338042 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16926 downsamp 6932 Map grid num: 14115 effect num : 6786
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:08.441485 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16886 downsamp 6962 Map grid num: 14174 effect num : 6822
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:08.546677 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16856 downsamp 6928 Map grid num: 14227 effect num : 6765
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:08.645931 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16922 downsamp 6955 Map grid num: 14278 effect num : 6801
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:08.748839 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16920 downsamp 6977 Map grid num: 14323 effect num : 6857
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:08.843137 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16891 downsamp 7028 Map grid num: 14372 effect num : 6892
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:08.952547 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16888 downsamp 6942 Map grid num: 14418 effect num : 6812
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:09.051014 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16849 downsamp 6902 Map grid num: 14466 effect num : 6776
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:09.157521 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16888 downsamp 6994 Map grid num: 14503 effect num : 6875
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:09.258211 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16823 downsamp 6935 Map grid num: 14539 effect num : 6805
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:09.349032 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16861 downsamp 6931 Map grid num: 14595 effect num : 6805
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:09.452885 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16778 downsamp 6902 Map grid num: 14643 effect num : 6784
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:09.545450 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16749 downsamp 6890 Map grid num: 14689 effect num : 6761
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:09.651028 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16768 downsamp 6940 Map grid num: 14742 effect num : 6807
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:09.746736 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16783 downsamp 6929 Map grid num: 14785 effect num : 6807
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:09.854691 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16741 downsamp 6872 Map grid num: 14838 effect num : 6750
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:09.950863 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16683 downsamp 6887 Map grid num: 14874 effect num : 6770
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:10.048720 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16718 downsamp 6881 Map grid num: 14916 effect num : 6764
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:10.148515 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16700 downsamp 6862 Map grid num: 14954 effect num : 6760
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:10.249228 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16722 downsamp 6857 Map grid num: 15001 effect num : 6729
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:10.345841 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16748 downsamp 6890 Map grid num: 15036 effect num : 6781
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:10.441511 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16773 downsamp 6878 Map grid num: 15080 effect num : 6758
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:10.544134 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16688 downsamp 6876 Map grid num: 15123 effect num : 6762
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:10.639778 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16704 downsamp 6951 Map grid num: 15173 effect num : 6826
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:10.744673 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16721 downsamp 6830 Map grid num: 15214 effect num : 6727
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:10.843830 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16626 downsamp 6822 Map grid num: 15272 effect num : 6713
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:10.939160 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16468 downsamp 6629 Map grid num: 15330 effect num : 6514
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:11.049913 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16229 downsamp 6483 Map grid num: 15379 effect num : 6371
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:11.137531 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16066 downsamp 6346 Map grid num: 15445 effect num : 6238
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:11.250891 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16076 downsamp 6414 Map grid num: 15535 effect num : 6262
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:11.344210 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16138 downsamp 6522 Map grid num: 15668 effect num : 6362
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:11.456053 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16084 downsamp 6481 Map grid num: 15864 effect num : 6301
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:11.545798 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16083 downsamp 6457 Map grid num: 16075 effect num : 6266
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:11.647789 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15953 downsamp 6425 Map grid num: 16308 effect num : 6184
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:11.755574 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15828 downsamp 6307 Map grid num: 16560 effect num : 6093
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:11.852108 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15606 downsamp 6250 Map grid num: 16839 effect num : 6009
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:11.942862 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15528 downsamp 6178 Map grid num: 17109 effect num : 5867
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:12.043562 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15547 downsamp 6180 Map grid num: 17398 effect num : 5858
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:12.135283 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15591 downsamp 6239 Map grid num: 17773 effect num : 5854
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:12.249910 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15428 downsamp 6206 Map grid num: 18162 effect num : 5823
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:12.340812 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15454 downsamp 6161 Map grid num: 18565 effect num : 5774
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:12.440277 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15382 downsamp 6115 Map grid num: 19040 effect num : 5656
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:12.533825 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15441 downsamp 6179 Map grid num: 19469 effect num : 5730
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:12.638219 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15329 downsamp 6123 Map grid num: 19917 effect num : 5605
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:12.752222 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15226 downsamp 6078 Map grid num: 20382 effect num : 5514
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:12.859123 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15172 downsamp 6080 Map grid num: 20911 effect num : 5471
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:12.946859 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15289 downsamp 6112 Map grid num: 21414 effect num : 5482
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:13.036383 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15185 downsamp 6031 Map grid num: 21927 effect num : 5394
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:13.148939 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15094 downsamp 5982 Map grid num: 22436 effect num : 5362
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:13.257969 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14964 downsamp 5989 Map grid num: 22977 effect num : 5351
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:13.356745 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14911 downsamp 6018 Map grid num: 23524 effect num : 5309
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:13.450664 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14957 downsamp 6028 Map grid num: 24088 effect num : 5297
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:13.549687 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15026 downsamp 6073 Map grid num: 24657 effect num : 5318
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:13.640582 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14860 downsamp 6005 Map grid num: 25238 effect num : 5268
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:13.731201 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14948 downsamp 5951 Map grid num: 25822 effect num : 5190
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:13.849692 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14810 downsamp 6086 Map grid num: 26438 effect num : 5304
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:13.963196 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14895 downsamp 6066 Map grid num: 27050 effect num : 5205
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:14.062541 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14749 downsamp 6064 Map grid num: 27654 effect num : 5228
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:14.176275 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14932 downsamp 6126 Map grid num: 28318 effect num : 5267
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:14.255768 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14776 downsamp 6073 Map grid num: 28893 effect num : 5198
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:14.363473 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14946 downsamp 6124 Map grid num: 29509 effect num : 5191
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:14.462566 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14923 downsamp 6181 Map grid num: 30103 effect num : 5231
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:14.555459 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15006 downsamp 6152 Map grid num: 30724 effect num : 5278
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:14.669954 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15038 downsamp 6237 Map grid num: 31341 effect num : 5286
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:14.762235 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15010 downsamp 6156 Map grid num: 31960 effect num : 5295
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:14.854442 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14931 downsamp 6172 Map grid num: 32565 effect num : 5336
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:14.958752 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15181 downsamp 6168 Map grid num: 33174 effect num : 5183
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:15.059332 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14895 downsamp 6166 Map grid num: 33716 effect num : 5235
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:15.155786 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14921 downsamp 6167 Map grid num: 34304 effect num : 5237
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:15.248621 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15063 downsamp 6187 Map grid num: 34849 effect num : 5240
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:15.359449 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15035 downsamp 6237 Map grid num: 35438 effect num : 5357
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:15.464790 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14959 downsamp 6124 Map grid num: 36014 effect num : 5158
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:15.569034 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15186 downsamp 6223 Map grid num: 36571 effect num : 5219
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:15.652959 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15096 downsamp 6251 Map grid num: 37100 effect num : 5260
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:15.756196 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15197 downsamp 6167 Map grid num: 37665 effect num : 5198
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:15.861564 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15141 downsamp 6289 Map grid num: 38261 effect num : 5295
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:15.960466 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15249 downsamp 6287 Map grid num: 38840 effect num : 5250
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:16.051286 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15101 downsamp 6250 Map grid num: 39416 effect num : 5212
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:16.162319 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14989 downsamp 6143 Map grid num: 39971 effect num : 5163
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:16.262438 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15048 downsamp 6155 Map grid num: 40541 effect num : 5101
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:16.376369 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15221 downsamp 6244 Map grid num: 41162 effect num : 5135
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:16.461585 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15219 downsamp 6318 Map grid num: 41729 effect num : 5209
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:16.564521 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15220 downsamp 6235 Map grid num: 42304 effect num : 5134
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:16.656525 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15104 downsamp 6233 Map grid num: 42854 effect num : 5097
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:16.766069 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15191 downsamp 6271 Map grid num: 43441 effect num : 5146
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:16.872362 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15385 downsamp 6319 Map grid num: 44004 effect num : 5141
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:16.963036 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15261 downsamp 6306 Map grid num: 44544 effect num : 5148
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:17.067284 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15284 downsamp 6334 Map grid num: 45117 effect num : 5159
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:17.163384 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15197 downsamp 6314 Map grid num: 45649 effect num : 5133
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:17.268392 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15004 downsamp 6333 Map grid num: 46323 effect num : 5096
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:17.370430 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15061 downsamp 6291 Map grid num: 47001 effect num : 4999
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:17.458577 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15435 downsamp 6415 Map grid num: 47629 effect num : 5033
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:17.564914 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15441 downsamp 6357 Map grid num: 48180 effect num : 5131
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:17.665375 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15333 downsamp 6377 Map grid num: 48788 effect num : 5104
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:17.758165 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15272 downsamp 6466 Map grid num: 49372 effect num : 5139
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:17.851255 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15243 downsamp 6459 Map grid num: 49969 effect num : 5115
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:17.958737 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15252 downsamp 6450 Map grid num: 50535 effect num : 5165
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:18.071977 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15252 downsamp 6498 Map grid num: 51105 effect num : 5180
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:18.152842 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15295 downsamp 6313 Map grid num: 51635 effect num : 5040
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:18.265066 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15203 downsamp 6422 Map grid num: 52203 effect num : 5154
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:18.356645 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15203 downsamp 6485 Map grid num: 52788 effect num : 5154
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:18.457131 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15211 downsamp 6492 Map grid num: 53400 effect num : 5182
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:18.554244 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15222 downsamp 6450 Map grid num: 53970 effect num : 5131
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:18.671527 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15200 downsamp 6593 Map grid num: 54527 effect num : 5254
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:18.753833 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15167 downsamp 6547 Map grid num: 55088 effect num : 5207
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:18.860933 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15143 downsamp 6471 Map grid num: 55658 effect num : 5161
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:18.963129 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15327 downsamp 6590 Map grid num: 56249 effect num : 5222
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:19.068231 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15086 downsamp 6519 Map grid num: 56815 effect num : 5169
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:19.149878 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15080 downsamp 6554 Map grid num: 57377 effect num : 5203
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:19.258711 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15086 downsamp 6537 Map grid num: 57955 effect num : 5202
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:19.356936 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15108 downsamp 6550 Map grid num: 58539 effect num : 5214
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:19.460969 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15169 downsamp 6629 Map grid num: 59089 effect num : 5300
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:19.553028 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15146 downsamp 6554 Map grid num: 59649 effect num : 5155
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:19.656965 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15054 downsamp 6556 Map grid num: 60218 effect num : 5184
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:19.768802 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15074 downsamp 6531 Map grid num: 60809 effect num : 5102
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:19.858015 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15220 downsamp 6538 Map grid num: 61364 effect num : 5164
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:19.951612 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15085 downsamp 6615 Map grid num: 61912 effect num : 5229
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:20.038117 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15016 downsamp 6573 Map grid num: 62432 effect num : 5191
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:20.147947 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15209 downsamp 6591 Map grid num: 62985 effect num : 5115
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:20.256759 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15059 downsamp 6532 Map grid num: 63614 effect num : 5079
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:20.360192 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14963 downsamp 6519 Map grid num: 64174 effect num : 5062
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:20.457882 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14850 downsamp 6484 Map grid num: 64809 effect num : 5013
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:20.562760 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15095 downsamp 6539 Map grid num: 65453 effect num : 5023
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:20.659304 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 14875 downsamp 6594 Map grid num: 66067 effect num : 5097
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:20.761326 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15160 downsamp 6561 Map grid num: 66667 effect num : 5118
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:20.841075 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15178 downsamp 6527 Map grid num: 67237 effect num : 5051
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:20.951516 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15192 downsamp 6570 Map grid num: 67853 effect num : 5042
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:21.059411 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15271 downsamp 6570 Map grid num: 68454 effect num : 5070
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:21.160742 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15181 downsamp 6606 Map grid num: 69024 effect num : 5022
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:21.267409 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15182 downsamp 6499 Map grid num: 69594 effect num : 5006
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:21.355066 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15328 downsamp 6576 Map grid num: 70189 effect num : 5045
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:21.447839 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15343 downsamp 6613 Map grid num: 70786 effect num : 5050
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:21.543642 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15339 downsamp 6566 Map grid num: 71342 effect num : 4987
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:21.660717 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15421 downsamp 6586 Map grid num: 71910 effect num : 5052
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:21.755962 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15455 downsamp 6540 Map grid num: 72438 effect num : 5035
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:21.855372 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15308 downsamp 6490 Map grid num: 73004 effect num : 4948
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:21.961906 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15407 downsamp 6478 Map grid num: 73589 effect num : 4842
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:22.050652 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15356 downsamp 6464 Map grid num: 74152 effect num : 4852
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:22.169954 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15397 downsamp 6415 Map grid num: 74715 effect num : 4841
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:22.256372 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15412 downsamp 6405 Map grid num: 75282 effect num : 4847
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:22.365259 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15348 downsamp 6362 Map grid num: 75801 effect num : 4765
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:22.452158 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15274 downsamp 6250 Map grid num: 76316 effect num : 4724
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:22.555037 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15469 downsamp 6316 Map grid num: 76847 effect num : 4674
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:22.659934 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15584 downsamp 6329 Map grid num: 77387 effect num : 4732
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:22.762524 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15477 downsamp 6295 Map grid num: 77906 effect num : 4668
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:22.857799 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15599 downsamp 6284 Map grid num: 78453 effect num : 4657
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:22.955383 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15831 downsamp 6363 Map grid num: 78984 effect num : 4663
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:23.060379 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16007 downsamp 6434 Map grid num: 79530 effect num : 4768
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:23.158320 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16048 downsamp 6411 Map grid num: 80050 effect num : 4814
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:23.257024 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15874 downsamp 6312 Map grid num: 80610 effect num : 4616
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:23.362385 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16116 downsamp 6207 Map grid num: 81105 effect num : 4558
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:23.451300 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16026 downsamp 6156 Map grid num: 81645 effect num : 4516
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:23.551523 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16166 downsamp 6163 Map grid num: 82165 effect num : 4476
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:23.664555 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16233 downsamp 6100 Map grid num: 82676 effect num : 4548
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:23.761403 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16381 downsamp 6119 Map grid num: 83168 effect num : 4522
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:23.847417 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16543 downsamp 6075 Map grid num: 83658 effect num : 4483
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:23.955340 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16705 downsamp 6084 Map grid num: 84162 effect num : 4514
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:24.064519 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16713 downsamp 6052 Map grid num: 84688 effect num : 4425
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:24.157076 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16721 downsamp 6067 Map grid num: 85176 effect num : 4476
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:24.263077 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16957 downsamp 6080 Map grid num: 85686 effect num : 4455
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:24.356325 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16792 downsamp 5935 Map grid num: 86154 effect num : 4310
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:24.462556 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16567 downsamp 5945 Map grid num: 86622 effect num : 4354
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:24.554070 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16854 downsamp 5987 Map grid num: 87135 effect num : 4367
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:24.654354 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16924 downsamp 5970 Map grid num: 87637 effect num : 4312
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:24.754033 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17019 downsamp 5930 Map grid num: 88152 effect num : 4274
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:24.853336 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17077 downsamp 5864 Map grid num: 88674 effect num : 4240
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:24.957690 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17145 downsamp 5797 Map grid num: 89176 effect num : 4166
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:25.055535 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16754 downsamp 5716 Map grid num: 89679 effect num : 4078
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:25.158876 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17103 downsamp 5750 Map grid num: 90139 effect num : 4158
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:25.260273 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16872 downsamp 5649 Map grid num: 90651 effect num : 4039
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:25.351872 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17234 downsamp 5730 Map grid num: 91121 effect num : 4216
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:25.457589 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17281 downsamp 5764 Map grid num: 91575 effect num : 4200
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:25.561149 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17236 downsamp 5595 Map grid num: 92054 effect num : 4033
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:25.656384 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17039 downsamp 5638 Map grid num: 92577 effect num : 4077
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:25.757677 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16970 downsamp 5647 Map grid num: 93117 effect num : 4049
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:25.855769 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17135 downsamp 5649 Map grid num: 93670 effect num : 4058
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:25.938753 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17063 downsamp 5580 Map grid num: 94207 effect num : 4033
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:26.051071 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17123 downsamp 5540 Map grid num: 94727 effect num : 4023
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:26.157448 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17140 downsamp 5537 Map grid num: 95299 effect num : 4028
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:26.256132 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17076 downsamp 5534 Map grid num: 95819 effect num : 4021
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:26.353723 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17256 downsamp 5486 Map grid num: 96374 effect num : 3980
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:26.456578 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17176 downsamp 5563 Map grid num: 96952 effect num : 4077
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:26.555969 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17265 downsamp 5593 Map grid num: 97515 effect num : 4024
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:26.657759 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17199 downsamp 5571 Map grid num: 98075 effect num : 4038
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:26.760027 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17318 downsamp 5549 Map grid num: 98632 effect num : 4024
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:26.860109 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17331 downsamp 5507 Map grid num: 99508 effect num : 3788
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:26.968672 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17240 downsamp 5532 Map grid num: 100128 effect num : 3784
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:27.048975 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17067 downsamp 5558 Map grid num: 100613 effect num : 3792
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:27.160848 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17401 downsamp 5599 Map grid num: 101145 effect num : 3810
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:27.257680 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17200 downsamp 5510 Map grid num: 101789 effect num : 3814
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:27.342048 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17414 downsamp 5565 Map grid num: 102466 effect num : 3702
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:27.437468 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17268 downsamp 5638 Map grid num: 103008 effect num : 3875
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:27.534289 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17194 downsamp 5639 Map grid num: 103558 effect num : 3792
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:27.649350 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17109 downsamp 5681 Map grid num: 104092 effect num : 3876
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:27.749305 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17186 downsamp 5648 Map grid num: 104583 effect num : 3856
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:27.859443 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17156 downsamp 5707 Map grid num: 105047 effect num : 3875
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:27.958703 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17141 downsamp 5674 Map grid num: 105518 effect num : 3916
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:28.056180 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17094 downsamp 5619 Map grid num: 105936 effect num : 3833
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:28.155292 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17021 downsamp 5589 Map grid num: 106352 effect num : 3824
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:28.261142 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16886 downsamp 5579 Map grid num: 106698 effect num : 3842
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:28.356798 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16873 downsamp 5611 Map grid num: 107044 effect num : 3916
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:28.454287 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16950 downsamp 5564 Map grid num: 107376 effect num : 3916
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:28.558014 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16921 downsamp 5646 Map grid num: 107726 effect num : 3959
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:28.647398 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16906 downsamp 5625 Map grid num: 108020 effect num : 3933
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:28.755758 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16998 downsamp 5591 Map grid num: 108343 effect num : 3965
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:28.862242 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17143 downsamp 5645 Map grid num: 108584 effect num : 3900
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:28.959514 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17003 downsamp 5733 Map grid num: 108907 effect num : 3956
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:29.068354 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 17089 downsamp 5715 Map grid num: 109143 effect num : 4018
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:29.163526 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16998 downsamp 5623 Map grid num: 109403 effect num : 4004
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:29.257472 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16754 downsamp 5650 Map grid num: 109587 effect num : 4026
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:29.358997 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16815 downsamp 5718 Map grid num: 109822 effect num : 4173
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:29.461755 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16702 downsamp 5741 Map grid num: 110065 effect num : 4122
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:29.559587 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16661 downsamp 5835 Map grid num: 110312 effect num : 4259
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:29.676397 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16470 downsamp 5764 Map grid num: 110539 effect num : 4244
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:29.764371 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16416 downsamp 5833 Map grid num: 110794 effect num : 4229
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:29.861567 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16457 downsamp 5794 Map grid num: 111072 effect num : 4205
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:29.961535 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16327 downsamp 5729 Map grid num: 111344 effect num : 4198
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:30.056383 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16147 downsamp 5670 Map grid num: 111596 effect num : 4180
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:30.154818 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16361 downsamp 5743 Map grid num: 111868 effect num : 4159
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:30.256093 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16189 downsamp 5629 Map grid num: 112078 effect num : 4153
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:30.364067 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16204 downsamp 5573 Map grid num: 112318 effect num : 4108
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:30.459882 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15993 downsamp 5471 Map grid num: 112531 effect num : 4060
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:30.562785 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16002 downsamp 5556 Map grid num: 112772 effect num : 4119
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:30.647988 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15830 downsamp 5499 Map grid num: 112983 effect num : 4095
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:30.761786 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15933 downsamp 5461 Map grid num: 113211 effect num : 4093
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:30.851598 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15709 downsamp 5345 Map grid num: 113422 effect num : 3971
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:30.957852 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 16013 downsamp 5392 Map grid num: 113612 effect num : 4055
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:31.059489 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15889 downsamp 5478 Map grid num: 113792 effect num : 4086
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:31.161592 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15669 downsamp 5374 Map grid num: 113979 effect num : 4018
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:31.254293 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15697 downsamp 5433 Map grid num: 114180 effect num : 4102
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:31.359841 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15795 downsamp 5505 Map grid num: 114377 effect num : 4179
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:31.461595 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15657 downsamp 5506 Map grid num: 114565 effect num : 4141
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:31.565484 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15789 downsamp 5534 Map grid num: 114762 effect num : 4226
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:31.670026 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15755 downsamp 5541 Map grid num: 114957 effect num : 4235
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:31.762055 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15674 downsamp 5505 Map grid num: 115155 effect num : 4129
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:31.844168 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15752 downsamp 5590 Map grid num: 115337 effect num : 4211
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:31.950011 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15597 downsamp 5601 Map grid num: 115509 effect num : 4219
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:32.056298 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15670 downsamp 5644 Map grid num: 115689 effect num : 4277
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:32.155542 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15697 downsamp 5651 Map grid num: 115831 effect num : 4302
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:32.259937 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15710 downsamp 5718 Map grid num: 115983 effect num : 4314
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:32.364283 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15695 downsamp 5653 Map grid num: 116146 effect num : 4259
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:32.456720 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15666 downsamp 5762 Map grid num: 116312 effect num : 4361
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:32.551763 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15647 downsamp 5662 Map grid num: 116483 effect num : 4267
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:32.657178 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15618 downsamp 5711 Map grid num: 116623 effect num : 4361
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:32.760419 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15541 downsamp 5627 Map grid num: 116794 effect num : 4206
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:32.851375 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15286 downsamp 5680 Map grid num: 116977 effect num : 4292
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:32.955714 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15257 downsamp 5719 Map grid num: 117169 effect num : 4265
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:33.065602 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15266 downsamp 5677 Map grid num: 117349 effect num : 4223
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:33.155503 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15521 downsamp 5797 Map grid num: 117512 effect num : 4316
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:33.260596 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15411 downsamp 5771 Map grid num: 117665 effect num : 4341
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:33.353598 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15377 downsamp 5732 Map grid num: 117858 effect num : 4266
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:33.461703 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15352 downsamp 5812 Map grid num: 118041 effect num : 4331
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:33.560156 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15539 downsamp 5760 Map grid num: 118216 effect num : 4303
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:33.657099 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15564 downsamp 5746 Map grid num: 118400 effect num : 4322
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:33.751894 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15420 downsamp 5863 Map grid num: 118590 effect num : 4367
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:33.849982 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15377 downsamp 5808 Map grid num: 118780 effect num : 4374
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:33.947238 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15352 downsamp 5788 Map grid num: 118955 effect num : 4314
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:34.049411 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15444 downsamp 5833 Map grid num: 119141 effect num : 4416
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:34.157053 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15347 downsamp 5890 Map grid num: 119342 effect num : 4504
+Failed to find exact match for field 'ring'.
+Will try to cast field 'ring' (original type is std::uint16_t). You may loose precision during casting. Make sure that this is acceptable or choose a different point type.
+I20261010 16:06:34.251168 281471712673824 laser_mapping.cc:348] [ mapping ]: In num: 15325 downsamp 5916 Map grid num: 119554 effect num : 4503
+[33m[WARN] [1791628601.776222254]: catch sig 2[0m
+I20261010 16:06:41.777609 281471712673824 run_mapping_online.cc:43] finishing mapping
+I20261010 16:06:41.777652 281471712673824 laser_mapping.cc:885] finish done
+I20261010 16:06:41.777667 281471712673824 utils.h:52] >>> ===== Printing run time =====
+I20261010 16:06:41.777680 281471712673824 utils.h:54] > [     IVox Add Points ] average time usage: 0.513596 ms , called times: 298
+I20261010 16:06:41.777775 281471712673824 utils.h:54] > [     Incremental Mapping ] average time usage: 1.35834 ms , called times: 298
+I20261010 16:06:41.777807 281471712673824 utils.h:54] > [     ObsModel (IEKF Build Jacobian) ] average time usage: 0.114253 ms , called times: 1187
+I20261010 16:06:41.777826 281471712673824 utils.h:54] > [     ObsModel (Lidar Match) ] average time usage: 2.75819 ms , called times: 1187
+I20261010 16:06:41.777845 281471712673824 utils.h:54] > [ Downsample PointCloud ] average time usage: 2.29252 ms , called times: 298
+I20261010 16:06:41.777861 281471712673824 utils.h:54] > [ IEKF Solve and Update ] average time usage: 14.5243 ms , called times: 298
+I20261010 16:06:41.777878 281471712673824 utils.h:54] > [ Preprocess (Standard) ] average time usage: 5.66846 ms , called times: 302
+I20261010 16:06:41.777893 281471712673824 utils.h:54] > [ Undistort Pcl ] average time usage: 4.93977 ms , called times: 299
+I20261010 16:06:41.777907 281471712673824 utils.h:59] >>> ===== Printing run time end =====
+I20261010 16:06:41.777938 281471712673824 run_mapping_online.cc:47] save trajectory to: ./Log/traj.txt
+[0;31mE20261010 16:06:41.778043 281471712673824 laser_mapping.cc:815] Failed to open traj_file: ./Log/traj.txt
+[mI20261010 16:06:41.778282 281471712673824 laser_mapping.h:34] laser mapping deconstruct
+master has started, initiating launch
+... logging to /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/_work/smoke30_extest_963971/ros_logs/6112f5ca-c496-11f1-bec4-52c3e62f6738/roslaunch-fedora-964352.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/ros/launch/faster_lio.launch
+[1mstarted roslaunch server http://127.0.0.1:45159/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /faster_lio/common/imu_topic: /ouster/imu
+ * /faster_lio/common/lid_topic: /ouster/points
+ * /faster_lio/common/time_sync_en: False
+ * /faster_lio/cube_side_length: 1000
+ * /faster_lio/esti_plane_threshold: 0.1
+ * /faster_lio/feature_extract_enable: False
+ * /faster_lio/filter_size_map: 0.5
+ * /faster_lio/filter_size_surf: 0.5
+ * /faster_lio/ivox_grid_resolution: 0.5
+ * /faster_lio/ivox_nearby_type: 18
+ * /faster_lio/map_file_path: 
+ * /faster_lio/mapping/acc_cov: 0.1
+ * /faster_lio/mapping/b_acc_cov: 0.0001
+ * /faster_lio/mapping/b_gyr_cov: 0.0001
+ * /faster_lio/mapping/det_range: 150.0
+ * /faster_lio/mapping/extrinsic_R: [1, 0, 0, 0, 1, 0...
+ * /faster_lio/mapping/extrinsic_T: [-0.006253, 0.011...
+ * /faster_lio/mapping/extrinsic_est_en: True
+ * /faster_lio/mapping/fov_degree: 360
+ * /faster_lio/mapping/gyr_cov: 0.1
+ * /faster_lio/max_iteration: 3
+ * /faster_lio/path_save_en: False
+ * /faster_lio/pcd_save/interval: -1
+ * /faster_lio/pcd_save/pcd_save_en: False
+ * /faster_lio/point_filter_num: 4
+ * /faster_lio/preprocess/blind: 2.0
+ * /faster_lio/preprocess/lidar_type: 3
+ * /faster_lio/preprocess/scan_line: 128
+ * /faster_lio/preprocess/time_scale: 1e-3
+ * /faster_lio/publish/dense_publish_en: False
+ * /faster_lio/publish/path_publish_en: False
+ * /faster_lio/publish/scan_bodyframe_pub_en: False
+ * /faster_lio/publish/scan_effect_pub_en: False
+ * /faster_lio/publish/scan_publish_en: False
+ * /faster_lio/runtime_pos_log_enable: False
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+  /faster_lio/
+    mapping (faster_lio/run_mapping_online)
+
+[1mROS_MASTER_URI=http://127.0.0.1:55379[0m
+]2;/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/ros/launch/faster_lio.launch http://127.0.0.1:55379
+[1mprocess[faster_lio/mapping-1]: started with pid [964456][0m
+[faster_lio/mapping-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

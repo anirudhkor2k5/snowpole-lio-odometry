@@ -1,0 +1,142 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 51725ea..29573c3 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -7,12 +7,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+ set(CMAKE_CXX_EXTENSIONS OFF)
+ set(CMAKE_CXX_STANDARD 17)
+ 
+-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread -fexceptions -g -ggdb")
++set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread -fexceptions")
+ set(CMAKE_CXX_FLAGS_RELEASE "-O3 ${CMAKE_CXX_FLAGS}")
+ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS}")
+ 
+ add_definitions(-DROOT_DIR=\"${CMAKE_CURRENT_SOURCE_DIR}/\")
+-add_subdirectory(thirdparty/livox_ros_driver)
+ 
+ include(cmake/packages.cmake)
+ 
+diff --git a/cmake/packages.cmake b/cmake/packages.cmake
+index 24f662e..13b68c0 100644
+--- a/cmake/packages.cmake
++++ b/cmake/packages.cmake
+@@ -2,6 +2,7 @@ list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
+ 
+ # glog
+ find_package(Glog REQUIRED)
++add_definitions(-DGLOG_USE_GLOG_EXPORT)
+ include_directories(${Glog_INCLUDE_DIRS})
+ 
+ # for ubuntu 18.04, update gcc/g++ to 9, and download tbb2018 from
+@@ -26,6 +27,7 @@ find_package(catkin REQUIRED COMPONENTS
+         tf
+         message_generation
+         eigen_conversions
++        livox_ros_driver
+         )
+ 
+ 
+diff --git a/include/ivox3d/ivox3d.h b/include/ivox3d/ivox3d.h
+index 38e6a99..fdea62a 100644
+--- a/include/ivox3d/ivox3d.h
++++ b/include/ivox3d/ivox3d.h
+@@ -242,7 +242,7 @@ bool IVox<dim, node_type, PointType>::GetClosestPoint(const PointVector& cloud,
+     }
+     closest_cloud.resize(cloud.size());
+ 
+-    std::for_each(std::execution::par_unseq, index.begin(), index.end(), [&cloud, &closest_cloud, this](size_t idx) {
++    std::for_each(std::execution::seq, index.begin(), index.end(), [&cloud, &closest_cloud, this](size_t idx) {
+         PointType pt;
+         if (GetClosestPoint(cloud[idx], pt)) {
+             closest_cloud[idx] = pt;
+@@ -255,7 +255,7 @@ bool IVox<dim, node_type, PointType>::GetClosestPoint(const PointVector& cloud,
+ 
+ template <int dim, IVoxNodeType node_type, typename PointType>
+ void IVox<dim, node_type, PointType>::AddPoints(const PointVector& points_to_add) {
+-    std::for_each(std::execution::unseq, points_to_add.begin(), points_to_add.end(), [this](const auto& pt) {
++    std::for_each(std::execution::seq, points_to_add.begin(), points_to_add.end(), [this](const auto& pt) {
+         auto key = Pos2Grid(ToEigen<float, dim>(pt));
+ 
+         auto iter = grids_map_.find(key);
+diff --git a/package.xml b/package.xml
+index 93d615a..bfbb010 100644
+--- a/package.xml
++++ b/package.xml
+@@ -43,4 +43,6 @@
+ 
+     <export>
+     </export>
++  <build_depend>livox_ros_driver</build_depend>
++  <run_depend>livox_ros_driver</run_depend>
+ </package>
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index 784396b..77d0f1b 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -1,3 +1,4 @@
++link_directories($ENV{CONDA_PREFIX}/lib)
+ add_library(${PROJECT_NAME}
+         laser_mapping.cc
+         pointcloud_preprocess.cc
+@@ -5,7 +6,7 @@ add_library(${PROJECT_NAME}
+         utils.cc
+         )
+ 
+-add_dependencies(${PROJECT_NAME} ${PROJECT_NAME}_gencpp livox_ros_driver_gencpp)
++add_dependencies(${PROJECT_NAME} ${PROJECT_NAME}_gencpp ${catkin_EXPORTED_TARGETS})
+ 
+ target_link_libraries(${PROJECT_NAME}
+         ${catkin_LIBRARIES}
+diff --git a/src/laser_mapping.cc b/src/laser_mapping.cc
+index 42d8031..9544c17 100644
+--- a/src/laser_mapping.cc
++++ b/src/laser_mapping.cc
+@@ -518,7 +518,7 @@ void LaserMapping::MapIncremental() {
+         index[i] = i;
+     }
+ 
+-    std::for_each(std::execution::unseq, index.begin(), index.end(), [&](const size_t &i) {
++    std::for_each(std::execution::seq, index.begin(), index.end(), [&](const size_t &i) {
+         /* transform to world frame */
+         PointBodyToWorld(&(scan_down_body_->points[i]), &(scan_down_world_->points[i]));
+ 
+@@ -586,7 +586,7 @@ void LaserMapping::ObsModel(state_ikfom &s, esekfom::dyn_share_datastruct<double
+             auto t_wl = (s.rot * s.offset_T_L_I + s.pos).cast<float>();
+ 
+             /** closest surface search and residual computation **/
+-            std::for_each(std::execution::par_unseq, index.begin(), index.end(), [&](const size_t &i) {
++            std::for_each(std::execution::seq, index.begin(), index.end(), [&](const size_t &i) {
+                 PointType &point_body = scan_down_body_->points[i];
+                 PointType &point_world = scan_down_world_->points[i];
+ 
+@@ -657,7 +657,7 @@ void LaserMapping::ObsModel(state_ikfom &s, esekfom::dyn_share_datastruct<double
+             const common::V3F off_t = s.offset_T_L_I.cast<float>();
+             const common::M3F Rt = s.rot.toRotationMatrix().transpose().cast<float>();
+ 
+-            std::for_each(std::execution::par_unseq, index.begin(), index.end(), [&](const size_t &i) {
++            std::for_each(std::execution::seq, index.begin(), index.end(), [&](const size_t &i) {
+                 common::V3F point_this_be = corr_pts_[i].head<3>();
+                 common::M3F point_be_crossmat = SKEW_SYM_MATRIX(point_this_be);
+                 common::V3F point_this = off_R * point_this_be + off_t;
+diff --git a/src/pointcloud_preprocess.cc b/src/pointcloud_preprocess.cc
+index 7ffba0f..ac0cca3 100644
+--- a/src/pointcloud_preprocess.cc
++++ b/src/pointcloud_preprocess.cc
+@@ -56,7 +56,7 @@ void PointCloudPreprocess::AviaHandler(const livox_ros_driver::CustomMsg::ConstP
+         index[i] = i + 1;  // 从1开始
+     }
+ 
+-    std::for_each(std::execution::par_unseq, index.begin(), index.end(), [&](const uint &i) {
++    std::for_each(std::execution::seq, index.begin(), index.end(), [&](const uint &i) {
+         if ((msg->points[i].line < num_scans_) &&
+             ((msg->points[i].tag & 0x30) == 0x10 || (msg->points[i].tag & 0x30) == 0x00)) {
+             if (i % point_filter_num_ == 0) {
+@@ -295,7 +295,7 @@ void PointCloudPreprocess::LivoxHandler(const sensor_msgs::PointCloud2::ConstPtr
+ 
+     double timebase = pl_orig.points[0].timestamp;
+ 
+-    std::for_each(std::execution::par_unseq, index.begin(), index.end(), [&](const uint &i) {
++    std::for_each(std::execution::seq, index.begin(), index.end(), [&](const uint &i) {
+         if ((pl_orig.points[i].line < num_scans_) &&
+             ((pl_orig.points[i].tag & 0x30) == 0x10 || (pl_orig.points[i].tag & 0x30) == 0x00)) {
+             if (i % point_filter_num_ == 0) {

@@ -1,0 +1,67 @@
+{
+  "baseline": "faster_lio",
+  "support": "genz_lio",
+  "machine": {
+    "cpus": 10,
+    "arch": "aarch64",
+    "mem_gb": 15.2
+  },
+  "per_algo": {
+    "faster_lio": {
+      "solo": {
+        "ate_rmse_m": 381.69162713282077,
+        "drift_pct": 5.050920423170307,
+        "latency_ms_median": 31.130075454711914,
+        "latency_ms_p95": 46.61059379577637,
+        "latency_ms_max": 119.8720932006836,
+        "poses": 5411,
+        "clouds": 5419,
+        "scans_without_pose": 8,
+        "cpu_pct_mean": 123.60552036199093,
+        "cpu_pct_p95": 191.8,
+        "rss_mb_max": 436.6
+      },
+      "concurrent": {
+        "ate_rmse_m": 382.11293740913516,
+        "drift_pct": 5.06844666971577,
+        "latency_ms_median": 25.452017784118652,
+        "latency_ms_p95": 37.96154260635375,
+        "latency_ms_max": 107.58209228515625,
+        "poses": 5412,
+        "clouds": 5419,
+        "scans_without_pose": 7,
+        "cpu_pct_mean": 90.44106980961016,
+        "cpu_pct_p95": 133.9,
+        "rss_mb_max": 452.5
+      }
+    },
+    "genz_lio": {
+      "solo": {
+        "ate_rmse_m": 450.37412386808853,
+        "drift_pct": 8.83892150379965,
+        "latency_ms_median": 76.43580436706543,
+        "latency_ms_p95": 97.30830192565917,
+        "latency_ms_max": 134.2930793762207,
+        "poses": 5413,
+        "clouds": 5419,
+        "scans_without_pose": 6,
+        "cpu_pct_mean": 215.6477355072464,
+        "cpu_pct_p95": 281.7,
+        "rss_mb_max": 2556.5
+      },
+      "concurrent": {
+        "ate_rmse_m": 457.4659413621961,
+        "drift_pct": 8.801907322653634,
+        "latency_ms_median": 66.40207767486572,
+        "latency_ms_p95": 87.79597282409662,
+        "latency_ms_max": 141.6940689086914,
+        "poses": 5414,
+        "clouds": 5419,
+        "scans_without_pose": 5,
+        "cpu_pct_mean": 165.60562103354488,
+        "cpu_pct_p95": 231.79,
+        "rss_mb_max": 2553.5
+      }
+    }
+  }
+}

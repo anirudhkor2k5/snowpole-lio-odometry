@@ -1,0 +1,26 @@
+{
+  "algo": "genz_lio",
+  "tag": "concurrent_fast_lio+genz_lio",
+  "runner": "ros",
+  "concurrent_with": [
+    "fast_lio"
+  ],
+  "world_frame": "first_imu",
+  "role": "support",
+  "config": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/configs/algorithms/genz_lio.yaml",
+  "bag": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/2024-02-28-12-59-51.bag",
+  "start_offset_s": 0.0,
+  "duration_s": null,
+  "rate": 1.0,
+  "wall": {
+    "play_start": 1791647326.2916875,
+    "play_end": 1791647873.3575773,
+    "drained": 1791647879.3598154
+  },
+  "machine": {
+    "cpus": 10,
+    "arch": "aarch64",
+    "mem_gb": 15.2
+  },
+  "estimator_commit": "c6c464de4a8288cbaae890a6390234486d2664d9"
+}

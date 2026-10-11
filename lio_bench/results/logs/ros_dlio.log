@@ -1,0 +1,4 @@
+[run_ros 20:41:15] tag=full algos=['dlio'] port=49183 bag=2024-02-28-12-59-51.bag start=0.0 dur=None rate=1.0
+[run_ros 20:50:25] playback finished in 546 s; draining
+[run_ros 20:50:31] odometry poses recorded: {'dlio': 41639}
+[run_ros 20:50:33] dlio: 41639 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/dlio/full

@@ -1,0 +1,24 @@
+{
+  "algo": "dlio",
+  "tag": "full_r2",
+  "runner": "ros",
+  "concurrent_with": [],
+  "world_frame": "gravity",
+  "role": "support",
+  "config": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/configs/algorithms/dlio.yaml",
+  "bag": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/2024-02-28-12-59-51.bag",
+  "start_offset_s": 0.0,
+  "duration_s": null,
+  "rate": 1.0,
+  "wall": {
+    "play_start": 1791666013.0739605,
+    "play_end": 1791666556.1828213,
+    "drained": 1791666562.1850703
+  },
+  "machine": {
+    "cpus": 10,
+    "arch": "aarch64",
+    "mem_gb": 15.2
+  },
+  "estimator_commit": "fc8d183f18cdcfb9bb4fc754c6d373cedc4cbd04"
+}

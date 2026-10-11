@@ -1,0 +1,28 @@
+{
+  "algo": "faster_lio+vgicp_grav",
+  "tag": "smoke60g",
+  "start_offset_s": 0.0,
+  "machine": {
+    "arch": "aarch64"
+  },
+  "runner": "correct.scanpass",
+  "role": "corrector",
+  "world_frame": "gravity",
+  "baseline": "faster_lio",
+  "baseline_tag": "full",
+  "variant": "vgicp_grav",
+  "spec": {
+    "reg": "VGICP",
+    "gravity": true
+  },
+  "ms_per_scan": 15.642372976683014,
+  "constants": {
+    "SIGMA_PRIOR_T": 0.02,
+    "SIGMA_PRIOR_R_deg": 0.1,
+    "N_CORR": 10.0,
+    "wheel_sigma": 0.07378668106068506,
+    "SRC_LEAF": 0.5,
+    "MAP_LEAF": 0.5,
+    "MAX_CORR": 1.0
+  }
+}

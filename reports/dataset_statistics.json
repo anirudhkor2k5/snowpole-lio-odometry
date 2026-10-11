@@ -1,0 +1,1105 @@
+{
+  "git_commit": "301e38a9025716e0550c3bb0bc192dc9a8a414af",
+  "host": {
+    "platform": "Linux-7.1.13-402.asahi.fc44.aarch64+16k-aarch64-with-glibc2.43",
+    "python": "3.14.8",
+    "machine": "aarch64",
+    "processor": null,
+    "cpu_count": 10
+  },
+  "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "sklearn": "1.9.1",
+    "pyproj": "3.8.0",
+    "xgboost": "3.4.1",
+    "yaml": "6.0.3"
+  },
+  "crs": {
+    "geographic": "EPSG:4326",
+    "projected": "EPSG:32633",
+    "reason": "The existing snow-pole pipeline and the pole map use UTM zone 33N.",
+    "incremental_first_sample_projection_residual_m": 0.0
+  },
+  "trajectories": {
+    "fasterlio": {
+      "path": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/fasterlio.csv",
+      "sha256": "25d4983f8a61f56e49e3b1eca503f9942bfc09d271e5b0d08de6c175a01213ed",
+      "n_rows": 5415,
+      "columns": [
+        "Time",
+        "header.seq",
+        "header.stamp.secs",
+        "header.stamp.nsecs",
+        "header.frame_id",
+        "status.status",
+        "status.service",
+        "latitude",
+        "longitude",
+        "altitude",
+        "position_covariance_0",
+        "position_covariance_1",
+        "position_covariance_2",
+        "position_covariance_3",
+        "position_covariance_4",
+        "position_covariance_5",
+        "position_covariance_6",
+        "position_covariance_7",
+        "position_covariance_8",
+        "position_covariance_type",
+        "easting",
+        "northing",
+        "translation_easting",
+        "translation_northing",
+        "rotation_angle_degrees",
+        "transformed_easting",
+        "transformed_northing",
+        "error"
+      ],
+      "empty_counts": {
+        "header.frame_id": 5415,
+        "status.status": 5415,
+        "status.service": 5415,
+        "position_covariance_0": 5415,
+        "position_covariance_1": 5415,
+        "position_covariance_2": 5415,
+        "position_covariance_3": 5415,
+        "position_covariance_4": 5415,
+        "position_covariance_5": 5415,
+        "position_covariance_6": 5415,
+        "position_covariance_7": 5415,
+        "position_covariance_8": 5415,
+        "position_covariance_type": 5415,
+        "translation_easting": 5415,
+        "translation_northing": 5415,
+        "transformed_easting": 5415,
+        "transformed_northing": 5415,
+        "error": 5415
+      },
+      "time_basis": "unix",
+      "time": {
+        "n": 5415,
+        "t0": 1709121591.56683,
+        "t1": 1709122133.006209,
+        "duration_s": 541.4393789768219,
+        "duplicate_timestamps": 0,
+        "nonmonotonic_steps": 0,
+        "dt_s": {
+          "median": 0.0999901294708252,
+          "mean": 0.10000727354577427,
+          "min": 0.0005879402160644531,
+          "max": 0.19937896728515625,
+          "p99": 0.1039994406700134,
+          "n_above_0_5s": 0
+        }
+      },
+      "latitude_deg": {
+        "n": 5415,
+        "min": 63.23233469957484,
+        "max": 63.28997900226236,
+        "mean": 63.25415639269064,
+        "std": 0.018761637722693014,
+        "median": 63.24904300074388
+      },
+      "longitude_deg": {
+        "n": 5415,
+        "min": 9.501870550039682,
+        "max": 9.586312642365536,
+        "mean": 9.554720669383276,
+        "std": 0.027530942655910762,
+        "median": 9.564082590880266
+      },
+      "altitude_m": {
+        "n": 5415,
+        "min": -0.007524457780827,
+        "max": 2387.1635572402547,
+        "mean": 827.5706071588404,
+        "std": 615.6925880394939,
+        "median": 672.3112005473027
+      },
+      "header_seq_start": 0.0,
+      "header_seq_end": 5414.0,
+      "seq_steps_not_one": 0,
+      "stored_versus_wgs84_utm33": {
+        "n": 5415,
+        "median_m": 270.6291853867504,
+        "mean_m": 282.21452002460086,
+        "p95_m": 554.7517716214013,
+        "max_m": 591.8622729589582
+      },
+      "covariance_populated": false,
+      "rotation_angle_deg": {
+        "n": 5415,
+        "min": -114.98918261687872,
+        "max": 119.129438108512,
+        "mean": 35.864747792162355,
+        "std": 49.80176248581031,
+        "median": 50.6384628108486
+      },
+      "status_counts": {},
+      "covariance_diag": {
+        "east": {
+          "n": 0
+        },
+        "north": {
+          "n": 0
+        },
+        "up": {
+          "n": 0
+        }
+      },
+      "covariance_type": {
+        "n": 0
+      }
+    },
+    "fastlio": {
+      "path": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/fastlio.csv",
+      "sha256": "dfc9870693f50e28e745550c1b539d8b07e6756c5086e14b6686b6dac155bdef",
+      "n_rows": 5416,
+      "columns": [
+        "Time",
+        "header.seq",
+        "header.stamp.secs",
+        "header.stamp.nsecs",
+        "header.frame_id",
+        "status.status",
+        "status.service",
+        "latitude",
+        "longitude",
+        "altitude",
+        "position_covariance_0",
+        "position_covariance_1",
+        "position_covariance_2",
+        "position_covariance_3",
+        "position_covariance_4",
+        "position_covariance_5",
+        "position_covariance_6",
+        "position_covariance_7",
+        "position_covariance_8",
+        "position_covariance_type",
+        "easting",
+        "northing",
+        "translation_easting",
+        "translation_northing",
+        "rotation_angle_degrees",
+        "transformed_easting",
+        "transformed_northing",
+        "error"
+      ],
+      "empty_counts": {
+        "header.frame_id": 5416,
+        "status.status": 5416,
+        "status.service": 5416,
+        "position_covariance_0": 5416,
+        "position_covariance_1": 5416,
+        "position_covariance_2": 5416,
+        "position_covariance_3": 5416,
+        "position_covariance_4": 5416,
+        "position_covariance_5": 5416,
+        "position_covariance_6": 5416,
+        "position_covariance_7": 5416,
+        "position_covariance_8": 5416,
+        "position_covariance_type": 5416,
+        "translation_easting": 5416,
+        "translation_northing": 5416,
+        "transformed_easting": 5416,
+        "transformed_northing": 5416,
+        "error": 5416
+      },
+      "time_basis": "relative",
+      "time": {
+        "n": 5416,
+        "t0": 0.0,
+        "t1": 541.5395529229991,
+        "duration_s": 541.5395529229991,
+        "duplicate_timestamps": 0,
+        "nonmonotonic_steps": 0,
+        "dt_s": {
+          "median": 0.09998736799934704,
+          "mean": 0.10000730432557693,
+          "min": 0.0006654450007772539,
+          "max": 0.1994115879988385,
+          "p99": 0.10269755908083539,
+          "n_above_0_5s": 0
+        }
+      },
+      "latitude_deg": {
+        "n": 5416,
+        "min": 63.23104239256261,
+        "max": 63.28862019181112,
+        "mean": 63.25314820609286,
+        "std": 0.018646452132235862,
+        "median": 63.247798029600816
+      },
+      "longitude_deg": {
+        "n": 5416,
+        "min": 9.501870601255154,
+        "max": 9.576471034425609,
+        "mean": 9.550527052110441,
+        "std": 0.025068316353912122,
+        "median": 9.560656019371846
+      },
+      "altitude_m": {
+        "n": 5416,
+        "min": -0.001527931607667,
+        "max": 2973.9815242235004,
+        "mean": 1095.8944983326512,
+        "std": 784.3958250868681,
+        "median": 930.4813917784813
+      },
+      "header_seq_start": 0.0,
+      "header_seq_end": 5415.0,
+      "seq_steps_not_one": 0,
+      "stored_versus_wgs84_utm33": {
+        "n": 5416,
+        "median_m": 10.049086462213578,
+        "mean_m": 8.917001490812423,
+        "p95_m": 15.43563247155623,
+        "max_m": 15.909041762117202
+      },
+      "covariance_populated": false,
+      "rotation_angle_deg": {
+        "n": 5416,
+        "min": -121.24074186171588,
+        "max": 114.95105854235229,
+        "mean": 36.74404026388138,
+        "std": 53.168335665147794,
+        "median": 54.34826462413138
+      },
+      "status_counts": {},
+      "covariance_diag": {
+        "east": {
+          "n": 0
+        },
+        "north": {
+          "n": 0
+        },
+        "up": {
+          "n": 0
+        }
+      },
+      "covariance_type": {
+        "n": 0
+      }
+    },
+    "fastreg": {
+      "path": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/fastreg.csv",
+      "sha256": "277fef1244d61379e61b2bea8757554d5abf1dafc0f2a25c9003c9be058b7ab1",
+      "n_rows": 5416,
+      "columns": [
+        "Time",
+        "header.seq",
+        "header.stamp.secs",
+        "header.stamp.nsecs",
+        "header.frame_id",
+        "status.status",
+        "status.service",
+        "latitude",
+        "longitude",
+        "altitude",
+        "position_covariance_0",
+        "position_covariance_1",
+        "position_covariance_2",
+        "position_covariance_3",
+        "position_covariance_4",
+        "position_covariance_5",
+        "position_covariance_6",
+        "position_covariance_7",
+        "position_covariance_8",
+        "position_covariance_type",
+        "easting",
+        "northing",
+        "translation_easting",
+        "translation_northing",
+        "rotation_angle_degrees",
+        "transformed_easting",
+        "transformed_northing",
+        "error"
+      ],
+      "empty_counts": {
+        "header.frame_id": 5416,
+        "status.status": 5416,
+        "status.service": 5416,
+        "position_covariance_0": 5416,
+        "position_covariance_1": 5416,
+        "position_covariance_2": 5416,
+        "position_covariance_3": 5416,
+        "position_covariance_4": 5416,
+        "position_covariance_5": 5416,
+        "position_covariance_6": 5416,
+        "position_covariance_7": 5416,
+        "position_covariance_8": 5416,
+        "position_covariance_type": 5416,
+        "translation_easting": 5416,
+        "translation_northing": 5416,
+        "transformed_easting": 5416,
+        "transformed_northing": 5416,
+        "error": 5416
+      },
+      "time_basis": "relative",
+      "time": {
+        "n": 5416,
+        "t0": 0.0,
+        "t1": 541.5395529229991,
+        "duration_s": 541.5395529229991,
+        "duplicate_timestamps": 0,
+        "nonmonotonic_steps": 0,
+        "dt_s": {
+          "median": 0.09998736799934704,
+          "mean": 0.10000730432557693,
+          "min": 0.0006654450007772539,
+          "max": 0.1994115879988385,
+          "p99": 0.10269755908083539,
+          "n_above_0_5s": 0
+        }
+      },
+      "latitude_deg": {
+        "n": 5416,
+        "min": 63.23104239256261,
+        "max": 63.28862019181112,
+        "mean": 63.25314820609286,
+        "std": 0.018646452132235862,
+        "median": 63.247798029600816
+      },
+      "longitude_deg": {
+        "n": 5416,
+        "min": 9.501870601255154,
+        "max": 9.576471034425609,
+        "mean": 9.550527052110441,
+        "std": 0.025068316353912122,
+        "median": 9.560656019371846
+      },
+      "altitude_m": {
+        "n": 5416,
+        "min": -0.001527931607667,
+        "max": 2973.9815242235004,
+        "mean": 1095.8944983326512,
+        "std": 784.3958250868681,
+        "median": 930.4813917784813
+      },
+      "header_seq_start": 0.0,
+      "header_seq_end": 5415.0,
+      "seq_steps_not_one": 0,
+      "stored_versus_wgs84_utm33": {
+        "n": 5416,
+        "median_m": 313.1896273604272,
+        "mean_m": 316.165181554066,
+        "p95_m": 612.2813916552159,
+        "max_m": 627.7144937810598
+      },
+      "covariance_populated": false,
+      "rotation_angle_deg": {
+        "n": 5416,
+        "min": -121.24074186171588,
+        "max": 114.95105854235229,
+        "mean": 36.74404026388138,
+        "std": 53.168335665147794,
+        "median": 54.34826462413138
+      },
+      "status_counts": {},
+      "covariance_diag": {
+        "east": {
+          "n": 0
+        },
+        "north": {
+          "n": 0
+        },
+        "up": {
+          "n": 0
+        }
+      },
+      "covariance_type": {
+        "n": 0
+      }
+    },
+    "gps_left": {
+      "path": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/gps_left_position.csv",
+      "sha256": "a6824041f72f700c9b8982be0d3ad928f4fbe0858cec5f7629a49eef2390e1b1",
+      "n_rows": 5422,
+      "columns": [
+        "Time",
+        "header.seq",
+        "header.stamp.secs",
+        "header.stamp.nsecs",
+        "header.frame_id",
+        "status.status",
+        "status.service",
+        "latitude",
+        "longitude",
+        "altitude",
+        "position_covariance_0",
+        "position_covariance_1",
+        "position_covariance_2",
+        "position_covariance_3",
+        "position_covariance_4",
+        "position_covariance_5",
+        "position_covariance_6",
+        "position_covariance_7",
+        "position_covariance_8",
+        "position_covariance_type"
+      ],
+      "empty_counts": {
+        "header.frame_id": 5422
+      },
+      "time_basis": "unix",
+      "time": {
+        "n": 5422,
+        "t0": 1709121591.9114873,
+        "t1": 1709122133.6640816,
+        "duration_s": 541.7525942325592,
+        "duplicate_timestamps": 0,
+        "nonmonotonic_steps": 0,
+        "dt_s": {
+          "median": 0.09987258911132812,
+          "mean": 0.0999359148187713,
+          "min": 0.0007236003875732422,
+          "max": 0.13493585586547852,
+          "p99": 0.11882038116455083,
+          "n_above_0_5s": 0
+        }
+      },
+      "latitude_deg": {
+        "n": 5422,
+        "min": 63.23296270181362,
+        "max": 63.28650426094215,
+        "mean": 63.25364982118603,
+        "std": 0.01773445531982697,
+        "median": 63.249153660293
+      },
+      "longitude_deg": {
+        "n": 5422,
+        "min": 9.50187025571028,
+        "max": 9.630304556033938,
+        "mean": 9.565886397770475,
+        "std": 0.037717027304229024,
+        "median": 9.568773983261355
+      },
+      "altitude_m": {
+        "n": 5422,
+        "min": 203.21937182155452,
+        "max": 387.1541125812606,
+        "mean": 332.3595756392446,
+        "std": 65.32737546269378,
+        "median": 373.0641679510717
+      },
+      "header_seq_start": 1166.0,
+      "header_seq_end": 6587.0,
+      "seq_steps_not_one": 0,
+      "stored_versus_wgs84_utm33": null,
+      "covariance_populated": true,
+      "status_counts": {
+        "0": 40,
+        "2": 5382
+      },
+      "covariance_diag": {
+        "east": {
+          "n": 5422,
+          "min": 29.0,
+          "max": 6521.0,
+          "mean": 63.06971597196606,
+          "std": 135.0408299578024,
+          "median": 52.0
+        },
+        "north": {
+          "n": 5422,
+          "min": 61.0,
+          "max": 10939.0,
+          "mean": 128.95038731095536,
+          "std": 225.00994102969898,
+          "median": 111.0
+        },
+        "up": {
+          "n": 5422,
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "median": 0.0
+        }
+      },
+      "covariance_type": {
+        "n": 5422,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0
+      }
+    },
+    "gps_right": {
+      "path": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/gps_right_position.csv",
+      "sha256": "41a8c155f36b139732ee2a2a8e1c47e7ce6abeaea73309fca7780e8a03e6d37f",
+      "n_rows": 5422,
+      "columns": [
+        "Time",
+        "header.seq",
+        "header.stamp.secs",
+        "header.stamp.nsecs",
+        "header.frame_id",
+        "status.status",
+        "status.service",
+        "latitude",
+        "longitude",
+        "altitude",
+        "position_covariance_0",
+        "position_covariance_1",
+        "position_covariance_2",
+        "position_covariance_3",
+        "position_covariance_4",
+        "position_covariance_5",
+        "position_covariance_6",
+        "position_covariance_7",
+        "position_covariance_8",
+        "position_covariance_type"
+      ],
+      "empty_counts": {
+        "header.frame_id": 5422
+      },
+      "time_basis": "unix",
+      "time": {
+        "n": 5422,
+        "t0": 1709121591.911521,
+        "t1": 1709122133.6641986,
+        "duration_s": 541.7526776790619,
+        "duplicate_timestamps": 0,
+        "nonmonotonic_steps": 0,
+        "dt_s": {
+          "median": 0.09988975524902344,
+          "mean": 0.09993593021196492,
+          "min": 0.0006842613220214844,
+          "max": 0.13491344451904297,
+          "p99": 0.11884675025939942,
+          "n_above_0_5s": 0
+        }
+      },
+      "latitude_deg": {
+        "n": 5422,
+        "min": 63.232958296547515,
+        "max": 63.28649987847587,
+        "mean": 63.25364699582809,
+        "std": 0.017734873946224954,
+        "median": 63.249151521091534
+      },
+      "longitude_deg": {
+        "n": 5422,
+        "min": 9.501872134339285,
+        "max": 9.63030280724698,
+        "mean": 9.565890731107476,
+        "std": 0.037720861906204724,
+        "median": 9.56878268222899
+      },
+      "altitude_m": {
+        "n": 5422,
+        "min": 201.4367405952446,
+        "max": 387.19039083635874,
+        "mean": 332.3417070714522,
+        "std": 65.34589925353973,
+        "median": 373.1194279971601
+      },
+      "header_seq_start": 1165.0,
+      "header_seq_end": 6586.0,
+      "seq_steps_not_one": 0,
+      "stored_versus_wgs84_utm33": null,
+      "covariance_populated": true,
+      "status_counts": {
+        "0": 32,
+        "2": 5390
+      },
+      "covariance_diag": {
+        "east": {
+          "n": 5422,
+          "min": 23.0,
+          "max": 3713.0,
+          "mean": 47.58723718185171,
+          "std": 83.7262893172467,
+          "median": 42.0
+        },
+        "north": {
+          "n": 5422,
+          "min": 50.0,
+          "max": 7646.0,
+          "mean": 99.24511250461084,
+          "std": 172.11974444172324,
+          "median": 87.0
+        },
+        "up": {
+          "n": 5422,
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "median": 0.0
+        }
+      },
+      "covariance_type": {
+        "n": 5422,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0
+      }
+    },
+    "incremental_navigation": {
+      "path": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/incremental_navigation_results.csv",
+      "sha256": "c99bfccec80a1a92dd70a8fe877b62180632e0f452480acd722dbd8071a574a4",
+      "n_rows": 5422,
+      "columns": [
+        "Time",
+        "header.seq",
+        "header.stamp.secs",
+        "header.stamp.nsecs",
+        "header.frame_id",
+        "status.status",
+        "status.service",
+        "latitude",
+        "longitude",
+        "altitude",
+        "position_covariance_0",
+        "position_covariance_1",
+        "position_covariance_2",
+        "position_covariance_3",
+        "position_covariance_4",
+        "position_covariance_5",
+        "position_covariance_6",
+        "position_covariance_7",
+        "position_covariance_8",
+        "position_covariance_type",
+        "easting",
+        "northing",
+        "translation_easting",
+        "translation_northing",
+        "rotation_angle_degrees",
+        "transformed_easting",
+        "transformed_northing",
+        "error"
+      ],
+      "empty_counts": {
+        "header.frame_id": 5422,
+        "translation_easting": 1,
+        "translation_northing": 1,
+        "rotation_angle_degrees": 1,
+        "transformed_easting": 1,
+        "transformed_northing": 1,
+        "error": 1
+      },
+      "time_basis": "unix",
+      "time": {
+        "n": 5422,
+        "t0": 1709121591.911487,
+        "t1": 1709122133.6640816,
+        "duration_s": 541.7525944709778,
+        "duplicate_timestamps": 0,
+        "nonmonotonic_steps": 0,
+        "dt_s": {
+          "median": 0.09987258911132812,
+          "mean": 0.09993591486275186,
+          "min": 0.0007238388061523438,
+          "max": 0.13493609428405762,
+          "p99": 0.11882038116455083,
+          "n_above_0_5s": 0
+        }
+      },
+      "latitude_deg": {
+        "n": 5422,
+        "min": 63.23319442504408,
+        "max": 63.28867162607843,
+        "mean": 63.254085100781836,
+        "std": 0.018151872548116805,
+        "median": 63.24948227150128
+      },
+      "longitude_deg": {
+        "n": 5422,
+        "min": 9.501868555203002,
+        "max": 9.630726492289527,
+        "mean": 9.565688419925776,
+        "std": 0.037760819354323,
+        "median": 9.568102470729539
+      },
+      "altitude_m": {
+        "n": 5422,
+        "min": 203.2193718215545,
+        "max": 387.1541125812606,
+        "mean": 332.3595756392446,
+        "std": 65.3273754626938,
+        "median": 373.0641679510717
+      },
+      "header_seq_start": 1166.0,
+      "header_seq_end": 6587.0,
+      "seq_steps_not_one": 0,
+      "stored_versus_wgs84_utm33": {
+        "n": 5422,
+        "median_m": 0.0,
+        "mean_m": 4.5621461060620206e-11,
+        "p95_m": 8.731149137020111e-11,
+        "max_m": 1.870812694540736e-09
+      },
+      "covariance_populated": true,
+      "rotation_angle_deg": {
+        "n": 5421,
+        "min": -4.545267779576534e-05,
+        "max": 2.9158221366287762e-05,
+        "mean": -1.0146305001976697e-05,
+        "std": 9.219185997595363e-06,
+        "median": -1.1024428204109427e-05
+      },
+      "status_counts": {
+        "0": 40,
+        "2": 5382
+      },
+      "covariance_diag": {
+        "east": {
+          "n": 5422,
+          "min": 29.0,
+          "max": 6521.0,
+          "mean": 63.06971597196606,
+          "std": 135.0408299578024,
+          "median": 52.0
+        },
+        "north": {
+          "n": 5422,
+          "min": 61.0,
+          "max": 10939.0,
+          "mean": 128.95038731095536,
+          "std": 225.00994102969898,
+          "median": 111.0
+        },
+        "up": {
+          "n": 5422,
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "median": 0.0
+        }
+      },
+      "covariance_type": {
+        "n": 5422,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "median": 0.0
+      },
+      "translation_matches_position_step": {
+        "n": 5421,
+        "median_abs_m": 0.0,
+        "max_abs_m": 0.0
+      }
+    }
+  },
+  "fastlio_fastreg_column_copy": {
+    "latitude_max_abs_deg": 0.0,
+    "longitude_max_abs_deg": 0.0,
+    "altitude_max_abs_m": 5.684341886080802e-14,
+    "rotation_max_abs_deg": 3.552713678800501e-15,
+    "stored_easting_max_abs_m": 479.87632355251117,
+    "stored_northing_max_abs_m": 394.8143388405442
+  },
+  "dual_gnss": {
+    "n": 5422,
+    "duration_s": 541.7525942325592,
+    "left_minus_right_median_time_s": -5.53131103515625e-05,
+    "baseline_length_m": {
+      "n": 5422,
+      "min": 0.29367605492623466,
+      "max": 0.8338074453053188,
+      "mean": 0.49767112830148874,
+      "std": 0.012872599364866335,
+      "median": 0.4986394268404457
+    },
+    "altitude_m": {
+      "n": 5422,
+      "min": 203.18936641196268,
+      "max": 387.1712556845985,
+      "mean": 332.35065870465814,
+      "std": 65.33661330556416,
+      "median": 373.0918075049881
+    },
+    "quality_weight": {
+      "n": 5422,
+      "min": 0.05,
+      "max": 1.0,
+      "mean": 0.9927148653633345,
+      "std": 0.08211767112549871,
+      "median": 1.0
+    },
+    "fraction_weight_below_0_5": 0.0073773515308004425,
+    "path_length_m": 10297.748099736607,
+    "start_to_end_m": 8284.561109147826,
+    "provenance": "midpoint of /gps_left_position and /gps_right_position CSV exports; not an independent survey trajectory"
+  },
+  "poles_versus_gnss_midpoint": {
+    "n_poles": 290,
+    "median_nearest_track_distance_m": 5.533598766875482,
+    "p10_m": 2.602485105342471,
+    "min_m": 1.6563059854232192,
+    "fraction_within_30m": 1.0,
+    "fraction_within_15m": 1.0
+  },
+  "bags": {
+    "reduced": {
+      "present": true,
+      "path": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/2024-02-28-12-59-51_no_unwanted_topics.bag",
+      "size_bytes": 5713783373,
+      "connection_count": 9,
+      "chunk_count": 7227,
+      "n_chunk_infos": 7227,
+      "n_chunks_with_nonsane_time": 7046,
+      "sane_start_unix_s": 1702907624.9403148,
+      "sane_end_unix_s": 1833221197.6034796,
+      "topics": [
+        {
+          "name": "/gps_left_position",
+          "type": "sensor_msgs/NavSatFix",
+          "count": 5422,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/gps_right_position",
+          "type": "sensor_msgs/NavSatFix",
+          "count": 5422,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/gps_state",
+          "type": "gps_msgs/SystemState",
+          "count": 5422,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/ouster/imu",
+          "type": "sensor_msgs/Imu",
+          "count": 54202,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/ouster/reflec_image",
+          "type": "sensor_msgs/Image",
+          "count": 5420,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/utm_position",
+          "type": "gps_msgs/UTMPosition",
+          "count": 5420,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/ouster/range_image",
+          "type": "sensor_msgs/Image",
+          "count": 5420,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/ouster/nearir_image",
+          "type": "sensor_msgs/Image",
+          "count": 5420,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/ouster/signal_image",
+          "type": "sensor_msgs/Image",
+          "count": 5420,
+          "pure_chunks": 0
+        }
+      ],
+      "decoded_payloads": false
+    },
+    "full": {
+      "present": true,
+      "path": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/2024-02-28-12-59-51.bag",
+      "size_bytes": 41235278422,
+      "connection_count": 28,
+      "chunk_count": 11042,
+      "n_chunk_infos": 11042,
+      "n_chunks_with_nonsane_time": 10464,
+      "sane_start_unix_s": 1689012774.377562,
+      "sane_end_unix_s": 1857207168.3174646,
+      "topics": [
+        {
+          "name": "/interfacea/link2/camera_info",
+          "type": "sensor_msgs/CameraInfo",
+          "count": 16265,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/interfacea/link1/image/h264",
+          "type": "sensor_msgs/CompressedImage",
+          "count": 16265,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/interfacea/link0/camera_info",
+          "type": "sensor_msgs/CameraInfo",
+          "count": 16265,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/interfacea/link0/image/h264",
+          "type": "sensor_msgs/CompressedImage",
+          "count": 16265,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/interfacea/link1/camera_info",
+          "type": "sensor_msgs/CameraInfo",
+          "count": 16265,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/gps_left_position",
+          "type": "sensor_msgs/NavSatFix",
+          "count": 5422,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/gps_right_position",
+          "type": "sensor_msgs/NavSatFix",
+          "count": 5422,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/gps_state",
+          "type": "gps_msgs/SystemState",
+          "count": 5422,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/ouster/imu",
+          "type": "sensor_msgs/Imu",
+          "count": 54202,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/interfacea/link2/image/h264",
+          "type": "sensor_msgs/CompressedImage",
+          "count": 16262,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/interfacea/link3/image/h264",
+          "type": "sensor_msgs/CompressedImage",
+          "count": 16262,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/interfacea/link3/camera_info",
+          "type": "sensor_msgs/CameraInfo",
+          "count": 16262,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/ouster/reflec_image",
+          "type": "sensor_msgs/Image",
+          "count": 5420,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/utm_position",
+          "type": "gps_msgs/UTMPosition",
+          "count": 5420,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/ouster/range_image",
+          "type": "sensor_msgs/Image",
+          "count": 5420,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/ouster/nearir_image",
+          "type": "sensor_msgs/Image",
+          "count": 5420,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/ouster/signal_image",
+          "type": "sensor_msgs/Image",
+          "count": 5420,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/vehicle/dbw_enabled",
+          "type": "std_msgs/Bool",
+          "count": 54185,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/vehicle/brake_report",
+          "type": "dbw_mkz_msgs/BrakeReport",
+          "count": 54185,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/vehicle/gear_report",
+          "type": "dbw_mkz_msgs/GearReport",
+          "count": 54183,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/vehicle/brake_cmd",
+          "type": "dbw_mkz_msgs/BrakeCmd",
+          "count": 10837,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/ouster/points",
+          "type": "sensor_msgs/PointCloud2",
+          "count": 5419,
+          "pure_chunks": 176
+        },
+        {
+          "name": "/vehicle/steering_report",
+          "type": "dbw_mkz_msgs/SteeringReport",
+          "count": 54171,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/vehicle/throttle_cmd",
+          "type": "dbw_mkz_msgs/ThrottleCmd",
+          "count": 10834,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/vehicle/steering_cmd",
+          "type": "dbw_mkz_msgs/SteeringCmd",
+          "count": 10834,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/vehicle_drive_path",
+          "type": "nav_msgs/Path",
+          "count": 10834,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/vehicle_enu_heading",
+          "type": "std_msgs/Float64",
+          "count": 10833,
+          "pure_chunks": 0
+        },
+        {
+          "name": "/vehicle/throttle_report",
+          "type": "dbw_mkz_msgs/ThrottleReport",
+          "count": 54161,
+          "pure_chunks": 0
+        }
+      ],
+      "decoded_payloads": false
+    }
+  },
+  "fasterlio_minus_gps_left_start_s": -0.34465742111206055,
+  "incremental_minus_gps_left_time_max_abs_s": 2.384185791015625e-07,
+  "limitations": [
+    "No independently extracted survey ground-truth trajectory is in the repository.",
+    "NavSat covariance type is UNKNOWN and the up-variance column is empty.",
+    "fasterlio, fastlio and fastreg latitude/longitude disagree with their stored easting/northing.",
+    "fastreg latitude, longitude, altitude and rotation match fastlio exactly; only stored easting/northing differ.",
+    "Odometry altitude is not GNSS ellipsoidal height.",
+    "rotation_angle_degrees is not validated as body yaw.",
+    "IMU, LiDAR images, point clouds, gps_state, utm_position and vehicle_enu_heading were counted from the bag index and not decoded.",
+    "The reduced bag has no /ouster/points topic. The full bag does, mixed into compressed chunks."
+  ]
+}

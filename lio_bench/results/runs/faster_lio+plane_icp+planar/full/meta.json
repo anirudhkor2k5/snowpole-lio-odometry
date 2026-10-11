@@ -1,0 +1,19 @@
+{
+  "algo": "faster_lio+plane_icp+planar",
+  "tag": "full",
+  "start_offset_s": 0.0,
+  "machine": {
+    "arch": "aarch64"
+  },
+  "runner": "correct.planar",
+  "role": "corrector",
+  "world_frame": "gravity",
+  "baseline": "faster_lio",
+  "source_method": "faster_lio+plane_icp",
+  "source_tag": "full",
+  "body_up": [
+    -0.004319289393623611,
+    0.029440973109598628,
+    0.9995571883796814
+  ]
+}

@@ -1,0 +1,369 @@
+[1;34m[lio_bench][0m per-step RAM cap: 4G
+[1;34m[lio_bench][0m done already: prepare
+[1;34m[lio_bench][0m done already: genz_python_full
+[1;34m[lio_bench][0m === ros_fast_lio
+[1;34m[lio_bench][0m ok ros_fast_lio (559 s)
+[1;34m[lio_bench][0m === ros_faster_lio
+[1;34m[lio_bench][0m ok ros_faster_lio (561 s)
+[1;34m[lio_bench][0m === ros_dlio
+[1;34m[lio_bench][0m ok ros_dlio (559 s)
+[1;34m[lio_bench][0m === ros_genz_lio
+[1;34m[lio_bench][0m ok ros_genz_lio (559 s)
+[1;34m[lio_bench][0m === ros_fast_lio_pf4_legacy
+[1;34m[lio_bench][0m ok ros_fast_lio_pf4_legacy (560 s)
+[1;34m[lio_bench][0m === verify
+[1;34m[lio_bench][0m ok verify (4 s)
+[1;34m[lio_bench][0m === analyze
+[1;34m[lio_bench][0m FAILED analyze - see /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/logs/analyze.log (continuing)
+[1;34m[lio_bench][0m === concurrent_fast_lio+dlio
+[1;34m[lio_bench][0m ok concurrent_fast_lio+dlio (560 s)
+[1;34m[lio_bench][0m === concurrency_report_fast_lio+dlio
+[1;34m[lio_bench][0m ok concurrency_report_fast_lio+dlio (3 s)
+[1;34m[lio_bench][0m === concurrent_fast_lio+genz_lio
+[1;34m[lio_bench][0m ok concurrent_fast_lio+genz_lio (560 s)
+[1;34m[lio_bench][0m === concurrency_report_fast_lio+genz_lio
+[1;34m[lio_bench][0m ok concurrency_report_fast_lio+genz_lio (3 s)
+[1;34m[lio_bench][0m === concurrent_faster_lio+dlio
+[1;34m[lio_bench][0m ok concurrent_faster_lio+dlio (559 s)
+[1;34m[lio_bench][0m === concurrency_report_faster_lio+dlio
+[1;34m[lio_bench][0m ok concurrency_report_faster_lio+dlio (2 s)
+[1;34m[lio_bench][0m === concurrent_faster_lio+genz_lio
+[1;34m[lio_bench][0m ok concurrent_faster_lio+genz_lio (560 s)
+[1;34m[lio_bench][0m === concurrency_report_faster_lio+genz_lio
+[1;34m[lio_bench][0m ok concurrency_report_faster_lio+genz_lio (2 s)
+[1;34m[lio_bench][0m === fusion_fast_lio
+[1;34m[lio_bench][0m ok fusion_fast_lio (70 s)
+[1;34m[lio_bench][0m === fusion_faster_lio
+[1;34m[lio_bench][0m ok fusion_faster_lio (56 s)
+[1;34m[lio_bench][0m === correct_wheel_fast_lio
+[1;34m[lio_bench][0m ok correct_wheel_fast_lio (3 s)
+[1;34m[lio_bench][0m === correct_scan_fast_lio
+[1;34m[lio_bench][0m ok correct_scan_fast_lio (1687 s)
+[1;34m[lio_bench][0m === correct_poles_fast_lio
+[1;34m[lio_bench][0m ok correct_poles_fast_lio (22 s)
+[1;34m[lio_bench][0m === correct_report_fast_lio
+[1;34m[lio_bench][0m ok correct_report_fast_lio (5 s)
+[1;34m[lio_bench][0m === fusion_fast_lio_correctors
+[1;34m[lio_bench][0m ok fusion_fast_lio_correctors (63 s)
+[1;34m[lio_bench][0m === correct_wheel_faster_lio
+[1;34m[lio_bench][0m ok correct_wheel_faster_lio (2 s)
+[1;34m[lio_bench][0m === correct_scan_faster_lio
+[1;34m[lio_bench][0m ok correct_scan_faster_lio (1492 s)
+[1;34m[lio_bench][0m === correct_poles_faster_lio
+[1;34m[lio_bench][0m ok correct_poles_faster_lio (25 s)
+[1;34m[lio_bench][0m === correct_report_faster_lio
+[1;34m[lio_bench][0m ok correct_report_faster_lio (5 s)
+[1;34m[lio_bench][0m === fusion_faster_lio_correctors
+[1;34m[lio_bench][0m ok fusion_faster_lio_correctors (42 s)
+[1;34m[lio_bench][0m === windows_fast_lio_genz_adaptive_warm
+[1;34m[lio_bench][0m ok windows_fast_lio_genz_adaptive_warm (43 s)
+[1;34m[lio_bench][0m === windows_fast_lio_genz_adaptive_cold
+[1;34m[lio_bench][0m ok windows_fast_lio_genz_adaptive_cold (35 s)
+[1;34m[lio_bench][0m === windows_fast_lio_genz_periodic_warm
+[1;34m[lio_bench][0m ok windows_fast_lio_genz_periodic_warm (53 s)
+[1;34m[lio_bench][0m === windows_fast_lio_genz_adaptive_q90
+[1;34m[lio_bench][0m ok windows_fast_lio_genz_adaptive_q90 (6 s)
+[1;34m[lio_bench][0m === windows_fast_lio_dlio_adaptive_cold
+[1;34m[lio_bench][0m ok windows_fast_lio_dlio_adaptive_cold (96 s)
+[1;34m[lio_bench][0m === windows_faster_lio_genz_adaptive_warm
+[1;34m[lio_bench][0m ok windows_faster_lio_genz_adaptive_warm (3 s)
+[1;34m[lio_bench][0m === windows_faster_lio_genz_adaptive_cold
+[1;34m[lio_bench][0m ok windows_faster_lio_genz_adaptive_cold (2 s)
+[1;34m[lio_bench][0m === windows_faster_lio_genz_periodic_warm
+[1;34m[lio_bench][0m ok windows_faster_lio_genz_periodic_warm (3 s)
+[1;34m[lio_bench][0m === windows_faster_lio_genz_adaptive_q90
+[1;34m[lio_bench][0m ok windows_faster_lio_genz_adaptive_q90 (3 s)
+[1;34m[lio_bench][0m === windows_faster_lio_dlio_adaptive_cold
+[1;34m[lio_bench][0m ok windows_faster_lio_dlio_adaptive_cold (3 s)
+[1;34m[lio_bench][0m === unit_tests
+[1;34m[lio_bench][0m ok unit_tests (5 s)
+[1;34m[lio_bench][0m finished. Summaries:
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/verify/verify_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/faster_lio_correctors/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/faster_lio/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/fast_lio_correctors/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/fast_lio/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/correct/faster_lio/correct_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/correct/fast_lio/correct_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/dlio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_adaptive_warm_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_adaptive_warm_wu5_q0.9/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_periodic_warm_wu5_L20_P60/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/dlio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_adaptive_warm_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_adaptive_warm_wu5_q0.9/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_periodic_warm_wu5_L20_P60/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/faster_lio+dlio.json
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/faster_lio+genz_lio.json
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/fast_lio+dlio.json
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/fast_lio+genz_lio.json
+[1;34m[lio_bench][0m failed steps: analyze
+[1;34m[lio_bench][0m per-step RAM cap: 4G
+[1;34m[lio_bench][0m done already: prepare
+[1;34m[lio_bench][0m done already: genz_python_full
+[1;34m[lio_bench][0m done already: ros_fast_lio
+[1;34m[lio_bench][0m done already: ros_faster_lio
+[1;34m[lio_bench][0m done already: ros_dlio
+[1;34m[lio_bench][0m done already: ros_genz_lio
+[1;34m[lio_bench][0m done already: ros_fast_lio_pf4_legacy
+[1;34m[lio_bench][0m done already: verify
+[1;34m[lio_bench][0m === analyze
+[1;34m[lio_bench][0m ok analyze (3 s)
+[1;34m[lio_bench][0m done already: concurrent_fast_lio+dlio
+[1;34m[lio_bench][0m done already: concurrency_report_fast_lio+dlio
+[1;34m[lio_bench][0m done already: concurrent_fast_lio+genz_lio
+[1;34m[lio_bench][0m done already: concurrency_report_fast_lio+genz_lio
+[1;34m[lio_bench][0m done already: concurrent_faster_lio+dlio
+[1;34m[lio_bench][0m done already: concurrency_report_faster_lio+dlio
+[1;34m[lio_bench][0m done already: concurrent_faster_lio+genz_lio
+[1;34m[lio_bench][0m done already: concurrency_report_faster_lio+genz_lio
+[1;34m[lio_bench][0m done already: fusion_fast_lio
+[1;34m[lio_bench][0m done already: fusion_faster_lio
+[1;34m[lio_bench][0m done already: correct_wheel_fast_lio
+[1;34m[lio_bench][0m done already: correct_scan_fast_lio
+[1;34m[lio_bench][0m done already: correct_poles_fast_lio
+[1;34m[lio_bench][0m done already: correct_report_fast_lio
+[1;34m[lio_bench][0m done already: fusion_fast_lio_correctors
+[1;34m[lio_bench][0m done already: correct_wheel_faster_lio
+[1;34m[lio_bench][0m done already: correct_scan_faster_lio
+[1;34m[lio_bench][0m done already: correct_poles_faster_lio
+[1;34m[lio_bench][0m done already: correct_report_faster_lio
+[1;34m[lio_bench][0m done already: fusion_faster_lio_correctors
+[1;34m[lio_bench][0m done already: windows_fast_lio_genz_adaptive_warm
+[1;34m[lio_bench][0m done already: windows_fast_lio_genz_adaptive_cold
+[1;34m[lio_bench][0m done already: windows_fast_lio_genz_periodic_warm
+[1;34m[lio_bench][0m done already: windows_fast_lio_genz_adaptive_q90
+[1;34m[lio_bench][0m done already: windows_fast_lio_dlio_adaptive_cold
+[1;34m[lio_bench][0m done already: windows_faster_lio_genz_adaptive_warm
+[1;34m[lio_bench][0m done already: windows_faster_lio_genz_adaptive_cold
+[1;34m[lio_bench][0m done already: windows_faster_lio_genz_periodic_warm
+[1;34m[lio_bench][0m done already: windows_faster_lio_genz_adaptive_q90
+[1;34m[lio_bench][0m done already: windows_faster_lio_dlio_adaptive_cold
+[1;34m[lio_bench][0m done already: unit_tests
+[1;34m[lio_bench][0m finished. Summaries:
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/verify/verify_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/analysis/analysis_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/faster_lio_correctors/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/faster_lio/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/fast_lio_correctors/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/fast_lio/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/correct/faster_lio/correct_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/correct/fast_lio/correct_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/dlio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_adaptive_warm_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_adaptive_warm_wu5_q0.9/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_periodic_warm_wu5_L20_P60/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/dlio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_adaptive_warm_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_adaptive_warm_wu5_q0.9/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_periodic_warm_wu5_L20_P60/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/faster_lio+dlio.json
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/faster_lio+genz_lio.json
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/fast_lio+dlio.json
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/fast_lio+genz_lio.json
+[1;34m[lio_bench][0m per-step RAM cap: 4G
+[1;34m[lio_bench][0m done already: prepare
+[1;34m[lio_bench][0m done already: genz_python_full
+[1;34m[lio_bench][0m done already: ros_fast_lio
+[1;34m[lio_bench][0m done already: ros_faster_lio
+[1;34m[lio_bench][0m done already: ros_dlio
+[1;34m[lio_bench][0m done already: ros_genz_lio
+[1;34m[lio_bench][0m done already: ros_fast_lio_pf4_legacy
+[1;34m[lio_bench][0m done already: verify
+[1;34m[lio_bench][0m done already: analyze
+[1;34m[lio_bench][0m done already: concurrent_fast_lio+dlio
+[1;34m[lio_bench][0m done already: concurrency_report_fast_lio+dlio
+[1;34m[lio_bench][0m done already: concurrent_fast_lio+genz_lio
+[1;34m[lio_bench][0m done already: concurrency_report_fast_lio+genz_lio
+[1;34m[lio_bench][0m done already: concurrent_faster_lio+dlio
+[1;34m[lio_bench][0m done already: concurrency_report_faster_lio+dlio
+[1;34m[lio_bench][0m done already: concurrent_faster_lio+genz_lio
+[1;34m[lio_bench][0m done already: concurrency_report_faster_lio+genz_lio
+[1;34m[lio_bench][0m done already: fusion_fast_lio
+[1;34m[lio_bench][0m done already: fusion_faster_lio
+[1;34m[lio_bench][0m done already: correct_wheel_fast_lio
+[1;34m[lio_bench][0m done already: correct_scan_fast_lio
+[1;34m[lio_bench][0m done already: correct_poles_fast_lio
+[1;34m[lio_bench][0m done already: correct_report_fast_lio
+[1;34m[lio_bench][0m done already: fusion_fast_lio_correctors
+[1;34m[lio_bench][0m done already: correct_wheel_faster_lio
+[1;34m[lio_bench][0m done already: correct_scan_faster_lio
+[1;34m[lio_bench][0m done already: correct_poles_faster_lio
+[1;34m[lio_bench][0m done already: correct_report_faster_lio
+[1;34m[lio_bench][0m done already: fusion_faster_lio_correctors
+[1;34m[lio_bench][0m done already: windows_fast_lio_genz_adaptive_warm
+[1;34m[lio_bench][0m done already: windows_fast_lio_genz_adaptive_cold
+[1;34m[lio_bench][0m done already: windows_fast_lio_genz_periodic_warm
+[1;34m[lio_bench][0m done already: windows_fast_lio_genz_adaptive_q90
+[1;34m[lio_bench][0m done already: windows_fast_lio_dlio_adaptive_cold
+[1;34m[lio_bench][0m done already: windows_faster_lio_genz_adaptive_warm
+[1;34m[lio_bench][0m done already: windows_faster_lio_genz_adaptive_cold
+[1;34m[lio_bench][0m done already: windows_faster_lio_genz_periodic_warm
+[1;34m[lio_bench][0m done already: windows_faster_lio_genz_adaptive_q90
+[1;34m[lio_bench][0m done already: windows_faster_lio_dlio_adaptive_cold
+[1;34m[lio_bench][0m done already: unit_tests
+[1;34m[lio_bench][0m finished. Summaries:
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/verify/verify_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/analysis/analysis_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/faster_lio_correctors/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/faster_lio/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/fast_lio_correctors/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/fast_lio/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/correct/faster_lio/correct_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/correct/fast_lio/correct_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/dlio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_adaptive_warm_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_adaptive_warm_wu5_q0.9/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_periodic_warm_wu5_L20_P60/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/dlio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_adaptive_warm_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_adaptive_warm_wu5_q0.9/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_periodic_warm_wu5_L20_P60/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/faster_lio+dlio.json
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/faster_lio+genz_lio.json
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/fast_lio+dlio.json
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/fast_lio+genz_lio.json
+[1;34m[lio_bench][0m per-step RAM cap: 4G
+[1;34m[lio_bench][0m done already: prepare
+[1;34m[lio_bench][0m done already: genz_python_full
+[1;34m[lio_bench][0m done already: ros_fast_lio
+[1;34m[lio_bench][0m done already: ros_faster_lio
+[1;34m[lio_bench][0m done already: ros_dlio
+[1;34m[lio_bench][0m done already: ros_genz_lio
+[1;34m[lio_bench][0m done already: ros_fast_lio_pf4_legacy
+[1;34m[lio_bench][0m done already: verify
+[1;34m[lio_bench][0m done already: analyze
+[1;34m[lio_bench][0m done already: concurrent_fast_lio+dlio
+[1;34m[lio_bench][0m done already: concurrency_report_fast_lio+dlio
+[1;34m[lio_bench][0m done already: concurrent_fast_lio+genz_lio
+[1;34m[lio_bench][0m done already: concurrency_report_fast_lio+genz_lio
+[1;34m[lio_bench][0m done already: concurrent_faster_lio+dlio
+[1;34m[lio_bench][0m done already: concurrency_report_faster_lio+dlio
+[1;34m[lio_bench][0m done already: concurrent_faster_lio+genz_lio
+[1;34m[lio_bench][0m done already: concurrency_report_faster_lio+genz_lio
+[1;34m[lio_bench][0m done already: fusion_fast_lio
+[1;34m[lio_bench][0m done already: fusion_faster_lio
+[1;34m[lio_bench][0m done already: correct_wheel_fast_lio
+[1;34m[lio_bench][0m done already: correct_scan_fast_lio
+[1;34m[lio_bench][0m done already: correct_poles_fast_lio
+[1;34m[lio_bench][0m done already: correct_report_fast_lio
+[1;34m[lio_bench][0m done already: fusion_fast_lio_correctors
+[1;34m[lio_bench][0m done already: correct_wheel_faster_lio
+[1;34m[lio_bench][0m done already: correct_scan_faster_lio
+[1;34m[lio_bench][0m done already: correct_poles_faster_lio
+[1;34m[lio_bench][0m done already: correct_report_faster_lio
+[1;34m[lio_bench][0m done already: fusion_faster_lio_correctors
+[1;34m[lio_bench][0m === windows_fast_lio_genz_adaptive_warm
+[1;34m[lio_bench][0m ok windows_fast_lio_genz_adaptive_warm (33 s)
+[1;34m[lio_bench][0m === windows_fast_lio_genz_adaptive_cold
+[1;34m[lio_bench][0m ok windows_fast_lio_genz_adaptive_cold (22 s)
+[1;34m[lio_bench][0m === windows_fast_lio_genz_periodic_warm
+[1;34m[lio_bench][0m ok windows_fast_lio_genz_periodic_warm (50 s)
+[1;34m[lio_bench][0m === windows_fast_lio_genz_adaptive_q90
+[1;34m[lio_bench][0m ok windows_fast_lio_genz_adaptive_q90 (6 s)
+[1;34m[lio_bench][0m === windows_fast_lio_dlio_adaptive_cold
+[1;34m[lio_bench][0m ok windows_fast_lio_dlio_adaptive_cold (92 s)
+[1;34m[lio_bench][0m === windows_faster_lio_genz_adaptive_warm
+[1;34m[lio_bench][0m ok windows_faster_lio_genz_adaptive_warm (15 s)
+[1;34m[lio_bench][0m === windows_faster_lio_genz_adaptive_cold
+[1;34m[lio_bench][0m ok windows_faster_lio_genz_adaptive_cold (14 s)
+[1;34m[lio_bench][0m === windows_faster_lio_genz_periodic_warm
+[1;34m[lio_bench][0m ok windows_faster_lio_genz_periodic_warm (39 s)
+[1;34m[lio_bench][0m === windows_faster_lio_genz_adaptive_q90
+[1;34m[lio_bench][0m ok windows_faster_lio_genz_adaptive_q90 (3 s)
+[1;34m[lio_bench][0m === windows_faster_lio_dlio_adaptive_cold
+[1;34m[lio_bench][0m ok windows_faster_lio_dlio_adaptive_cold (67 s)
+[1;34m[lio_bench][0m done already: unit_tests
+[1;34m[lio_bench][0m finished. Summaries:
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/verify/verify_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/analysis/analysis_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/faster_lio_correctors/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/faster_lio/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/fast_lio_correctors/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/fast_lio/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/correct/faster_lio/correct_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/correct/fast_lio/correct_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/dlio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_adaptive_warm_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_adaptive_warm_wu5_q0.9/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_periodic_warm_wu5_L20_P60/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/dlio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_adaptive_warm_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_adaptive_warm_wu5_q0.9/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_periodic_warm_wu5_L20_P60/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/faster_lio+dlio.json
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/faster_lio+genz_lio.json
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/fast_lio+dlio.json
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/fast_lio+genz_lio.json
+[1;34m[lio_bench][0m per-step RAM cap: 4G
+[1;34m[lio_bench][0m done already: prepare
+[1;34m[lio_bench][0m done already: genz_python_full
+[1;34m[lio_bench][0m done already: ros_fast_lio
+[1;34m[lio_bench][0m done already: ros_faster_lio
+[1;34m[lio_bench][0m done already: ros_dlio
+[1;34m[lio_bench][0m done already: ros_genz_lio
+[1;34m[lio_bench][0m done already: ros_fast_lio_pf4_legacy
+[1;34m[lio_bench][0m done already: verify
+[1;34m[lio_bench][0m done already: analyze
+[1;34m[lio_bench][0m done already: concurrent_fast_lio+dlio
+[1;34m[lio_bench][0m done already: concurrency_report_fast_lio+dlio
+[1;34m[lio_bench][0m done already: concurrent_fast_lio+genz_lio
+[1;34m[lio_bench][0m done already: concurrency_report_fast_lio+genz_lio
+[1;34m[lio_bench][0m done already: concurrent_faster_lio+dlio
+[1;34m[lio_bench][0m done already: concurrency_report_faster_lio+dlio
+[1;34m[lio_bench][0m done already: concurrent_faster_lio+genz_lio
+[1;34m[lio_bench][0m done already: concurrency_report_faster_lio+genz_lio
+[1;34m[lio_bench][0m done already: fusion_fast_lio
+[1;34m[lio_bench][0m done already: fusion_faster_lio
+[1;34m[lio_bench][0m done already: correct_wheel_fast_lio
+[1;34m[lio_bench][0m done already: correct_scan_fast_lio
+[1;34m[lio_bench][0m done already: correct_poles_fast_lio
+[1;34m[lio_bench][0m done already: correct_report_fast_lio
+[1;34m[lio_bench][0m done already: fusion_fast_lio_correctors
+[1;34m[lio_bench][0m done already: correct_wheel_faster_lio
+[1;34m[lio_bench][0m done already: correct_scan_faster_lio
+[1;34m[lio_bench][0m done already: correct_poles_faster_lio
+[1;34m[lio_bench][0m done already: correct_report_faster_lio
+[1;34m[lio_bench][0m done already: fusion_faster_lio_correctors
+[1;34m[lio_bench][0m done already: windows_fast_lio_genz_adaptive_warm
+[1;34m[lio_bench][0m done already: windows_fast_lio_genz_adaptive_cold
+[1;34m[lio_bench][0m done already: windows_fast_lio_genz_periodic_warm
+[1;34m[lio_bench][0m done already: windows_fast_lio_genz_adaptive_q90
+[1;34m[lio_bench][0m done already: windows_fast_lio_dlio_adaptive_cold
+[1;34m[lio_bench][0m done already: windows_faster_lio_genz_adaptive_warm
+[1;34m[lio_bench][0m done already: windows_faster_lio_genz_adaptive_cold
+[1;34m[lio_bench][0m done already: windows_faster_lio_genz_periodic_warm
+[1;34m[lio_bench][0m done already: windows_faster_lio_genz_adaptive_q90
+[1;34m[lio_bench][0m done already: windows_faster_lio_dlio_adaptive_cold
+[1;34m[lio_bench][0m done already: unit_tests
+[1;34m[lio_bench][0m finished. Summaries:
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/verify/verify_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/analysis/analysis_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/faster_lio_correctors/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/faster_lio/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/fast_lio_correctors/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/fusion/fast_lio/fusion_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/correct/faster_lio/correct_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/correct/fast_lio/correct_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/dlio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_adaptive_warm_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_adaptive_warm_wu5_q0.9/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/faster_lio/genz_lio_periodic_warm_wu5_L20_P60/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/dlio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_adaptive_cold_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_adaptive_warm_wu5_q0.75/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_adaptive_warm_wu5_q0.9/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/windows/fast_lio/genz_lio_periodic_warm_wu5_L20_P60/windows_summary.md
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/faster_lio+dlio.json
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/faster_lio+genz_lio.json
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/fast_lio+dlio.json
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/concurrency/fast_lio+genz_lio.json

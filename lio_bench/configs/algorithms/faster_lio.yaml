@@ -1,0 +1,55 @@
+# Faster-LIO (gaoxiang12/faster-lio @ 8038fba) for the Ouster OS2-128 + internal IMU.
+# Same sensor model and noise as fast_lio.yaml so the two baselines differ only
+# in the map structure (iVox vs ikd-tree).
+common:
+    lid_topic: "/ouster/points"
+    imu_topic: "/ouster/imu"
+    time_sync_en: false
+
+preprocess:
+    lidar_type: 3
+    scan_line: 128
+    blind: 2.0
+    time_scale: 1e-3                # ns -> ms
+
+mapping:
+    acc_cov: 0.1
+    gyr_cov: 0.1
+    b_acc_cov: 0.0001
+    b_gyr_cov: 0.0001
+    fov_degree: 360
+    det_range: 150.0
+    extrinsic_est_en: false
+    extrinsic_T: [-0.006253, 0.011775, -0.007645]
+    extrinsic_R: [1, 0, 0,
+                  0, 1, 0,
+                  0, 0, 1]
+
+publish:
+    path_publish_en: false
+    scan_publish_en: false
+    scan_effect_pub_en: false
+    dense_publish_en: false
+    scan_bodyframe_pub_en: false
+
+path_save_en: false
+
+pcd_save:
+    pcd_save_en: false
+    interval: -1
+
+feature_extract_enable: false
+# 3, not 4: the OS2 has 1024 columns per ring, and keeping every 4th point keeps the same
+# azimuth columns in every ring. Those radial stripes look alike from scan to scan and pin
+# the scan to the map along the road (30 s test: Faster-LIO length ratio 0.24, FAST-LIO 0.974).
+# 1024 mod 3 = 1 staggers the columns ring to ring (1.004 / 1.006). The legacy fastlio.csv
+# matches a pf=4 run; see variants/fast_lio_pf4_legacy.yaml.
+point_filter_num: 3
+max_iteration: 3
+filter_size_surf: 0.5
+filter_size_map: 0.5
+cube_side_length: 1000
+ivox_grid_resolution: 0.5
+ivox_nearby_type: 18
+esti_plane_threshold: 0.1
+runtime_pos_log_enable: false

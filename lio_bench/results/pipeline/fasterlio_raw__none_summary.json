@@ -1,0 +1,45 @@
+{
+  "label": "fasterlio_raw__none",
+  "nav_csv": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/export/incremental_navigation_faster_lio_full_raw.csv",
+  "heading_mode": "none",
+  "native_box_metric": {
+    "mean": 10.15365151678315,
+    "median": 10.52920504033548,
+    "p95": 18.53893208656484,
+    "max": 28.255640681453006,
+    "n": 2146
+  },
+  "whole_drive": {
+    "mean": 507.7821869289099,
+    "median": 15.860472699360862,
+    "p95": 2206.163022792209,
+    "max": 2484.12499805549,
+    "n": 5420,
+    "final_m": 2484.004754235793,
+    "length_km": 10.295349514215534
+  },
+  "pole_span": {
+    "mean": 10.193590181127973,
+    "median": 10.545832141212887,
+    "p95": 18.629262565428387,
+    "max": 28.255640681453006,
+    "n": 2156,
+    "from_km": 0.722693311743788,
+    "to_km": 5.1896222047150875,
+    "at_exit_m": 21.79502211739898
+  },
+  "after_last_pole": {
+    "mean": 1120.0774003975998,
+    "median": 998.4748898727322,
+    "p95": 2383.4996317815635,
+    "max": 2484.12499805549,
+    "n": 2435,
+    "final_m": 2484.004754235793
+  },
+  "pole_fixes": 354,
+  "frames_in_box": 2146,
+  "heading_updates": 0,
+  "heading_rejected": 0,
+  "final_theta_deg": 0.0,
+  "final_rate_deg_s": 0.0
+}

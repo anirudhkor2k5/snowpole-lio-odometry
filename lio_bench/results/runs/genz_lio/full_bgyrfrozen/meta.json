@@ -1,0 +1,17 @@
+{
+  "algo": "genz_lio",
+  "tag": "full_bgyrfrozen",
+  "runner": "python",
+  "world_frame": "gravity",
+  "role": "support",
+  "start_offset_s": 0.0,
+  "duration_s": null,
+  "warm_start_from": null,
+  "seed_velocity_body": null,
+  "scans": 5419,
+  "valid": 5417,
+  "wall_s": 373.72717050099163,
+  "real_time_factor": 1.449988234126965,
+  "config": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/configs/algorithms/variants/genz_lio_bgyrfrozen.yaml",
+  "time_scale": 1.0
+}

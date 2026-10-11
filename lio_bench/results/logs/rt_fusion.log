@@ -1,0 +1,11 @@
+[run_ros 11:40:34] tag=rt_fusion algos=['faster_lio', 'kiss_fusion'] port=41505 bag=2024-02-28-12-59-51.bag start=0.0 dur=None rate=1.0
+[run_ros 11:49:44] playback finished in 546 s; draining
+[run_ros 11:49:50] odometry poses recorded: {'faster_lio': 5412, 'kiss_fusion': 5412}
+[run_ros 11:49:53] faster_lio: 5412 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/faster_lio/rt_fusion
+Traceback (most recent call last):
+  File "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/ros/scripts/run_ros.py", line 297, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/ros/scripts/run_ros.py", line 286, in main
+    {"fast_lio": "FAST_LIO", "faster_lio": "faster-lio",
+KeyError: 'kiss_fusion'

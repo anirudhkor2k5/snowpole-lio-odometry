@@ -1,0 +1,4 @@
+[run_ros 20:50:35] tag=full_ros algos=['genz_lio'] port=51327 bag=2024-02-28-12-59-51.bag start=0.0 dur=None rate=1.0
+[run_ros 20:59:44] playback finished in 546 s; draining
+[run_ros 20:59:50] odometry poses recorded: {'genz_lio': 5413}
+[run_ros 20:59:52] genz_lio: 5413 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/genz_lio/full_ros

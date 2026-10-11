@@ -1,0 +1,6 @@
+# Causal odometry features. IMU and LiDAR features are not computed.
+smoothness_window_s: 1.0
+max_dt_s: 0.5
+min_speed_for_curvature_m_s: 0.5
+blocked_inputs: [easting, northing, latitude, longitude, altitude, index, sample_index]
+horizons_s: [0.5, 1.0, 2.0]

@@ -1,0 +1,40 @@
+# One entry per estimator. `role` drives the analysis/fusion steps:
+#   baseline : always running in deployment (FAST-LIO, Faster-LIO)
+#   support  : candidate helper that may run alongside or in windows (DLIO, GenZ-LIO)
+# `world_frame` says whether the output frame is gravity-aligned:
+#   first_imu : world = IMU frame at start-up (tilted by the mounting); evaluation
+#               levels it with the start-up IMU gravity (results/bag/sensor_clock.json)
+#   gravity   : z already up
+# `node_binary` is used by the resource monitor to find the process.
+fast_lio:
+  role: baseline
+  launch: fast_lio.launch
+  config: fast_lio.yaml
+  node_binary: fastlio_mapping
+  world_frame: first_imu
+faster_lio:
+  role: baseline
+  launch: faster_lio.launch
+  config: faster_lio.yaml
+  node_binary: run_mapping_online
+  world_frame: first_imu
+dlio:
+  role: support
+  launch: dlio.launch
+  config: dlio.yaml
+  node_binary: dlio_odom_node
+  world_frame: gravity
+genz_lio:
+  role: support
+  launch: genz_lio.launch
+  config: genz_lio.yaml
+  node_binary: genz_lio_node
+  world_frame: first_imu       # ROS node publishes the un-levelled odom frame
+  world_frame_python: gravity  # the Python runner saves gravity-aligned poses
+kiss_fusion:
+  role: corrector              # online post-processor of a LIO: gravity-filtered attitude + KISS-ICP heading
+  script: kiss_fusion_node.py  # plain rospy node (ros/scripts), started by run_ros.py without roslaunch
+  lio_input: faster_lio        # whose /<name>/Odometry it corrects (run together: --algos faster_lio,kiss_fusion)
+  config: kiss_fusion.yaml
+  node_binary: kiss_fusion_node.py
+  world_frame: gravity

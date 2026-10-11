@@ -1,0 +1,48 @@
+[scanpass faster_lio] 250 scans, 16 s wall, 1.53x real time, vgicp_grav_da 10 ms, vgicp_grav_every2 5 ms, vgicp_grav_every5 3 ms, vgicp_grav_every10 2 ms, vgicp_grav_every20 2 ms
+[scanpass faster_lio] 500 scans, 28 s wall, 1.76x real time, vgicp_grav_da 9 ms, vgicp_grav_every2 6 ms, vgicp_grav_every5 3 ms, vgicp_grav_every10 2 ms, vgicp_grav_every20 2 ms
+[scanpass faster_lio] 750 scans, 48 s wall, 1.57x real time, vgicp_grav_da 12 ms, vgicp_grav_every2 7 ms, vgicp_grav_every5 4 ms, vgicp_grav_every10 3 ms, vgicp_grav_every20 2 ms
+[scanpass faster_lio] 1000 scans, 68 s wall, 1.48x real time, vgicp_grav_da 13 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 4 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 1250 scans, 87 s wall, 1.43x real time, vgicp_grav_da 14 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 4 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 1500 scans, 109 s wall, 1.37x real time, vgicp_grav_da 14 ms, vgicp_grav_every2 9 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 4 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 1750 scans, 125 s wall, 1.41x real time, vgicp_grav_da 14 ms, vgicp_grav_every2 9 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 4 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 2000 scans, 135 s wall, 1.48x real time, vgicp_grav_da 14 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 4 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 2250 scans, 148 s wall, 1.53x real time, vgicp_grav_da 13 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 4 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 2500 scans, 161 s wall, 1.55x real time, vgicp_grav_da 13 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 4 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 2750 scans, 172 s wall, 1.60x real time, vgicp_grav_da 13 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 4 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 3000 scans, 186 s wall, 1.61x real time, vgicp_grav_da 13 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 4 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 3250 scans, 195 s wall, 1.66x real time, vgicp_grav_da 12 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 3 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 3500 scans, 211 s wall, 1.66x real time, vgicp_grav_da 12 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 3 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 3750 scans, 226 s wall, 1.66x real time, vgicp_grav_da 12 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 3 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 4000 scans, 244 s wall, 1.64x real time, vgicp_grav_da 12 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 4 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 4250 scans, 259 s wall, 1.64x real time, vgicp_grav_da 12 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 4 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 4500 scans, 277 s wall, 1.63x real time, vgicp_grav_da 13 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 4 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 4750 scans, 293 s wall, 1.62x real time, vgicp_grav_da 13 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 4 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 5000 scans, 305 s wall, 1.64x real time, vgicp_grav_da 13 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 4 ms, vgicp_grav_every20 3 ms
+[scanpass faster_lio] 5250 scans, 317 s wall, 1.66x real time, vgicp_grav_da 12 ms, vgicp_grav_every2 8 ms, vgicp_grav_every5 5 ms, vgicp_grav_every10 4 ms, vgicp_grav_every20 3 ms
+{
+  "baseline": "faster_lio",
+  "scans": 5410,
+  "wall_s": 324.8365085609985,
+  "variants": {
+    "vgicp_grav_da": {
+      "ms_per_scan": 12.382068562961758,
+      "fallback_rate": 0.021811460258780037
+    },
+    "vgicp_grav_every2": {
+      "ms_per_scan": 7.630761390912468,
+      "fallback_rate": 0.5107208872458411
+    },
+    "vgicp_grav_every5": {
+      "ms_per_scan": 4.644163952767139,
+      "fallback_rate": 0.8033271719038817
+    },
+    "vgicp_grav_every10": {
+      "ms_per_scan": 3.5935868566541402,
+      "fallback_rate": 0.9014787430683918
+    },
+    "vgicp_grav_every20": {
+      "ms_per_scan": 3.0312375037298476,
+      "fallback_rate": 0.9521256931608133
+    }
+  }
+}

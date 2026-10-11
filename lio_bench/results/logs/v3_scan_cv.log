@@ -1,0 +1,36 @@
+[scanpass faster_lio] 250 scans, 20 s wall, 1.23x real time, vgicp_grav_cvrot 14 ms, vgicp_grav_cv 15 ms
+[scanpass faster_lio] 500 scans, 30 s wall, 1.65x real time, vgicp_grav_cvrot 12 ms, vgicp_grav_cv 12 ms
+[scanpass faster_lio] 750 scans, 53 s wall, 1.43x real time, vgicp_grav_cvrot 15 ms, vgicp_grav_cv 16 ms
+[scanpass faster_lio] 1000 scans, 75 s wall, 1.33x real time, vgicp_grav_cvrot 17 ms, vgicp_grav_cv 18 ms
+[scanpass faster_lio] 1250 scans, 100 s wall, 1.25x real time, vgicp_grav_cvrot 19 ms, vgicp_grav_cv 20 ms
+[scanpass faster_lio] 1500 scans, 125 s wall, 1.20x real time, vgicp_grav_cvrot 20 ms, vgicp_grav_cv 21 ms
+[scanpass faster_lio] 1750 scans, 137 s wall, 1.28x real time, vgicp_grav_cvrot 19 ms, vgicp_grav_cv 20 ms
+[scanpass faster_lio] 2000 scans, 145 s wall, 1.38x real time, vgicp_grav_cvrot 17 ms, vgicp_grav_cv 18 ms
+[scanpass faster_lio] 2250 scans, 156 s wall, 1.44x real time, vgicp_grav_cvrot 16 ms, vgicp_grav_cv 17 ms
+[scanpass faster_lio] 2500 scans, 167 s wall, 1.49x real time, vgicp_grav_cvrot 16 ms, vgicp_grav_cv 17 ms
+[scanpass faster_lio] 2750 scans, 176 s wall, 1.56x real time, vgicp_grav_cvrot 15 ms, vgicp_grav_cv 16 ms
+[scanpass faster_lio] 3000 scans, 196 s wall, 1.53x real time, vgicp_grav_cvrot 16 ms, vgicp_grav_cv 16 ms
+[scanpass faster_lio] 3250 scans, 204 s wall, 1.59x real time, vgicp_grav_cvrot 15 ms, vgicp_grav_cv 16 ms
+[scanpass faster_lio] 3500 scans, 220 s wall, 1.59x real time, vgicp_grav_cvrot 15 ms, vgicp_grav_cv 15 ms
+[scanpass faster_lio] 3750 scans, 230 s wall, 1.63x real time, vgicp_grav_cvrot 15 ms, vgicp_grav_cv 15 ms
+[scanpass faster_lio] 4000 scans, 251 s wall, 1.59x real time, vgicp_grav_cvrot 15 ms, vgicp_grav_cv 16 ms
+[scanpass faster_lio] 4250 scans, 264 s wall, 1.61x real time, vgicp_grav_cvrot 15 ms, vgicp_grav_cv 15 ms
+[scanpass faster_lio] 4500 scans, 283 s wall, 1.59x real time, vgicp_grav_cvrot 15 ms, vgicp_grav_cv 16 ms
+[scanpass faster_lio] 4750 scans, 295 s wall, 1.61x real time, vgicp_grav_cvrot 15 ms, vgicp_grav_cv 15 ms
+[scanpass faster_lio] 5000 scans, 304 s wall, 1.64x real time, vgicp_grav_cvrot 15 ms, vgicp_grav_cv 15 ms
+[scanpass faster_lio] 5250 scans, 313 s wall, 1.68x real time, vgicp_grav_cvrot 14 ms, vgicp_grav_cv 15 ms
+{
+  "baseline": "faster_lio",
+  "scans": 5410,
+  "wall_s": 320.63970653899014,
+  "variants": {
+    "vgicp_grav_cvrot": {
+      "ms_per_scan": 14.222485382499796,
+      "fallback_rate": 0.043992606284658044
+    },
+    "vgicp_grav_cv": {
+      "ms_per_scan": 14.761999394339979,
+      "fallback_rate": 0.053789279112754156
+    }
+  }
+}

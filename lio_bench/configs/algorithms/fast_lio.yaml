@@ -1,0 +1,51 @@
+# FAST-LIO2 (hku-mars/FAST_LIO @ 7cc4175) for the Ouster OS2-128 + internal IMU.
+# Loaded into the node's namespace by ros/launch/fast_lio.launch.
+common:
+    lid_topic: "/ouster/points"
+    imu_topic: "/ouster/imu"
+    time_sync_en: false
+    time_offset_lidar_to_imu: 0.0   # both streams share the Ouster clock
+
+preprocess:
+    lidar_type: 3                   # Ouster
+    scan_line: 128
+    timestamp_unit: 3               # per-point `t` is uint32 nanoseconds
+    blind: 2.0                      # m; drops vehicle/roof returns (FAST-LIO squares it internally)
+    scan_rate: 10
+
+mapping:
+    acc_cov: 0.1
+    gyr_cov: 0.1
+    b_acc_cov: 0.0001
+    b_gyr_cov: 0.0001
+    fov_degree: 360
+    det_range: 150.0
+    extrinsic_est_en: false
+    # LiDAR (os_sensor) origin in the IMU (os_imu) frame, from Trip068.json
+    extrinsic_T: [-0.006253, 0.011775, -0.007645]
+    extrinsic_R: [1, 0, 0,
+                  0, 1, 0,
+                  0, 0, 1]
+
+publish:
+    path_en: false
+    scan_publish_en: false          # headless: no cloud output needed
+    dense_publish_en: false
+    scan_bodyframe_pub_en: false
+
+pcd_save:
+    pcd_save_en: false
+    interval: -1
+
+feature_extract_enable: false
+# 3, not 4: the OS2 has 1024 columns per ring, and keeping every 4th point keeps the same
+# azimuth columns in every ring. Those radial stripes look alike from scan to scan and pin
+# the scan to the map along the road (30 s test: Faster-LIO length ratio 0.24, FAST-LIO 0.974).
+# 1024 mod 3 = 1 staggers the columns ring to ring (1.004 / 1.006). The legacy fastlio.csv
+# matches a pf=4 run; see variants/fast_lio_pf4_legacy.yaml.
+point_filter_num: 3
+max_iteration: 3
+filter_size_surf: 0.5
+filter_size_map: 0.5
+cube_side_length: 1000
+runtime_pos_log_enable: false

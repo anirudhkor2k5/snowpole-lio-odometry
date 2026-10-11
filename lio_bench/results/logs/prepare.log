@@ -1,0 +1,16 @@
+{
+  "stamp0": 13214.2395428,
+  "offset_s": 1709108377.3551764,
+  "drift": 0.00010493499328967526,
+  "drift_ppm": 104.93499328967526,
+  "envelope_residual_std_s": 0.0001409056134103901,
+  "imu_rate_hz": 99.99999999781721,
+  "imu_static_mean_acc": [
+    -0.17515600066232204,
+    0.9773794915831912,
+    10.007146610312885
+  ],
+  "imu_static_acc_norm": 10.056288260358894,
+  "imu_frame_tilt_deg": 5.666575160009262
+}
+{'enu_heading': '/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/bag/enu_heading.csv', 'steering': '/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/bag/steering.csv', 'utm_position': '/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/bag/utm_position.csv', 'gps_state': '/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/bag/gps_state.csv'}

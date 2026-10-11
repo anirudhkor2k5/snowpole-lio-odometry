@@ -1,0 +1,14 @@
+{
+  "algo": "kiss_icp_default",
+  "tag": "full",
+  "start_offset_s": 0.0,
+  "machine": {
+    "arch": "aarch64"
+  },
+  "runner": "correct.kiss_probe",
+  "role": "probe",
+  "world_frame": "first_imu",
+  "probe": {},
+  "wall_s": 214.33016953000333,
+  "ms_per_scan": 28.494326298091018
+}

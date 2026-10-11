@@ -1,0 +1,20 @@
+<launch>
+  <!-- DLIO odometry node only (the map node is visualisation; not needed headless). -->
+  <arg name="ns" default="dlio"/>
+  <arg name="config"/>
+  <arg name="pointcloud_topic" default="/ouster/points"/>
+  <arg name="imu_topic" default="/ouster/imu"/>
+  <group ns="$(arg ns)">
+    <node pkg="direct_lidar_inertial_odometry" type="dlio_odom_node" name="odom" output="screen" clear_params="true" required="true">
+      <rosparam file="$(arg config)" command="load"/>
+      <remap from="~pointcloud" to="$(arg pointcloud_topic)"/>
+      <remap from="~imu" to="$(arg imu_topic)"/>
+      <remap from="~odom" to="/$(arg ns)/Odometry"/>
+      <remap from="~pose" to="/$(arg ns)/pose"/>
+      <remap from="~path" to="/$(arg ns)/path"/>
+      <remap from="~kf_pose" to="/$(arg ns)/keyframes"/>
+      <remap from="~kf_cloud" to="/$(arg ns)/keyframe_cloud"/>
+      <remap from="~deskewed" to="/$(arg ns)/deskewed"/>
+    </node>
+  </group>
+</launch>

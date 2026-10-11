@@ -1,0 +1,36 @@
+# Analysis / fusion / GenZ-LIO environment (no ROS needed).
+#   conda env create -f lio_bench/envs/lio-py.yml
+name: lio-py
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=1.26
+  - scipy
+  - pandas
+  - matplotlib
+  - pyproj
+  - scikit-learn
+  - xgboost
+  - pytorch-cpu        # CPU build (avoids pulling CUDA on GPU cloud boxes); model is tiny
+  - pyyaml
+  - tqdm
+  - psutil
+  - pytest
+  - typer
+  - rich
+  # build toolchain for GenZ-LIO's pybind11 extension
+  - cxx-compiler
+  - cmake>=3.16
+  - ninja
+  - make
+  - eigen=3.4
+  - libboost-headers
+  - pybind11>=2.13,<3
+  - scikit-build-core>=0.11,<0.12
+  - pip
+  - pip:
+      - rosbags>=0.9.16,<0.10
+      - evo
+      - small_gicp>=1.0,<2     # point-to-point ICP, point-to-plane ICP, GICP, VGICP (correct/icp.py)
+      - kiss-icp>=1.2,<2       # KISS-ICP LiDAR odometry as an extra support

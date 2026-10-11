@@ -1,0 +1,30 @@
+[run_ros 00:39:27] tag=win_fast_lio_dlio_adaptive_cold_wu5_q0.75_000 algos=['dlio'] port=60519 bag=2024-02-28-12-59-51.bag start=465.996 dur=10.096 rate=1.0
+[run_ros 00:39:43] playback finished in 13 s; draining
+[run_ros 00:39:49] odometry poses recorded: {'dlio': 821}
+[run_ros 00:39:51] dlio: 821 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/dlio/win_fast_lio_dlio_adaptive_cold_wu5_q0.75_000
+[run_ros 00:39:52] tag=win_fast_lio_dlio_adaptive_cold_wu5_q0.75_001 algos=['dlio'] port=58399 bag=2024-02-28-12-59-51.bag start=472.993 dur=10.802 rate=1.0
+[run_ros 00:40:08] playback finished in 12 s; draining
+[run_ros 00:40:14] odometry poses recorded: {'dlio': 814}
+[run_ros 00:40:16] dlio: 814 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/dlio/win_fast_lio_dlio_adaptive_cold_wu5_q0.75_001
+[run_ros 00:40:17] tag=win_fast_lio_dlio_adaptive_cold_wu5_q0.75_002 algos=['dlio'] port=37935 bag=2024-02-28-12-59-51.bag start=511.894 dur=10.098 rate=1.0
+[run_ros 00:40:31] playback finished in 11 s; draining
+[run_ros 00:40:37] odometry poses recorded: {'dlio': 792}
+[run_ros 00:40:54] dlio: 792 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/dlio/win_fast_lio_dlio_adaptive_cold_wu5_q0.75_002
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/src/liobench/fusion.py:87: RuntimeWarning: All-NaN slice encountered
+  med = np.nanmedian(U, axis=0) if len(methods) > 1 else None
+{
+  "baseline": "fast_lio",
+  "support": "dlio",
+  "schedule": "adaptive",
+  "warm_start": false,
+  "warmup_s": 5.0,
+  "threshold": 0.0433857082479311,
+  "n_windows": 3,
+  "duty_cycle": 0.16260162601626016,
+  "support_wall_s": 0.0,
+  "support_step_err_in_windows": {
+    "windowed_median": 0.10111166414197492,
+    "continuous_median": 0.14867682784155245,
+    "baseline_median": 0.05736675443262232
+  }
+}

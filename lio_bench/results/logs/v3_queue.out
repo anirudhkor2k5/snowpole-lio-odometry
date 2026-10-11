@@ -1,0 +1,19 @@
+[1;34m[lio_bench][0m v3 job: scan_selective_faster_lio
+[1;34m[lio_bench][0m v3 job scan_selective_faster_lio exit 0 (327 s)
+[1;34m[lio_bench][0m v3 job: kiss_nodeskew
+[1;34m[lio_bench][0m v3 job kiss_nodeskew exit 0 (212 s)
+[1;34m[lio_bench][0m v3 job: kiss_revtime
+[1;34m[lio_bench][0m v3 job kiss_revtime exit 0 (218 s)
+[1;34m[lio_bench][0m v3 job: kiss_vox05
+[1;34m[lio_bench][0m v3 job kiss_vox05 exit 0 (653 s)
+[1;34m[lio_bench][0m v3 job: kiss_shift5ms
+[1;34m[lio_bench][0m v3 job kiss_shift5ms exit 0 (212 s)
+[1;34m[lio_bench][0m v3 job: repeat_fast_lio_r2
+[1;34m[lio_bench][0m v3 job repeat_fast_lio_r2 exit 0 (559 s)
+[1;34m[lio_bench][0m v3 job: repeat_dlio_r2
+[1;34m[lio_bench][0m v3 job repeat_dlio_r2 exit 0 (555 s)
+[1;34m[lio_bench][0m v3 job: repeat_fast_lio_r3
+[1;34m[lio_bench][0m v3 job repeat_fast_lio_r3 exit 0 (559 s)
+[1;34m[lio_bench][0m v3 job: repeat_dlio_r3
+[1;34m[lio_bench][0m v3 job repeat_dlio_r3 exit 0 (559 s)
+[1;34m[lio_bench][0m v3 queue done

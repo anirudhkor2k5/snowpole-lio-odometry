@@ -1,0 +1,19 @@
+<launch>
+  <!-- FAST-LIO, headless, namespaced so it can run beside other estimators.
+       Upstream loads its YAML into the global namespace; here it goes into $(arg ns),
+       and the absolute /Odometry topic is remapped to /$(arg ns)/Odometry. -->
+  <arg name="ns" default="fast_lio"/>
+  <arg name="config"/>
+  <group ns="$(arg ns)">
+    <rosparam command="load" file="$(arg config)"/>
+    <param name="map_file_path" value=""/>
+    <node pkg="fast_lio" type="fastlio_mapping" name="mapping" output="screen" required="true">
+      <remap from="/Odometry" to="/$(arg ns)/Odometry"/>
+      <remap from="/path" to="/$(arg ns)/path"/>
+      <remap from="/cloud_registered" to="/$(arg ns)/cloud_registered"/>
+      <remap from="/cloud_registered_body" to="/$(arg ns)/cloud_registered_body"/>
+      <remap from="/cloud_effected" to="/$(arg ns)/cloud_effected"/>
+      <remap from="/Laser_map" to="/$(arg ns)/Laser_map"/>
+    </node>
+  </group>
+</launch>

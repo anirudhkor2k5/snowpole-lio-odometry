@@ -1,0 +1,57 @@
+[scanpass faster_lio] 250 scans, 58 s wall, 0.43x real time, icp 44 ms, plane_icp 38 ms, gicp 27 ms, vgicp 7 ms, plane_icp_da 24 ms, gicp_da 21 ms, gicp_da_wheel 21 ms
+[scanpass faster_lio] 500 scans, 109 s wall, 0.46x real time, icp 39 ms, plane_icp 35 ms, gicp 27 ms, vgicp 6 ms, plane_icp_da 25 ms, gicp_da 23 ms, gicp_da_wheel 23 ms
+[scanpass faster_lio] 750 scans, 206 s wall, 0.36x real time, icp 54 ms, plane_icp 43 ms, gicp 34 ms, vgicp 8 ms, plane_icp_da 33 ms, gicp_da 31 ms, gicp_da_wheel 32 ms
+[scanpass faster_lio] 1000 scans, 293 s wall, 0.34x real time, icp 58 ms, plane_icp 47 ms, gicp 37 ms, vgicp 8 ms, plane_icp_da 35 ms, gicp_da 34 ms, gicp_da_wheel 34 ms
+[scanpass faster_lio] 1250 scans, 381 s wall, 0.33x real time, icp 60 ms, plane_icp 48 ms, gicp 38 ms, vgicp 9 ms, plane_icp_da 37 ms, gicp_da 36 ms, gicp_da_wheel 36 ms
+[scanpass faster_lio] 1500 scans, 480 s wall, 0.31x real time, icp 64 ms, plane_icp 50 ms, gicp 40 ms, vgicp 9 ms, plane_icp_da 39 ms, gicp_da 38 ms, gicp_da_wheel 38 ms
+[scanpass faster_lio] 1750 scans, 554 s wall, 0.32x real time, icp 62 ms, plane_icp 49 ms, gicp 40 ms, vgicp 9 ms, plane_icp_da 39 ms, gicp_da 38 ms, gicp_da_wheel 38 ms
+[scanpass faster_lio] 2000 scans, 608 s wall, 0.33x real time, icp 59 ms, plane_icp 47 ms, gicp 39 ms, vgicp 9 ms, plane_icp_da 38 ms, gicp_da 37 ms, gicp_da_wheel 37 ms
+[scanpass faster_lio] 2250 scans, 672 s wall, 0.33x real time, icp 57 ms, plane_icp 46 ms, gicp 39 ms, vgicp 8 ms, plane_icp_da 38 ms, gicp_da 37 ms, gicp_da_wheel 37 ms
+[scanpass faster_lio] 2500 scans, 733 s wall, 0.34x real time, icp 56 ms, plane_icp 45 ms, gicp 38 ms, vgicp 8 ms, plane_icp_da 37 ms, gicp_da 36 ms, gicp_da_wheel 36 ms
+[scanpass faster_lio] 2750 scans, 782 s wall, 0.35x real time, icp 54 ms, plane_icp 44 ms, gicp 37 ms, vgicp 8 ms, plane_icp_da 37 ms, gicp_da 35 ms, gicp_da_wheel 36 ms
+[scanpass faster_lio] 3000 scans, 848 s wall, 0.35x real time, icp 53 ms, plane_icp 44 ms, gicp 36 ms, vgicp 8 ms, plane_icp_da 36 ms, gicp_da 34 ms, gicp_da_wheel 35 ms
+[scanpass faster_lio] 3250 scans, 893 s wall, 0.36x real time, icp 51 ms, plane_icp 43 ms, gicp 36 ms, vgicp 8 ms, plane_icp_da 35 ms, gicp_da 34 ms, gicp_da_wheel 34 ms
+[scanpass faster_lio] 3500 scans, 950 s wall, 0.37x real time, icp 51 ms, plane_icp 43 ms, gicp 35 ms, vgicp 8 ms, plane_icp_da 35 ms, gicp_da 33 ms, gicp_da_wheel 33 ms
+[scanpass faster_lio] 3750 scans, 1017 s wall, 0.37x real time, icp 50 ms, plane_icp 43 ms, gicp 35 ms, vgicp 8 ms, plane_icp_da 35 ms, gicp_da 33 ms, gicp_da_wheel 33 ms
+[scanpass faster_lio] 4000 scans, 1087 s wall, 0.37x real time, icp 51 ms, plane_icp 43 ms, gicp 35 ms, vgicp 8 ms, plane_icp_da 35 ms, gicp_da 33 ms, gicp_da_wheel 33 ms
+[scanpass faster_lio] 4250 scans, 1151 s wall, 0.37x real time, icp 50 ms, plane_icp 43 ms, gicp 35 ms, vgicp 8 ms, plane_icp_da 35 ms, gicp_da 33 ms, gicp_da_wheel 33 ms
+[scanpass faster_lio] 4500 scans, 1220 s wall, 0.37x real time, icp 51 ms, plane_icp 43 ms, gicp 35 ms, vgicp 8 ms, plane_icp_da 35 ms, gicp_da 33 ms, gicp_da_wheel 33 ms
+[scanpass faster_lio] 4750 scans, 1315 s wall, 0.36x real time, icp 51 ms, plane_icp 44 ms, gicp 36 ms, vgicp 8 ms, plane_icp_da 36 ms, gicp_da 34 ms, gicp_da_wheel 34 ms
+[scanpass faster_lio] 5000 scans, 1380 s wall, 0.36x real time, icp 51 ms, plane_icp 44 ms, gicp 36 ms, vgicp 8 ms, plane_icp_da 36 ms, gicp_da 34 ms, gicp_da_wheel 34 ms
+[scanpass faster_lio] 5250 scans, 1450 s wall, 0.36x real time, icp 50 ms, plane_icp 43 ms, gicp 36 ms, vgicp 8 ms, plane_icp_da 36 ms, gicp_da 34 ms, gicp_da_wheel 34 ms
+{
+  "baseline": "faster_lio",
+  "scans": 5410,
+  "wall_s": 1490.0952823510015,
+  "variants": {
+    "icp": {
+      "ms_per_scan": 50.208743066248175,
+      "fallback_rate": 0.09648798521256932
+    },
+    "plane_icp": {
+      "ms_per_scan": 43.46139226379923,
+      "fallback_rate": 0.053789279112754156
+    },
+    "gicp": {
+      "ms_per_scan": 36.28954657601139,
+      "fallback_rate": 0.009242144177449169
+    },
+    "vgicp": {
+      "ms_per_scan": 7.86505610014565,
+      "fallback_rate": 0.015157116451016635
+    },
+    "plane_icp_da": {
+      "ms_per_scan": 36.30570636208928,
+      "fallback_rate": 0.04787430683918669
+    },
+    "gicp_da": {
+      "ms_per_scan": 34.193677879363065,
+      "fallback_rate": 0.010166358595194085
+    },
+    "gicp_da_wheel": {
+      "ms_per_scan": 34.22740563738055,
+      "fallback_rate": 0.010351201478743069
+    }
+  },
+  "pole_candidates": 6643
+}

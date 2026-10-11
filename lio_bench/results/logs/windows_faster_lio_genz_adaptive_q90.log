@@ -1,0 +1,18 @@
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/src/liobench/fusion.py:87: RuntimeWarning: All-NaN slice encountered
+  med = np.nanmedian(U, axis=0) if len(methods) > 1 else None
+{
+  "baseline": "faster_lio",
+  "support": "genz_lio",
+  "schedule": "adaptive",
+  "warm_start": true,
+  "warmup_s": 5.0,
+  "threshold": 0.07034148408561795,
+  "n_windows": 0,
+  "duty_cycle": 0.0,
+  "support_wall_s": 0.0,
+  "support_step_err_in_windows": {
+    "windowed_median": null,
+    "continuous_median": null,
+    "baseline_median": null
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "algo": "kiss_icp_revtime",
+  "tag": "full",
+  "start_offset_s": 0.0,
+  "machine": {
+    "arch": "aarch64"
+  },
+  "runner": "correct.kiss_probe",
+  "role": "probe",
+  "world_frame": "first_imu",
+  "probe": {
+    "time": "reverse"
+  },
+  "wall_s": 216.5008240039897
+}

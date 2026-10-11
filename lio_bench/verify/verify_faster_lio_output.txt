@@ -1,0 +1,18 @@
+ground truth: 5420 rows, 542 s, 10.30 km
+A. fasterlio.csv (old export already in the repo)
+  poses 5415, clock offset +0.56 s, head-fit rms 0.15 m, yaw -0.86 deg
+  horizontal length 9.731 km vs ground truth 10.295 km (ratio 0.945)
+  error at km 1/2/5/8/10: 19 / 60 / 458 / 1474 / 2588 m; final 2696 m; final/length 26.2 %
+B. our Faster-LIO run (runs/faster_lio/full)
+  poses 5411, clock offset +0.12 s, head-fit rms 0.68 m, yaw +4.41 deg
+  horizontal length 9.908 km vs ground truth 10.295 km (ratio 0.962)
+  error at km 1/2/5/8/10: 25 / 102 / 628 / 1767 / 2983 m; final 3113 m; final/length 30.2 %
+C. our FAST-LIO2 run (runs/fast_lio/full)
+  poses 5413, clock offset +0.12 s, head-fit rms 0.66 m, yaw +4.67 deg
+  horizontal length 9.485 km vs ground truth 10.295 km (ratio 0.921)
+  error at km 1/2/5/8/10: 23 / 113 / 813 / 2116 / 3558 m; final 3717 m; final/length 36.1 %
+D. fastlio.csv (old FAST-LIO export already in the repo)
+  poses 5416, clock offset +0.40 s, head-fit rms 0.83 m, yaw +10.40 deg
+  horizontal length 9.474 km vs ground truth 10.294 km (ratio 0.920)
+  error at km 1/2/5/8/10: 20 / 104 / 859 / 2263 / 3794 m; final 3964 m; final/length 38.5 %
+A vs B (old export vs our run, best rigid fit over the whole drive): median 36.4 m, p95 106.7 m, max 163.7 m, length ratio A/B 0.982

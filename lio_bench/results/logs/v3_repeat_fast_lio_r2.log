@@ -1,0 +1,4 @@
+[run_ros 02:20:50] tag=full_r2 algos=['fast_lio'] port=60655 bag=2024-02-28-12-59-51.bag start=0.0 dur=None rate=1.0
+[run_ros 02:30:00] playback finished in 546 s; draining
+[run_ros 02:30:06] odometry poses recorded: {'fast_lio': 5413}
+[run_ros 02:30:08] fast_lio: 5413 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/fast_lio/full_r2

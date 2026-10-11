@@ -1,0 +1,4 @@
+[run_ros 20:59:54] tag=full_pf4_legacy algos=['fast_lio'] port=38569 bag=2024-02-28-12-59-51.bag start=0.0 dur=None rate=1.0
+[run_ros 21:09:04] playback finished in 546 s; draining
+[run_ros 21:09:10] odometry poses recorded: {'fast_lio': 5413}
+[run_ros 21:09:12] fast_lio: 5413 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/fast_lio/full_pf4_legacy

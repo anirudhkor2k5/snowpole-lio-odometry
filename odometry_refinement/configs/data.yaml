@@ -1,0 +1,12 @@
+files:
+  fasterlio: fasterlio.csv
+  fastlio: fastlio.csv
+  fastreg: fastreg.csv
+  incremental_navigation: incremental_navigation_results.csv
+  gps_left: gps_left_position.csv
+  gps_right: gps_right_position.csv
+  poles: Groundtruth_pole_location_at_test_site_E39_Hemnekjølen.csv
+bags:
+  reduced: 2024-02-28-12-59-51_no_unwanted_topics.bag
+  full: 2024-02-28-12-59-51.bag
+decode_bag_payloads: false

@@ -1,0 +1,45 @@
+# Odometry refinement post-processor
+
+Black-box post-processing for an existing LiDAR–inertial trajectory. Faster-LIO, FAST-LIO, the snow-pole pipeline, the CSV exports, and the ROS bags are inputs. This package does not modify them.
+
+What is implemented and has been run on the 2024-02-28 drive:
+
+- Read-only CSV loading and a ROS1 bag index reader that does not decompress chunks.
+- Projection to EPSG:32633, the frame the snow-pole pipeline and the pole map already use.
+- Dual-GNSS midpoint reference, with an explicit quality flag. This is not survey ground truth.
+- Identity, origin-only, and initial-chord planar alignment. A whole-trajectory SE(2) fit is computed only as a diagnostic.
+- Horizontal ATE, time-horizon and distance-horizon relative displacement error, segment RMSE, and failure episodes.
+- Causal odometry features. An online pusher matches the batch features. Labels are stored in a separate `.npz`.
+- An analytical motion rule, logistic regression, XGBoost, a 16-unit MLP, and a lag stack. Chronological blocks with gaps. Normalization is fit on the training block only.
+
+What is not implemented, because the data do not support it yet:
+
+- IMU, LiDAR-geometry, reflectivity, signal, or near-IR features. Those streams are in the bags and were not decoded. The Ouster metadata file used by the existing pipeline is not in the checkout.
+- Scan-to-submap registration, a correction oracle, a scheduler, and fixed-lag smoothing. The reliability experiment did not clear the gate for a learned corrector. See `docs/05_reliability_experiment.md`.
+- A corrected odometry CSV. Writing one would present an uncorrected or unvalidated pose as a result.
+
+## Run
+
+From the repository root, with the packages in `odometry_refinement/requirements.txt`:
+
+```bash
+python odometry_refinement/scripts/audit_data.py
+python odometry_refinement/scripts/evaluate_baselines.py
+python odometry_refinement/scripts/extract_features.py
+python odometry_refinement/scripts/train_reliability.py
+python -m unittest odometry_refinement/tests/test_core.py
+```
+
+Outputs:
+
+- `reports/dataset_statistics.json`
+- `experiments/baseline/`
+- `experiments/features/`
+- `experiments/reliability/reliability_summary.json`
+- `docs/01_data_audit.md` through `docs/05_reliability_experiment.md`
+
+The scripts embed the evaluation constants (0.15 s association gap, 30 m initial chord, 1 s / 2 m primary label, 20 s split gaps). Those constants are repeated in `odometry_refinement/configs/`.
+
+## Interface for a later live pose
+
+`OnlineOdometryFeatures.push(time_s, easting_m, northing_m, z_m)` returns the same feature vector as the batch extractor at that instant, using only samples already pushed. A future corrector should consume that API and the original Faster-LIO pose, and should refuse to emit a corrected pose until registration and degeneracy checks exist. Until then the evaluated pose is the exported pose.

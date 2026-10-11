@@ -1,0 +1,15 @@
+{
+  "algo": "kiss_icp_minr10",
+  "tag": "full",
+  "start_offset_s": 0.0,
+  "machine": {
+    "arch": "aarch64"
+  },
+  "runner": "correct.kiss_probe",
+  "role": "probe",
+  "world_frame": "first_imu",
+  "probe": {
+    "r_min": 10.0
+  },
+  "wall_s": 203.7842461889959
+}

@@ -1,0 +1,15 @@
+{
+  "algo": "kiss_icp_nodeskew",
+  "tag": "full",
+  "start_offset_s": 0.0,
+  "machine": {
+    "arch": "aarch64"
+  },
+  "runner": "correct.kiss_probe",
+  "role": "probe",
+  "world_frame": "first_imu",
+  "probe": {
+    "deskew": false
+  },
+  "wall_s": 210.29300298298767
+}

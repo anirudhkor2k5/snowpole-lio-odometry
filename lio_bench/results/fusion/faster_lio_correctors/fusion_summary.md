@@ -1,0 +1,109 @@
+# Step 4 - learned fusion, baseline = faster_lio
+
+Methods: ['faster_lio', 'dlio', 'genz_lio', 'kiss_icp', 'faster_lio+wheel', 'faster_lio+plane_icp_da+planar']. 114 causal features. Test rows [4436, 5419].
+
+## Held-out (last block of the drive)
+
+| method | step err RMSE m | yaw err median deg | integrated ATE RMSE m | final m | drift 200 m % |
+|---|---:|---:|---:|---:|---:|
+| faster_lio | 0.1002 | 0.048 | 31.9 | 66.2 | 0.94 |
+| dlio | 0.2496 | 0.056 | 16.6 | 37.4 | 0.68 |
+| genz_lio | 0.0951 | 0.050 | 21.4 | 46.9 | 0.59 |
+| kiss_icp | 0.1056 | 0.055 | 9.1 | 22.4 | 0.93 |
+| faster_lio+wheel | 0.0974 | 0.052 | 14.0 | 35.9 | 0.58 |
+| faster_lio+plane_icp_da+planar | 0.1048 | 0.051 | 31.1 | 78.4 | 1.17 |
+| uniform_mean | 0.1023 | 0.050 | 20.0 | 47.8 | 0.70 |
+| oracle_best_per_step | 0.0757 | 0.046 | 14.9 | 38.8 | 0.52 |
+| static_inv_var | 0.0963 | 0.050 | 20.1 | 47.4 | 0.74 |
+| best_single | 0.1002 | 0.048 | 31.9 | 66.2 | 0.94 |
+| chosen:linear_gating | 0.0957 | 0.052 | 27.7 | 63.2 | 0.47 |
+| control:shuffled_context | 0.0988 | 0.050 | 24.4 | 57.7 | 0.50 |
+
+**Model chosen by CV (one-SE rule): `linear_gating`.**
+
+## Overfitting checks
+
+- Learned model beats best-single, static weights and its shuffled-context control on test.
+- Step error RMSE train / val / test: {'train': 0.07130751251465245, 'val': 0.07204366534939911, 'test': 0.0956854244808242}
+- Test drift 200 m % across seeds: [0.46767146957367695, 0.4525102138400873, 0.44501247343633415]
+- Fraction of the test road within 25 m of the training route: 0.00
+
+Mean test weights: {'w_trans_faster_lio': 0.22699999809265137, 'w_trans_dlio': 0.07599999755620956, 'w_trans_genz_lio': 0.06499999761581421, 'w_trans_kiss_icp': 0.15299999713897705, 'w_trans_faster_lio+wheel': 0.3089999854564667, 'w_trans_faster_lio+plane_icp_da+planar': 0.16899999976158142, 'w_yaw_faster_lio': 0.15700000524520874, 'w_yaw_dlio': 0.14399999380111694, 'w_yaw_genz_lio': 0.09600000083446503, 'w_yaw_kiss_icp': 0.18400000035762787, 'w_yaw_faster_lio+wheel': 0.2680000066757202, 'w_yaw_faster_lio+plane_icp_da+planar': 0.1509999930858612}
+
+Static inverse-variance weights (fwd, lat, yaw): {'faster_lio': [0.2, 0.225, 0.178], 'dlio': [0.034, 0.118, 0.163], 'genz_lio': [0.203, 0.208, 0.167], 'kiss_icp': [0.165, 0.049, 0.164], 'faster_lio+wheel': [0.198, 0.21, 0.161], 'faster_lio+plane_icp_da+planar': [0.2, 0.189, 0.166]}
+
+Oracle (best single method per step) share on test: {'faster_lio': 0.10060975609756098, 'dlio': 0.14939024390243902, 'genz_lio': 0.17378048780487804, 'kiss_icp': 0.20223577235772358, 'faster_lio+wheel': 0.2225609756097561, 'faster_lio+plane_icp_da+planar': 0.15142276422764228}
+
+## Blocked 5-fold CV (mean over folds)
+
+| method | step err RMSE m | integrated ATE RMSE m | drift 200 m % | ± SE |
+|---|---:|---:|---:|---:|
+| faster_lio | 0.0767 | 49.0 | 1.08 | 0.31 |
+| dlio | 0.1947 | 36.0 | 1.00 | 0.38 |
+| genz_lio | 0.0752 | 40.7 | 0.93 | 0.34 |
+| kiss_icp | 0.0845 | 19.7 | 1.09 | 0.35 |
+| faster_lio+wheel | 0.0765 | 56.3 | 1.95 | 1.04 |
+| faster_lio+plane_icp_da+planar | 0.0776 | 41.1 | 1.03 | 0.33 |
+| uniform_mean | 0.0802 | 38.7 | 1.05 | 0.45 |
+| oracle_best_per_step | 0.0577 | 31.7 | 1.02 | 0.47 |
+| best_single | 0.0767 | 50.2 | 1.08 | 0.31 |
+| static_inv_var | 0.0753 | 38.9 | 1.07 | 0.45 |
+| linear_gating | 0.0761 | 32.8 | 0.93 | 0.43 |
+| mlp16 | 0.0762 | 37.3 | 1.02 | 0.41 |
+| mlp64 | 0.0763 | 31.8 | 0.88 | 0.37 |
+
+Per-fold drift 200 m % (folds in time order):
+
+- `faster_lio`: [2.3, 0.48, 0.87, 0.87, 0.88]
+- `dlio`: [2.51, 0.45, 0.5, 0.86, 0.67]
+- `genz_lio`: [2.29, 0.51, 0.62, 0.66, 0.58]
+- `kiss_icp`: [2.23, 0.38, 1.53, 0.47, 0.86]
+- `faster_lio+wheel`: [6.11, 0.98, 0.93, 1.14, 0.62]
+- `faster_lio+plane_icp_da+planar`: [2.25, 0.41, 0.78, 0.62, 1.08]
+- `uniform_mean`: [2.83, 0.4, 0.69, 0.65, 0.67]
+- `oracle_best_per_step`: [2.91, 0.44, 0.59, 0.67, 0.52]
+- `best_single`: [2.29, 0.48, 0.87, 0.87, 0.88]
+- `static_inv_var`: [2.85, 0.41, 0.73, 0.66, 0.71]
+- `linear_gating`: [2.62, 0.35, 0.56, 0.65, 0.47]
+- `mlp16`: [2.64, 0.44, 0.75, 0.72, 0.55]
+- `mlp64`: [2.35, 0.42, 0.59, 0.58, 0.46]
+
+Paired against the best by mean (`mlp64`), simplest first:
+
+| model | mean diff (pp) | paired SE | folds better than best |
+|---|---:|---:|---:|
+| best_single | +0.20 | 0.09 | 1 |
+| static_inv_var | +0.19 | 0.09 | 1 |
+| linear_gating | +0.05 | 0.06 | 2 |
+| mlp16 | +0.14 | 0.05 | 0 |
+| mlp64 | +0.00 | 0.00 | 0 |
+
+-> chosen `linear_gating` (simplest within one paired SE of the best).
+
+## Trigger model (baseline-only features -> baseline error next 1 s)
+
+{
+ "target": "next-1 s baseline step error per metre driven",
+ "n_iter_chosen_on_val": 25,
+ "val": {
+  "spearman": 0.18088571587306476,
+  "bad_threshold": 0.044348226527537955,
+  "bad_rate": 0.14735772357723578,
+  "roc_auc_bad": 0.603633225103777,
+  "speed_only_control": {
+   "spearman": 0.1191897927716252,
+   "roc_auc_bad": 0.531823599523242
+  }
+ },
+ "test": {
+  "spearman": 0.28741337533080097,
+  "bad_threshold": 0.044348226527537955,
+  "bad_rate": 0.2782340862422998,
+  "roc_auc_bad": 0.648811367203288,
+  "speed_only_control": {
+   "spearman": 0.2876817887931425,
+   "roc_auc_bad": 0.6329725530541224
+  }
+ }
+}
+

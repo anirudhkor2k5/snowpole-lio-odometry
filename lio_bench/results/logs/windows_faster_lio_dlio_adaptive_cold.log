@@ -1,0 +1,26 @@
+[run_ros 00:42:09] tag=win_faster_lio_dlio_adaptive_cold_wu5_q0.75_000 algos=['dlio'] port=47059 bag=2024-02-28-12-59-51.bag start=475.296 dur=10.0 rate=1.0
+[run_ros 00:42:26] playback finished in 13 s; draining
+[run_ros 00:42:32] odometry poses recorded: {'dlio': 727}
+[run_ros 00:42:34] dlio: 727 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/dlio/win_faster_lio_dlio_adaptive_cold_wu5_q0.75_000
+[run_ros 00:42:35] tag=win_faster_lio_dlio_adaptive_cold_wu5_q0.75_001 algos=['dlio'] port=47747 bag=2024-02-28-12-59-51.bag start=511.894 dur=10.098 rate=1.0
+[run_ros 00:42:49] playback finished in 11 s; draining
+[run_ros 00:42:55] odometry poses recorded: {'dlio': 820}
+[run_ros 00:43:12] dlio: 820 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/dlio/win_faster_lio_dlio_adaptive_cold_wu5_q0.75_001
+/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/src/liobench/fusion.py:87: RuntimeWarning: All-NaN slice encountered
+  med = np.nanmedian(U, axis=0) if len(methods) > 1 else None
+{
+  "baseline": "faster_lio",
+  "support": "dlio",
+  "schedule": "adaptive",
+  "warm_start": false,
+  "warmup_s": 5.0,
+  "threshold": 0.0428132093159329,
+  "n_windows": 2,
+  "duty_cycle": 0.09959349593495935,
+  "support_wall_s": 0.0,
+  "support_step_err_in_windows": {
+    "windowed_median": 0.08735919137627249,
+    "continuous_median": 0.10596928299049868,
+    "baseline_median": 0.07139746271926722
+  }
+}

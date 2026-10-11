@@ -1,0 +1,10 @@
+{
+  "up": [
+    -0.004319289393623611,
+    0.029440973109598628,
+    0.9995571883796814
+  ],
+  "samples": 32484,
+  "source": "mean IMU specific force, training block",
+  "tilt_from_imu_z_deg": 1.7051522483276498
+}

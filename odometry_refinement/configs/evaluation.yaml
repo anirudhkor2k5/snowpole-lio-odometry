@@ -1,0 +1,13 @@
+# Mirrors the constants in scripts/evaluate_baselines.py and scripts/audit_data.py.
+crs_geographic: EPSG:4326
+crs_projected: EPSG:32633
+max_sync_gap_s: 0.15
+relative_time_origin: gps_left_start
+relative_time_sensitivity: fasterlio_start
+initial_chord_m: 30
+rpe_horizons_s: [0.5, 1.0, 2.0, 10.0]
+rpe_tolerance_s: 0.15
+distance_horizons_m: [50, 100, 500]
+segment_m: 500
+failure_thresholds_m: [5, 10, 20, 50, 100]
+primary_alignment: identity_utm33

@@ -1,0 +1,4 @@
+[run_ros 03:31:35] tag=full_imunoise10 algos=['faster_lio'] port=41573 bag=2024-02-28-12-59-51.bag start=0.0 dur=None rate=1.0
+[run_ros 03:40:44] playback finished in 546 s; draining
+[run_ros 03:40:50] odometry poses recorded: {'faster_lio': 5412}
+[run_ros 03:40:52] faster_lio: 5412 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/faster_lio/full_imunoise10
