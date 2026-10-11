@@ -1,0 +1,25 @@
+variant                                   in-box mean   median  pole-span max    final
+our export file (as shared)                      10.2     10.5           28.3     2484
+rebuilt here, same steps                         10.2     10.5           28.3     2484
+no clock correction (0 s)                        10.1     10.5           28.1     2482
+clock 0.5 s late                                 10.1     10.4           27.4     2475
+start fit on 50 m                                10.3     10.5           28.4     2491
+start fit on 1000 m                               9.4     10.2           26.7     2388
+one row per scan (not per GNSS row)              10.4     10.6           28.7     2484
+yaw -4 deg after fit                              7.9      9.6           36.0     2177
+yaw -2 deg after fit                              9.4     10.1           25.7     2331
+yaw -1 deg after fit                              9.5     10.3           27.0     2408
+yaw +1 deg after fit                             10.5     10.6           29.8     2560
+yaw +2 deg after fit                             10.9     10.8           32.2     2636
+yaw +4 deg after fit                             11.9     11.2           36.5     2787
+row jitter 0.02 m                                10.1     10.5           28.1     2485
+row jitter 0.05 m                                10.1     10.5           28.0     2485
+row jitter 0.10 m                                10.1     10.4           27.7     2482
+row jitter 0.20 m                                10.1     10.3           27.5     2480
+every 50th row repeated (zero step)               9.8     10.3           28.3     2484
+every 10th row repeated (zero step)               9.9     10.4           28.3     2484
+distance scaled x0.95                            50.0     56.3           80.3     2446
+distance scaled x0.9                            153.0    153.6          219.1     2461
+distance scaled x0.75                          1013.9    932.3         1261.5     3298
+distance scaled x0.5                           4024.8   3950.7         3297.3     7874
+fasterlio.csv (old export, as is)                 9.2     10.0           25.8     2294
