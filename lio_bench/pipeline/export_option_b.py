@@ -29,10 +29,11 @@ from liobench import export as X  # noqa: E402
 from liobench.io import load_config, load_ground_truth, repo_path  # noqa: E402
 
 OUT = REPO / "lio_bench" / "results" / "export_optionB"
-JOBS = [("faster_lio", "full", "raw"),                       # 1. raw Faster-LIO
-        ("faster_lio", "full", "gravity"),                   # 2. + gravity
-        ("faster_lio", "full", "gravity+kiss_heading"),      # 3. + gravity + KISS-ICP heading (offline)
-        ("kiss_fusion", "rt_fusion_v20", "run")]             # 4. online fusion node (gravity + KISS-ICP, real time)
+# (output name, source, tag key, pipeline); tags come from the command line (defaults = the original runs)
+JOBS = [("faster_lio_full_raw", "faster_lio", "faster", "raw"),                                     # 1. raw Faster-LIO
+        ("faster_lio_full_gravity", "faster_lio", "faster", "gravity"),                             # 2. + gravity
+        ("faster_lio_full_gravity_kiss_heading", "faster_lio", "faster", "gravity+kiss_heading"),   # 3. + KISS-ICP (offline)
+        ("kiss_fusion_rt_fusion_v20_run", "kiss_fusion", "fusion", "run")]                          # 4. online fusion node
 
 
 def antenna_heading_enu() -> float:
@@ -50,7 +51,7 @@ def yaw_of(q) -> float:
     return float(np.arctan2(2 * (w * z + x * y), 1 - 2 * (y * y + z * z)))
 
 
-def export(cfg, source, tag, pipeline, yaw0) -> Path:
+def export(cfg, source, tag, pipeline, yaw0, name, out_dir) -> Path:
     tr, dt = X.trajectory(cfg, source, tag, pipeline)   # dt: clock offset measured against GNSS; NOT applied
     rot = yaw0 - yaw_of(tr.q[0])
     c, s = np.cos(rot), np.sin(rot)
@@ -67,13 +68,12 @@ def export(cfg, source, tag, pipeline, yaw0) -> Path:
     lon, lat = Transformer.from_crs(f"EPSG:{cfg['utm_epsg']}", "EPSG:4326", always_xy=True).transform(e, n)
     df["easting"], df["northing"], df["latitude"], df["longitude"] = e, n, lat, lon
     df["altitude"] = tmpl["altitude"].iloc[0] + (z - z[0])
-    name = f"incremental_navigation_{source}_{tag}_{pipeline}.csv".replace("+", "_")
-    out = OUT / name
+    out = out_dir / f"incremental_navigation_{name}.csv"
     df.to_csv(out, index=False)
     gt = load_ground_truth(cfg)
     inside = (ts >= gt.t[0]) & (ts <= gt.t[-1])
     err = np.hypot(e - np.interp(ts, gt.t, gt.p[:, 0]), n - np.interp(ts, gt.t, gt.p[:, 1]))[inside]
-    meta = {"source": source, "tag": tag, "pipeline": pipeline, "rows": len(df), "clock_offset_s": 0.0,
+    meta = {"source": source, "tag": tag, "kiss_icp_tag": X.v3.SOURCES["kiss_icp"][1] if "kiss" in pipeline else None, "pipeline": pipeline, "rows": len(df), "clock_offset_s": 0.0,
             "clock_offset_measured_not_applied_s": dt,
             "start_heading": "one dual-antenna GNSS reading at the first frame (option B)",
             "antenna_heading_enu_deg": float(np.degrees(yaw0)), "odometry_yaw0_deg": float(np.degrees(yaw_of(tr.q[0]))),
@@ -85,12 +85,23 @@ def export(cfg, source, tag, pipeline, yaw0) -> Path:
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--faster-tag", default="full", help="results/runs/faster_lio/<tag> for files 1-3")
+    ap.add_argument("--kiss-tag", default="full", help="results/runs/kiss_icp/<tag> for file 3")
+    ap.add_argument("--fusion-tag", default="rt_fusion_v20", help="results/runs/kiss_fusion/<tag> for file 4")
+    ap.add_argument("--out", default=str(OUT))
+    a = ap.parse_args()
+    X.v3.SOURCES["kiss_icp"] = ("kiss_icp", a.kiss_tag)
+    tags = {"faster": a.faster_tag, "fusion": a.fusion_tag}
+    out_dir = Path(a.out)
     cfg = load_config()
-    OUT.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=True)
     yaw0 = antenna_heading_enu()
     print(f"antenna heading at the first frame: ENU {np.degrees(yaw0):.2f} deg (compass {(90 - np.degrees(yaw0)) % 360:.2f})")
-    for job in JOBS:
-        p = export(cfg, *job, yaw0)
+    for name, source, key, pipeline in JOBS:
+        p = export(cfg, source, tags[key], pipeline, yaw0, name, out_dir)
+        print(f"  {source}/{tags[key]} ({pipeline})" + (f" + kiss_icp/{a.kiss_tag}" if "kiss" in pipeline else ""))
         m = json.loads(p.with_suffix(".json").read_text())
         old = json.loads((X.results_dir("export") / p.name).with_suffix(".json").read_text())
         print(f"{p.name:70s} rotation {m['rotation_applied_deg']:+6.2f} deg (200 m fit had "

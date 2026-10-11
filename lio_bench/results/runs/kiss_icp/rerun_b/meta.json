@@ -1,0 +1,13 @@
+{
+  "algo": "kiss_icp",
+  "tag": "rerun_b",
+  "start_offset_s": 0.0,
+  "machine": {
+    "arch": "aarch64"
+  },
+  "runner": "correct.scanpass",
+  "role": "support",
+  "world_frame": "first_imu",
+  "ms_per_scan": 40.0725464774463,
+  "note": "KISS-ICP 1.x, LiDAR only, 1.0 m voxel"
+}
