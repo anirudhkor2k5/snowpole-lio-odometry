@@ -1,0 +1,6 @@
+A. ours, 200 m GNSS fit                              in-box mean   10.2 m, median  10.5 m | pole span mean   10.2 m, max   28.3 m
+A. ours, 200 m GNSS fit + pole heading reset         in-box mean    2.0 m, median   1.0 m | pole span mean    2.1 m, max   17.5 m
+B. ours, one INS heading at t0 (+10.9 deg)           in-box mean   13.0 m, median  11.7 m | pole span mean   12.7 m, max   41.6 m
+B. ours, one INS heading at t0 + pole heading reset  in-box mean    2.4 m, median   0.9 m | pole span mean    2.0 m, max   13.3 m
+C. friend's CSV as is                                in-box mean   53.7 m, median  31.4 m | pole span mean   55.2 m, max  121.1 m
+C. friend's CSV as is + pole heading reset           in-box mean   55.9 m, median  31.6 m | pole span mean   58.7 m, max  149.2 m
