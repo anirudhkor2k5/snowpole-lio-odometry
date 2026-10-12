@@ -27,7 +27,7 @@ REPO = Path(__file__).resolve().parents[2]
 TEMPLATE = REPO / "incremental_navigation_results.csv"
 # Ouster sensor clock -> Unix for 2024-02-28-12-59-51.bag (fitted on the IMU stream, residual 0.14 ms)
 STAMP0, OFFSET, DRIFT = 13214.2395428, 1709108377.3551764, 0.00010493499328967526
-CLOCK = 0.06                            # Faster-LIO pose stamp vs truth (s), measured on the training block
+CLOCK = 0.0                             # no clock shift (option B: the 0.06 s offset was measured against GNSS)
 
 
 def antenna_yaw0():

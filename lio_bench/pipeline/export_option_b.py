@@ -1,4 +1,7 @@
-"""Option B exports: start heading from ONE dual-antenna GNSS reading at the first frame, no GNSS after that.
+"""(Superseded as an entry point by score_option_b.py, which imports antenna_heading_enu and yaw_of
+from here and writes results/export_optionB_all/. Running this file still works.)
+
+Option B exports: start heading from ONE dual-antenna GNSS reading at the first frame, no GNSS after that.
 
 Same as liobench.export.run (same trajectories, rows, columns), except: no clock offset (the 0.06 s
 offset was measured against GNSS on the training block, so it is left out), and the placement in
