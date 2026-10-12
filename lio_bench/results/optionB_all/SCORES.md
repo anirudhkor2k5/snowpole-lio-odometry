@@ -108,3 +108,17 @@
   - The offline 2.0 m KISS pass repeated to the metre (132 m end error in both runs).
 - **Caveat for the pole pipeline:** every file is 19–32 m off at the first pole, which is more than half
   the 18 m pole spacing, so the original stage 3 may lock onto the wrong pole.
+
+## Runtime (real-time replay on the laptop, indicative only)
+
+| LIO | run | LIO CPU % | LIO RAM MB | LIO latency median / p95 ms | node CPU % | node RAM MB | node latency median / p95 ms | KISS-ICP in node, ms/scan median / p95 | scans KISS-ICP processed |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Faster-LIO | solo run (raw / gravity / gk rows) | 147 | 409 | 36 / 48 | — | — | — | — | — |
+| Faster-LIO | with its node (node row) | 112 | 432 | 32 / 45 | 68 | 150 | 45 / 64 | 39 / 57 | 5419 / 5419 |
+| FAST-LIO2 | with its node | 96 | 625 | 43 / 59 | 68 | 180 | 49 / 65 | 36 / 53 | 5419 / 5419 |
+| DLIO | with its node (100 Hz poses) | 216 | 3074 | n/a (100 Hz timer poses) | 74 | 164 | 41 / 114 | 25 / 46 | 5419 / 5419 |
+| GenZ-LIO | with its node | 217 | 2557 | 80 / 100 | 69 | 149 | 82 / 111 | 30 / 50 | 5419 / 5419 |
+
+KISS-ICP alone (offline pass, 2.0 m, 4 threads): 11 ms/scan, 1.9 min for the whole drive (the drive is 9.0 min, so faster than real time).
+The offline gravity and gravity + KISS rows are post-processing of recorded runs and take seconds.
+Every run replayed the bag at real-time speed (~9.1 min of playback per run). DLIO publishes poses from a 100 Hz timer, so its per-scan latency is not defined; its node's latency is measured the same way as the others (pose received after the latest scan).
