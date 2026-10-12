@@ -1,0 +1,11 @@
+{
+  "source": "faster_lio",
+  "tag": "rerun_b",
+  "pipeline": "gravity",
+  "kiss_icp": null,
+  "rows": 5422,
+  "clock_offset_s": 0.0,
+  "rotation_applied_deg": 5.88578297962896,
+  "start_heading": "one dual-antenna GNSS reading at the first frame (option B)",
+  "template": "incremental_navigation_results.csv"
+}

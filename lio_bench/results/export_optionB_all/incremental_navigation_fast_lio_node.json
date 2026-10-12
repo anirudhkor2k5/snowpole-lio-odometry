@@ -1,0 +1,11 @@
+{
+  "source": "kiss_fusion_fast_lio",
+  "tag": "optb",
+  "pipeline": "run",
+  "kiss_icp": null,
+  "rows": 5422,
+  "clock_offset_s": 0.0,
+  "rotation_applied_deg": 5.897802093867096,
+  "start_heading": "one dual-antenna GNSS reading at the first frame (option B)",
+  "template": "incremental_navigation_results.csv"
+}

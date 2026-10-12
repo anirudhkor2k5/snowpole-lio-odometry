@@ -1,0 +1,11 @@
+{
+  "source": "dlio",
+  "tag": "optb",
+  "pipeline": "gravity",
+  "kiss_icp": null,
+  "rows": 5422,
+  "clock_offset_s": 0.0,
+  "rotation_applied_deg": 5.896387349853137,
+  "start_heading": "one dual-antenna GNSS reading at the first frame (option B)",
+  "template": "incremental_navigation_results.csv"
+}

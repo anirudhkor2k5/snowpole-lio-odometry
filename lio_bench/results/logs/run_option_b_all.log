@@ -1,0 +1,21 @@
+[20:26:00] 1/4 KISS-ICP alone, 2.0 m voxels
+{'probe': 'vox20', 'scans': 5419, 'wall_s': 115.92153056899997}
+[20:27:56] 2/4 FAST-LIO2 + node (real time)
+[run_ros 20:27:58] tag=optb algos=['fast_lio', 'kiss_fusion_fast_lio'] port=47335 bag=2024-02-28-12-59-51.bag start=0.0 dur=None rate=1.0
+[run_ros 20:37:05] playback finished in 544 s; draining
+[run_ros 20:37:11] odometry poses recorded: {'fast_lio': 5412, 'kiss_fusion_fast_lio': 5412}
+[run_ros 20:37:14] fast_lio: 5412 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/fast_lio/optb
+[run_ros 20:37:14] kiss_fusion_fast_lio: 5412 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/kiss_fusion_fast_lio/optb
+[20:37:14] 3/4 DLIO + node (real time)
+[run_ros 20:37:15] tag=optb algos=['dlio', 'kiss_fusion_dlio'] port=58321 bag=2024-02-28-12-59-51.bag start=0.0 dur=None rate=1.0
+[run_ros 20:46:25] playback finished in 546 s; draining
+[run_ros 20:46:31] odometry poses recorded: {'dlio': 41281, 'kiss_fusion_dlio': 41276}
+[run_ros 20:46:34] dlio: 41281 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/dlio/optb
+[run_ros 20:46:34] kiss_fusion_dlio: 41276 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/kiss_fusion_dlio/optb
+[20:46:34] 4/4 GenZ-LIO + node (real time)
+[run_ros 20:46:36] tag=optb algos=['genz_lio', 'kiss_fusion_genz_lio'] port=40087 bag=2024-02-28-12-59-51.bag start=0.0 dur=None rate=1.0
+[run_ros 20:55:45] playback finished in 546 s; draining
+[run_ros 20:55:51] odometry poses recorded: {'genz_lio': 5413, 'kiss_fusion_genz_lio': 5413}
+[run_ros 20:55:54] genz_lio: 5413 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/genz_lio/optb
+[run_ros 20:55:54] kiss_fusion_genz_lio: 5413 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/kiss_fusion_genz_lio/optb
+[20:55:54] runs done

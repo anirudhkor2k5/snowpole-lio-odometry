@@ -1,0 +1,5 @@
+[run_ros 20:58:30] tag=optb algos=['dlio', 'kiss_fusion_dlio'] port=38403 bag=2024-02-28-12-59-51.bag start=0.0 dur=None rate=1.0
+[run_ros 21:07:40] playback finished in 546 s; draining
+[run_ros 21:07:46] odometry poses recorded: {'dlio': 41165, 'kiss_fusion_dlio': 41160}
+[run_ros 21:07:49] dlio: 41165 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/dlio/optb
+[run_ros 21:07:49] kiss_fusion_dlio: 41160 poses -> /home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/results/runs/kiss_fusion_dlio/optb

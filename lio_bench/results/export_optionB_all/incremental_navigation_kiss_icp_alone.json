@@ -1,0 +1,10 @@
+{
+  "source": "kiss_icp_vox20",
+  "tag": "optb",
+  "pipeline": "raw",
+  "rows": 5422,
+  "clock_offset_s": 0.0,
+  "rotation_applied_deg": 5.991449878659401,
+  "start_heading": "one dual-antenna GNSS reading at the first frame (option B)",
+  "template": "incremental_navigation_results.csv"
+}

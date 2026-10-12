@@ -1,0 +1,26 @@
+{
+  "algo": "kiss_fusion_fast_lio",
+  "tag": "optb",
+  "runner": "ros",
+  "concurrent_with": [
+    "fast_lio"
+  ],
+  "world_frame": "gravity",
+  "role": "corrector",
+  "config": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/lio_bench/configs/algorithms/kiss_fusion.yaml",
+  "bag": "/home/anirudhk/Documents/Projects/Snow-pole-based-vehicle-localization/2024-02-28-12-59-51.bag",
+  "start_offset_s": 0.0,
+  "duration_s": null,
+  "rate": 1.0,
+  "wall": {
+    "play_start": 1791817081.3149092,
+    "play_end": 1791817625.3765962,
+    "drained": 1791817631.38144
+  },
+  "machine": {
+    "cpus": 10,
+    "arch": "aarch64",
+    "mem_gb": 15.2
+  },
+  "estimator_commit": null
+}

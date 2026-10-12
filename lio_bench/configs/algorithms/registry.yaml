@@ -38,3 +38,27 @@ kiss_fusion:
   config: kiss_fusion.yaml
   node_binary: kiss_fusion_node.py
   world_frame: gravity
+# The same online node on the other three LIOs (option B study, 2026-10-12). Identical config
+# (2.0 m KISS voxels); only the LIO it corrects differs. Run together with its LIO:
+#   --algos fast_lio,kiss_fusion_fast_lio
+kiss_fusion_fast_lio:
+  role: corrector
+  script: kiss_fusion_node.py
+  lio_input: fast_lio
+  config: kiss_fusion.yaml
+  node_binary: kiss_fusion_node.py
+  world_frame: gravity
+kiss_fusion_dlio:
+  role: corrector
+  script: kiss_fusion_node_anyrate.py   # DLIO publishes 100 Hz poses; see that file
+  lio_input: dlio
+  config: kiss_fusion_100hz.yaml
+  node_binary: kiss_fusion_node_anyrate.py
+  world_frame: gravity
+kiss_fusion_genz_lio:
+  role: corrector
+  script: kiss_fusion_node.py
+  lio_input: genz_lio
+  config: kiss_fusion.yaml
+  node_binary: kiss_fusion_node.py
+  world_frame: gravity

@@ -331,6 +331,20 @@ Each phase lists what ran, the main result, and the figures, with paths.
 - `pipeline/run_option_b.py` (pipeline + sensitivity on option B) exists but was stopped on your
   request. Its output folder was deleted, and `results/pipeline/` was verified unchanged.
 
+
+### Option B for every method (2026-10-12, `results/optionB_all/SCORES.md`)
+
+Every method with GNSS for one heading at frame 1 only, KISS-ICP at 2.0 m everywhere. 17
+trajectories:
+- four LIOs × {raw, + gravity, + gravity + KISS heading offline, online node};
+- KISS-ICP alone.
+
+Scored with option B ATE / final / end-to-end drift, KITTI translation % and rotation °/100 m,
+RPE 1 s, and paper-style ATE (labelled evaluation only). Pipeline CSVs (17):
+`results/export_optionB_all/`. Figures: `results/optionB_all/figures/error_vs_distance.png`,
+`maps.png`, `kitti_translation.png`, `end_to_end_drift.png`. Scripts:
+`scripts/run_option_b_all.sh`, `pipeline/score_option_b.py`.
+
 ---
 
 ## 3. All figures in one list
@@ -345,8 +359,9 @@ Each phase lists what ran, the main result, and the figures, with paths.
 | `results/v3/figures/` | `f0_map` … `f5_bias_per_block` | v3 heading + node |
 | `results/pipeline/figures/` | `p1_validation` … `p7_cross_track` | stage 3, 200 m CSVs |
 | `results/pipeline/` | `error_vs_distance__{none,reset,reset_rate}` | stage 3, 200 m CSVs |
+| `results/optionB_all/figures/` | `error_vs_distance`, `maps`, `kitti_translation`, `end_to_end_drift` | option B, every method |
 
-There are no figures for option B, the Faster-LIO verification, or the friend's-file
+There are no figures for the first option B set, the Faster-LIO verification, or the friend's-file
 investigation; those are text outputs in `verify/`.
 
 ---
