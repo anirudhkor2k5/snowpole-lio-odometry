@@ -1,0 +1,32 @@
+[22:12:50] offline seed 1
+offline seed 1: 5419 scans, 128 s
+[22:14:59] node seed 1
+node seed 1: 5419 scans, 127 s
+[22:17:07] offline seed 2
+offline seed 2: 5419 scans, 127 s
+[22:19:14] node seed 2
+node seed 2: 5419 scans, 127 s
+[22:21:22] offline seed 3
+offline seed 3: 5419 scans, 126 s
+[22:23:30] node seed 3
+node seed 3: 5419 scans, 127 s
+[22:25:38] offline seed 4
+offline seed 4: 5419 scans, 123 s
+[22:27:41] node seed 4
+node seed 4: 5419 scans, 128 s
+[22:29:50] offline seed 5
+offline seed 5: 5419 scans, 124 s
+[22:31:55] node seed 5
+node seed 5: 5419 scans, 126 s
+[22:34:01] scoring
+offline  s1: KISS alone end   744 m, Faster-LIO+G+KISS end   594 m, KITTI 1.18 %, heading at end +7.9 deg
+offline  s2: KISS alone end   109 m, Faster-LIO+G+KISS end   155 m, KITTI 1.38 %, heading at end +1.0 deg
+offline  s3: KISS alone end   948 m, Faster-LIO+G+KISS end   759 m, KITTI 1.15 %, heading at end +9.8 deg
+offline  s4: KISS alone end   493 m, Faster-LIO+G+KISS end   336 m, KITTI 1.23 %, heading at end +4.6 deg
+offline  s5: KISS alone end   796 m, Faster-LIO+G+KISS end   648 m, KITTI 1.13 %, heading at end +8.6 deg
+node     s1: KISS alone end   711 m, Faster-LIO+G+KISS end   546 m, KITTI 1.18 %, heading at end +7.2 deg
+node     s2: KISS alone end   531 m, Faster-LIO+G+KISS end   346 m, KITTI 1.22 %, heading at end +5.1 deg
+node     s3: KISS alone end   422 m, Faster-LIO+G+KISS end   263 m, KITTI 1.24 %, heading at end +4.4 deg
+node     s4: KISS alone end   614 m, Faster-LIO+G+KISS end   767 m, KITTI 1.67 %, heading at end -5.2 deg
+node     s5: KISS alone end   657 m, Faster-LIO+G+KISS end   483 m, KITTI 1.20 %, heading at end +7.1 deg
+[22:35:19] done

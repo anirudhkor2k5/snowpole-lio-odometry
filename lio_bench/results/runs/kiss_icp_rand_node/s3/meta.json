@@ -1,0 +1,15 @@
+{
+  "algo": "kiss_icp_rand_node",
+  "tag": "s3",
+  "start_offset_s": 0.0,
+  "machine": {
+    "arch": "aarch64"
+  },
+  "runner": "verify/kiss_randomness_test.py",
+  "role": "probe",
+  "world_frame": "first_imu",
+  "reader": "node",
+  "seed": 3,
+  "drop_fraction": 0.001,
+  "wall_s": 127.28239318600026
+}

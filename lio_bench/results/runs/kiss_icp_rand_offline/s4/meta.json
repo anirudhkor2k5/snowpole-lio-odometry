@@ -1,0 +1,15 @@
+{
+  "algo": "kiss_icp_rand_offline",
+  "tag": "s4",
+  "start_offset_s": 0.0,
+  "machine": {
+    "arch": "aarch64"
+  },
+  "runner": "verify/kiss_randomness_test.py",
+  "role": "probe",
+  "world_frame": "first_imu",
+  "reader": "offline",
+  "seed": 4,
+  "drop_fraction": 0.001,
+  "wall_s": 122.73794755000017
+}

@@ -69,6 +69,10 @@ Correct. The difference is **historical, not a design decision**:
 - This also weakens the §0.3 voxel comparison (132 m at 2.0 m vs 792 m at 1.0 m): that gap is within
   this spread.
 - 2.0 m is still the right choice, for its validation result and because the node keeps real time with it.
+- **Confirmed by a randomness test** (5 perturbed runs per reader, `SCORES.md`):
+  - offline reader: 155–759 m, mean 498 m;
+  - node reader: 263–767 m, mean 481 m.
+  - Offline and online are equivalent. The realistic end error is ~500 m after 10.3 km; KITTI is ~1.2–1.3 %.
 
 **2.0 m, on every test we have.** After your question I checked it on option B directly. The
 offline file 3 was rebuilt from the 2.0 m sweep run that already exists (`runs/kiss_icp_vox20/full`).

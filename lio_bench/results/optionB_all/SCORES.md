@@ -146,3 +146,28 @@ errors but the same local accuracy (`verify/kiss_input_test.py`, runs in `result
   - So the offline 132 m is a lucky draw, not proof that offline is better, and the online 962 m is an
     unlucky draw within the same spread. The same applies to the gaps between LIOs in the node rows.
   - Compare methods by KITTI %, or by several runs, never by one end error.
+
+## Randomness test: offline reader vs node reader, 5 runs each (`verify/kiss_randomness_test.py`)
+
+Each run reads the whole bag offline with KISS-ICP at 2.0 m. One reader is the offline pass's, the other
+is the node's. Every run drops a different random 0.1 % of each scan's points, a physically meaningless
+change. Each run is scored as Faster-LIO + gravity + KISS heading (`faster_lio/rerun_b`). Script:
+`scripts/run_kiss_randomness.sh` (~22 min); log: `results/logs/kiss_randomness.log`; numbers:
+`results/optionB_all/kiss_randomness.json`.
+
+| reader | run 1 | run 2 | run 3 | run 4 | run 5 | mean | KITTI % (mean) | heading err at end |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| offline pass's reader | 594 m | 155 m | 759 m | 336 m | 648 m | 498 m | 1.21 | +1.0 … +9.8° |
+| node's reader | 546 m | 346 m | 263 m | 767 m | 483 m | 481 m | 1.30 | −5.2 … +7.2° |
+
+- **The two readers are equivalent.** Their ranges overlap completely and their means are the same within noise.
+- **The 132 m offline result was a favourable draw.** Only 1 of the 5 perturbed offline runs came near
+  it (155 m).
+- **The live node's 962 m** is at the unlucky end of the same spread.
+- **Honest figure for this method on this drive:** end error typically ~500 m after 10.3 km (~5 %),
+  range ~130–960 m over all runs. KITTI error is ~1.2–1.3 %, with one run at 1.67 %.
+- **The heading error at the end is mostly positive (+4…+10°).** A residual counter-clockwise heading bias
+  remains after the KISS-ICP heading.
+- **This applies to every single-run end error in this file,** including the per-LIO rows of sections 1–2
+  and the `*_gk.csv` files. The Faster-LIO / FAST-LIO2 / GenZ-LIO `gk` CSVs (all built on the same 132 m
+  KISS-ICP pass) are on the optimistic side.
