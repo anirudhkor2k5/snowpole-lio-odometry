@@ -122,3 +122,27 @@
 KISS-ICP alone (offline pass, 2.0 m, 4 threads): 11 ms/scan, 1.9 min for the whole drive (the drive is 9.0 min, so faster than real time).
 The offline gravity and gravity + KISS rows are post-processing of recorded runs and take seconds.
 Every run replayed the bag at real-time speed (~9.1 min of playback per run). DLIO publishes poses from a 100 Hz timer, so its per-scan latency is not defined; its node's latency is measured the same way as the others (pose received after the latest scan).
+
+## Why offline and online differ: KISS-ICP's long-distance heading is sensitive to tiny input changes
+
+The offline "+ KISS" rows and the online node use the same rule and the same KISS-ICP setting (2.0 m).
+The node is not worse. Feeding the same bag to KISS-ICP with trivial differences gives very different end
+errors but the same local accuracy (`verify/kiss_input_test.py`, runs in `results/runs/kiss_icp_nodeinput/`):
+
+| how KISS-ICP was fed (same scans, same points, same order) | KISS-ICP alone, end | Faster-LIO + G + KISS, end | KITTI % |
+|---|---:|---:|---:|
+| offline pass (`kiss_icp_vox20/optb`; repeated twice: identical) | 283 m | 132 m | 1.26 |
+| node's reader, offline, 1 / 2 / 4 threads (identical to each other) | 751 m | 592 m | 1.17 |
+| node's reader + points beyond 100 m dropped first | 868 m | 712 m | 1.15 |
+| live node (`kiss_fusion/rerun_b_fusion`) | — | 962 m | 1.27 |
+
+- Each setting is repeatable on its own; the thread count changes nothing.
+- The only difference between the first two rows is a handful of points right at the 100 m range limit.
+  The runs separate by more than 1 cm after 134 scans, and the heading difference then grows over the drive.
+- **How to read this:**
+  - The local accuracy (KITTI ~1.15–1.27 %) is robust.
+  - The 10 km end error is not. With the same method it falls anywhere between ~130 m and ~960 m,
+    depending on chance details.
+  - So the offline 132 m is a lucky draw, not proof that offline is better, and the online 962 m is an
+    unlucky draw within the same spread. The same applies to the gaps between LIOs in the node rows.
+  - Compare methods by KITTI %, or by several runs, never by one end error.

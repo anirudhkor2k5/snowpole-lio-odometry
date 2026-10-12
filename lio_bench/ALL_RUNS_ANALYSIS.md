@@ -62,6 +62,14 @@ Correct. The difference is **historical, not a design decision**:
 
 ### 0.3 Which is better?
 
+**Correction (2026-10-12, later):** single 10 km end errors are not reliable for comparing methods.
+- KISS-ICP's long-distance heading changes a lot with trivial input details (same scans, same points).
+  With the same method, Faster-LIO + G + KISS ends anywhere from 132 m to 962 m, at the same
+  ~1.2 % KITTI error. See `results/optionB_all/SCORES.md`, "Why offline and online differ".
+- This also weakens the §0.3 voxel comparison (132 m at 2.0 m vs 792 m at 1.0 m): that gap is within
+  this spread.
+- 2.0 m is still the right choice, for its validation result and because the node keeps real time with it.
+
 **2.0 m, on every test we have.** After your question I checked it on option B directly. The
 offline file 3 was rebuilt from the 2.0 m sweep run that already exists (`runs/kiss_icp_vox20/full`).
 This was an export only, no new bag run, written to `/tmp/vox20/`:

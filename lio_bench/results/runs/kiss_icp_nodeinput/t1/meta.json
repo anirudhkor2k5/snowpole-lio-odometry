@@ -1,0 +1,13 @@
+{
+  "algo": "kiss_icp_nodeinput",
+  "tag": "t1",
+  "start_offset_s": 0.0,
+  "machine": {
+    "arch": "aarch64"
+  },
+  "runner": "verify/kiss_input_test.py",
+  "role": "probe",
+  "world_frame": "first_imu",
+  "note": "node's input path, offline, 1 threads, 2.0 m",
+  "wall_s": 176.25507626000035
+}
